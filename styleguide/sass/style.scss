@@ -1,0 +1,416 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+
+
+body {
+  padding: 100px
+}
+
+
+/* 
+================================== STYLEGUIDE STYLES ================================= 
+*/
+
+
+/* 
+==== FONTS ==== 
+*/
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: $font-color;
+  font-family: $font;
+  font-weight: $title-font-weight;
+}
+
+p {
+  color: $font-color;
+  font-size: 16px;
+  font-weight: $paragraph-font-weight;
+  font-family: $font;
+}
+
+a {
+  color: $link-color;
+  font-family: $font;
+}
+
+li {
+  color: $font-color;
+  font-family: $font;
+}
+
+
+/* 
+==== BUTTONS ==== 
+*/
+
+.btn-success {
+@include button-style;
+}
+
+.btn-square {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: $button-color;
+  font-weight: $button-font-weight;
+  padding: 10px;
+  fill: $white;
+}
+
+.button-refresh {
+  /*background-image: url('../images/refresh.svg');
+  background-position: center center;
+  background-repeat: no-repeat;*/
+  fill: $white;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: $button-color;
+  padding: 10px;
+}
+
+
+/* 
+==== LOGO ==== 
+*/
+
+.logo {
+  background-color: #191919;
+  width: 188px;
+  height: 60px;
+}
+
+.logo-img {
+width: 80px;
+height: 40px;
+padding-left: 20px;
+padding-top:10px;
+line-height: 60px;
+}
+
+.hamburger-img {
+width: 25px;
+height: 25px;
+float: right;
+padding-top:18px;
+padding-right:20px;
+
+}
+
+
+/* 
+==== SIDEBAR MENU LINKS ==== 
+*/
+
+
+.component-sidebar-menu {
+  background-color: #000;
+  text-align: left;
+  list-style-type: none;
+  width: 188px;
+  height: 39px;
+}
+
+.component-sidebar-menu-link {
+  height: 39px;
+  line-height: 39px;
+  padding: 0 15px;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.link-paragraph {
+  margin: 0 auto;
+  font-weight: $menu-font-weight; 
+}
+
+.component-sidebar-menu-icon {
+  fill: $font-color;
+  width: 18px;
+  height: 18px;
+  text-align: left;
+  transform: translateY(3px);
+}
+
+.side-strip:active {
+  border-left: 5px solid orange;
+}
+
+
+/* 
+==== NAVBAR ELEMENTS ==== 
+*/
+
+    /*  Wallet  */ 
+
+.wallet-element {
+  list-style-type: none;
+  width: 190px;
+  height: 60px;
+  border-left: 1px solid $font-color;
+  border-right: 1px solid $font-color;
+  //margin: 10 auto;
+  //border: 1px solid orange;
+  p {
+    display: inline-block;
+    line-height: 60px;
+    font-size: 18px;
+    margin: 0 auto;
+    color: $font-color;
+ // border: 1px solid orange;
+
+  }
+}
+
+.wallet-icon {
+  width:20px;
+  height: 20px;
+  //font-size: 13px;
+  //padding: 20px 15px;
+  margin:0 15px;
+  fill: $font-color;
+  transform: translateY(5px);
+  //border: 1px solid orange;
+
+}
+
+.icon-arrow-down {
+  width:20px;
+  height: 20px;
+  //font-size: 13px;
+  //padding: 20px 15px;
+  margin:0 12px;
+  fill: $font-color;
+  transform: translateY(12px);
+  //border: 1px solid orange;
+
+}
+
+
+    /*  Notification  */ 
+
+
+.notification-element{
+  width:60px;
+  height: 60px;
+  list-style-type: none;
+  border: 1px solid orange;
+}
+
+.bell-icon {
+  width:40px;
+  height: 40px;
+  margin: 10px;
+}
+
+
+    /*  Profile  */ 
+
+
+.profile-element {
+  list-style-type: none;
+  width: 190px;
+  height: 60px;
+    border-left: 1px solid $font-color;
+  border-right: 1px solid $font-color;
+  //margin: 10 auto;
+  //border: 1px solid orange;
+  p {
+    display: inline-block;
+    line-height: 60px;
+    font-size: 14px;
+    margin: 0 auto;
+    color: $link-color;
+  //border: 1px solid orange;
+
+  }
+}
+.profile-icon {
+  width:20px;
+  height: 20px;
+  //font-size: 13px;
+  //padding: 20px 15px;
+  margin:0 10px;
+  fill: $link-color;
+  transform: translateY(5px);
+  //border: 1px solid orange;
+
+}
+
+    /*  Exit  */ 
+
+
+.exit-element{
+  width:60px;
+  height: 60px;
+  list-style-type: none;
+  fill: $link-color;
+  border: 1px solid orange;
+}
+
+.exit-icon {
+  width:20px;
+  height: 20px;
+  margin:22px 20px 20px 22px;
+  //border: 1px solid orange;
+}
+
+
+/* 
+==== GENERAL TABLE ==== 
+*/
+
+
+.wrap{
+  width: 100%;
+}
+
+.column-r {
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.general-table-top {
+  display: flex;
+  flex: wrap;
+  //flex-direction: column;
+}
+
+.r1, .r2 {
+  border-bottom: 1px solid #e3e3e3;
+  line-height: 20px;
+  p{
+  transform: translateY(10px);
+  }
+}
+
+.r1 {
+  width: 250px;
+  margin-left:5%;  
+  //border: 1px solid orange;
+}
+
+.r2 {
+  margin-right:5%;
+  width: 50px;
+  text-align: right;
+  //border: 1px solid orange;
+  p {
+    color: #333;
+    font-weight: $menu-font-weight;
+  }
+}
+
+
+.c1, .c2 {
+  border-bottom: 1px solid #e3e3e3;
+  line-height: 20px;
+  p{
+  transform: translateY(10px);
+  }
+}
+
+.c1 {
+  width: 250px;
+  //margin-left:5%;  
+  //border: 1px solid orange;
+}
+
+.c2 {
+  //margin-right:5%;
+  width: 50px;
+  text-align: right;
+  //border: 1px solid orange;
+  p {
+    color: #333;
+    font-weight: $menu-font-weight;
+  }
+}
+
+
+/* 
+==== TABLE ==== 
+*/
+
+.table-row {
+  display: flex;
+  width: 800px;
+  height: 60px;
+
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  //border: 1px solid orange;
+}
+
+.name-column {
+  width: 300px;
+  //border: 1px solid orange;
+  p{
+    padding-left: 30px;
+    line-height: 60px;
+      //border: 1px solid orange;
+      margin: 0;
+  }
+}
+
+.link-column {
+  width: 400px;
+  //border: 1px solid orange;
+  a {
+    //border: 1px solid orange;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 16px;
+    //padding-top: 15px;
+    text-decoration: none;
+  }
+}
+.links-and-bin-column {
+  width: 100;
+}
+
+.bin-icon1 {
+height:20px;
+width: 20px;
+//border: 1px solid orange;
+ transform: translateY(5px);
+ //padding:0 20px;
+ margin: 0 15px;
+}
+.links-icon1 {
+  height:20px;
+width: 20px;
+//border: 1px solid orange;
+ transform: translateY(10px);
+ //padding:5px 0 0 20%;
+ margin-left: 200px;
+}
+
+.bin-icon, .links-icon {
+  height:20px;
+width: 20px;
+//border: 1px solid orange;
+fill: $link-color;
+}
+
+.bin-icon {
+ transform: translateY(5px);
+ //padding:0 22px;
+ margin: 0 15px;
+}
+.links-icon {
+ transform: translateY(10px);
+margin-top: 15px;
+ //padding:5px 0 0 20%;
+ //margin-left: 200px;
+}

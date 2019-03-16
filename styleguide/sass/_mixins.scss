@@ -1,0 +1,12 @@
+@mixin button-style {
+  width: 126px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 4px;	
+  background-color: $button-color;
+  font-weight: $button-font-weight;
+  color: $white;
+  font-family: $font;
+  font-size: $button-font-size;
+  text-align: center;
+}
