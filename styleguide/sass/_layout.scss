@@ -1,1 +1,110 @@
 
+      // MEDIA //
+
+@media(max-width: 992px) {
+
+// Small statistic general section table //
+
+  .row-table {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .row-left {
+    align-items: center;
+    flex: 1 ;
+  }
+
+  .row-right {
+    margin-bottom: 50px;
+    align-items: center;
+    flex: 1 ;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+// Links section - main table //
+
+.table-row {
+  width: 100%;
+  flex: wrap;
+  flex-direction: column;
+}
+.name-column {
+  width: 100%;
+  text-align: center;
+  p{
+    padding: 0;
+    line-height: 60px;
+    text-decoration: underline;
+  }
+}
+.link-column {
+  width: 100%;
+  text-align: center;
+  a {
+    line-height: 30px;
+  }
+}
+.links-and-bin-column {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bin-icon, .links-icon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 30px 20px 0 ;
+  }
+}
+
+@media(max-width: 767px) {
+
+ // General statistic - calendar //
+
+.general-calendar {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.calendar-wrapper {
+  margin-top: 12px;
+  height: auto;
+  max-width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-calendar-input {
+  border-left: none;
+  border-top: 1px solid $divider-color;
+  transform: translateY(-4px);
+}
+
+.left-calendar-input {
+  transform: translateY(8px);
+}
+
+.calendar-icon {
+display: none;
+}
+
+// General statistic - table //
+
+.r1 {
+  flex: 5;
+  width: 150px;
+}
+
+.r2 {
+  flex: 1;
+  width: 25px;
+  }
+
+}

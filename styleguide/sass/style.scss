@@ -1,10 +1,10 @@
 @import "variables";
 @import "mixins";
 @import "normalize";
-
+@import "layout";
 
 body {
-  padding: 100px
+  padding: 5%;
 }
 
 
@@ -59,12 +59,16 @@ li {
   font-weight: $button-font-weight;
   padding: 10px;
   fill: $white;
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+  &:hover {
+    background-color: #f39c12;
+  }
 }
 
 .button-refresh {
-  /*background-image: url('../images/refresh.svg');
-  background-position: center center;
-  background-repeat: no-repeat;*/
   fill: $white;
   width: 40px;
   height: 40px;
@@ -72,6 +76,9 @@ li {
   border: none;
   background-color: $button-color;
   padding: 10px;
+  &:hover {
+    background-color: #f39c12;
+  }
 }
 
 
@@ -79,27 +86,26 @@ li {
 ==== LOGO ==== 
 */
 
-.logo {
+.sidebar-logo-and-hamburger {
   background-color: #191919;
   width: 188px;
   height: 60px;
 }
 
 .logo-img {
-width: 80px;
-height: 40px;
-padding-left: 20px;
-padding-top:10px;
-line-height: 60px;
+  width: 90px;
+  height: 40px;
+  padding-left: 20px;
+  padding-top:10px;
+  line-height: 60px;
 }
 
 .hamburger-img {
-width: 25px;
-height: 25px;
-float: right;
-padding-top:18px;
-padding-right:20px;
-
+  width: 30px;
+  height: 30px;
+  float: right;
+  padding-top:15px;
+  padding-right:20px;
 }
 
 
@@ -112,8 +118,12 @@ padding-right:20px;
   background-color: #000;
   text-align: left;
   list-style-type: none;
-  width: 188px;
+  width: 180px;
   height: 39px;
+  &:hover {
+  background-color: #282828;
+  border-left: 5px solid orange;
+  }
 }
 
 .component-sidebar-menu-link {
@@ -123,7 +133,7 @@ padding-right:20px;
   display: block;
   margin: 0 auto;
   text-decoration: none;
-}
+  }
 
 .link-paragraph {
   margin: 0 auto;
@@ -138,13 +148,9 @@ padding-right:20px;
   transform: translateY(3px);
 }
 
-.side-strip:active {
-  border-left: 5px solid orange;
-}
-
 
 /* 
-==== NAVBAR ELEMENTS ==== 
+==== TOPBAR ELEMENTS ==== 
 */
 
     /*  Wallet  */ 
@@ -153,43 +159,31 @@ padding-right:20px;
   list-style-type: none;
   width: 190px;
   height: 60px;
-  border-left: 1px solid $font-color;
-  border-right: 1px solid $font-color;
-  //margin: 10 auto;
-  //border: 1px solid orange;
+  line-height: 60px;
+  border-left: 1px solid $divider-color;
+  border-right: 1px solid $divider-color;
   p {
     display: inline-block;
-    line-height: 60px;
-    font-size: 18px;
+    font-size: 20px;
     margin: 0 auto;
     color: $font-color;
- // border: 1px solid orange;
-
   }
 }
 
 .wallet-icon {
   width:20px;
   height: 20px;
-  //font-size: 13px;
-  //padding: 20px 15px;
-  margin:0 15px;
+  margin:0 10px 0 15px;
   fill: $font-color;
-  transform: translateY(5px);
-  //border: 1px solid orange;
-
+  transform: translateY(2px);
 }
 
 .icon-arrow-down {
-  width:20px;
-  height: 20px;
-  //font-size: 13px;
-  //padding: 20px 15px;
-  margin:0 12px;
+  width: 18px;
+  height: 18px;
+  margin:0 10px;
   fill: $font-color;
-  transform: translateY(12px);
-  //border: 1px solid orange;
-
+  transform: translateY(8px);
 }
 
 
@@ -200,15 +194,22 @@ padding-right:20px;
   width:60px;
   height: 60px;
   list-style-type: none;
-  border: 1px solid orange;
 }
 
 .bell-icon {
-  width:40px;
-  height: 40px;
-  margin: 10px;
+  width:20px;
+  height: 20px;
+  margin: 20px;
+  fill: $font-color;
 }
 
+.orange-dot {
+  width:8px;
+  height: 8px;
+  background-color: $button-color;
+  border-radius: 50%;
+  transform: translate(30px, -48px);
+}
 
     /*  Profile  */ 
 
@@ -217,30 +218,22 @@ padding-right:20px;
   list-style-type: none;
   width: 190px;
   height: 60px;
-    border-left: 1px solid $font-color;
-  border-right: 1px solid $font-color;
-  //margin: 10 auto;
-  //border: 1px solid orange;
+  border-left: 1px solid $divider-color;
+  border-right: 1px solid $divider-color;
   p {
     display: inline-block;
     line-height: 60px;
     font-size: 14px;
     margin: 0 auto;
     color: $link-color;
-  //border: 1px solid orange;
-
   }
 }
 .profile-icon {
   width:20px;
   height: 20px;
-  //font-size: 13px;
-  //padding: 20px 15px;
   margin:0 10px;
   fill: $link-color;
   transform: translateY(5px);
-  //border: 1px solid orange;
-
 }
 
     /*  Exit  */ 
@@ -250,15 +243,13 @@ padding-right:20px;
   width:60px;
   height: 60px;
   list-style-type: none;
-  fill: $link-color;
-  border: 1px solid orange;
 }
 
 .exit-icon {
+  fill: $link-color;
   width:20px;
   height: 20px;
   margin:22px 20px 20px 22px;
-  //border: 1px solid orange;
 }
 
 
@@ -283,7 +274,6 @@ padding-right:20px;
 .general-table-top {
   display: flex;
   flex: wrap;
-  //flex-direction: column;
 }
 
 .r1, .r2 {
@@ -295,22 +285,19 @@ padding-right:20px;
 }
 
 .r1 {
+  flex: 5;
   width: 250px;
-  margin-left:5%;  
-  //border: 1px solid orange;
 }
 
 .r2 {
-  margin-right:5%;
+  flex: 1;
   width: 50px;
   text-align: right;
-  //border: 1px solid orange;
   p {
     color: #333;
     font-weight: $menu-font-weight;
   }
 }
-
 
 .c1, .c2 {
   border-bottom: 1px solid #e3e3e3;
@@ -322,15 +309,11 @@ padding-right:20px;
 
 .c1 {
   width: 250px;
-  //margin-left:5%;  
-  //border: 1px solid orange;
 }
 
 .c2 {
-  //margin-right:5%;
   width: 50px;
   text-align: right;
-  //border: 1px solid orange;
   p {
     color: #333;
     font-weight: $menu-font-weight;
@@ -339,78 +322,410 @@ padding-right:20px;
 
 
 /* 
-==== TABLE ==== 
+==== LINKS TABLE ROW ==== 
 */
+
 
 .table-row {
   display: flex;
-  width: 800px;
-  height: 60px;
-
+  width: 100%;
+  height: auto;
+  flex: wrap;
   border-top: 1px solid #e3e3e3;
+  &:hover {
+    background-color: #f1f3f3;
+  }
+  &:hover .links-icon {
+    fill: $button-color;
+  }
+}
+
+.bottom-border {
   border-bottom: 1px solid #e3e3e3;
-  //border: 1px solid orange;
 }
 
 .name-column {
-  width: 300px;
-  //border: 1px solid orange;
+  flex: 4;
   p{
     padding-left: 30px;
     line-height: 60px;
-      //border: 1px solid orange;
-      margin: 0;
+    margin: 0;
   }
 }
 
 .link-column {
-  width: 400px;
-  //border: 1px solid orange;
+  flex: 4;
   a {
-    //border: 1px solid orange;
-    display: inline-block;
+    flex: 4;
+    display: block;
     line-height: 60px;
     font-size: 16px;
-    //padding-top: 15px;
     text-decoration: none;
   }
 }
 .links-and-bin-column {
-  width: 100;
-}
-
-.bin-icon1 {
-height:20px;
-width: 20px;
-//border: 1px solid orange;
- transform: translateY(5px);
- //padding:0 20px;
- margin: 0 15px;
-}
-.links-icon1 {
-  height:20px;
-width: 20px;
-//border: 1px solid orange;
- transform: translateY(10px);
- //padding:5px 0 0 20%;
- margin-left: 200px;
+  flex: 2;
+  padding: 0 20px;
+  text-align: right;
 }
 
 .bin-icon, .links-icon {
   height:20px;
-width: 20px;
-//border: 1px solid orange;
-fill: $link-color;
+  width: 20px;
+  fill: $font-color;
 }
 
 .bin-icon {
  transform: translateY(5px);
- //padding:0 22px;
  margin: 0 15px;
 }
+
 .links-icon {
  transform: translateY(10px);
-margin-top: 15px;
- //padding:5px 0 0 20%;
- //margin-left: 200px;
+ margin-top: 15px;
+}
+
+
+/* 
+================================================ SECTIONS ================================= 
+*/
+
+
+
+
+
+/* 
+==== SIDEBAR SECTION ==== 
+*/
+
+
+.sidebar {
+  display: block;
+  width: 188px;
+  height: 100%;
+  background-color: #000;
+  //position: fixed;
+  //bottom: 0;
+  //left: 0;
+  //right: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.sidebar-manager-section {
+  height: 100px;
+  width: 80%;
+  padding: 10%;
+  border-top: 1px solid $calendar-entry-color;
+  margin-top: 20px;
+  p{
+    font-size: $menu-font-size;
+    display: inline-block;
+    padding-left: 5px;
+    transform: translateY(-20px);
+    }
+    p:last-child {
+      color: $link-color;
+      font-size: $paragraph-font-size;
+      font-weight: $menu-font-weight;
+    }
+}
+
+.sidebar-mobile-section {
+  height: 300px;
+  margin-top: 50px;
+}
+
+
+/* 
+==== TOPBAR SECTION ==== 
+*/
+
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #e3e3e3;
+  display: block;
+}
+
+ .row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* 
+==== GENERAL SECTION ==== 
+*/
+
+
+// Wrapper //
+
+.wrapper {
+width: 80%;
+height: auto;
+margin: 0 auto;  
+}
+
+// General heading //
+
+.general {
+max-width: 100%; 
+height: auto;
+border: 1px solid #e3e3e3;
+h3 {
+  font-size: $paragraph-font-size;
+  margin: 12px;
+  }
+}
+
+// General calendar //
+
+.general-calendar {
+  width: 100%;
+  min-height: 110px;
+  border-top: 1px solid $divider-color;
+  border-bottom: 1px solid $divider-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-wrapper {
+  height: 40px;
+  max-width: 100%;
+  display: flex;
+  border-radius: 5px;
+  box-shadow:inset 0px 0px 0px 5px $white;
+  border: 1px solid $divider-color;
+  justify-content: center;
+}
+
+.left-calendar-input, .right-calendar-input {
+  border: none;
+  color: $calendar-entry-color;
+  font-family: $font;
+  font-size: $paragraph-font-size;
+  flex: 1;
+  padding: 5px 0 5px 20px;
+  margin: 5px;
+}
+.right-calendar-input {
+  border-left: 1px solid $divider-color;
+}
+
+.calendar-icon {
+  height: 15px;
+  width: 15px;
+  margin: 12px;
+  fill: $font-color;
+}
+
+.calendar-button {
+  margin: 12px;
+}
+
+// General table //
+
+.general-table {
+  width: 100%;
+  min-height: 150px;
+}
+.row-table {
+  display: flex;
+  height: auto;
+  flex-direction: row;
+}
+.row-left, .row-right {
+  display: flex;
+  flex-direction: column;
+}
+.row-left {
+  align-items: center;
+  flex: 1;
+}
+.row-right {
+  align-items: center;
+  flex: 1;
+}
+
+// Chart //
+
+.heading {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.general-chart {
+  width: 100%; 
+  height: auto;
+}
+
+.chart {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.chart-image {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* 
+==== LINKS SECTION ==== 
+*/
+
+
+.links-heading {
+  border-bottom: 1px solid #e3e3e3;
+  h3{
+    font-size: $paragraph-font-size;
+    margin: 12px;
+  }
+}
+
+.button-links-top {
+  margin: 30px auto;
+}
+
+
+      // MEDIA //
+
+@media(max-width: 992px) {
+
+// Small statistic general section table //
+
+  .row-table {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .row-left {
+    align-items: center;
+    flex: 1 ;
+  }
+
+  .row-right {
+    margin-bottom: 50px;
+    align-items: center;
+    flex: 1 ;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+// Links section - main table //
+
+.table-row {
+  width: 100%;
+  flex: wrap;
+  flex-direction: column;
+}
+.name-column {
+  width: 100%;
+  text-align: center;
+  p{
+    padding: 0;
+    line-height: 60px;
+    text-decoration: underline;
+  }
+}
+.link-column {
+  width: 100%;
+  text-align: center;
+  a {
+    line-height: 30px;
+  }
+}
+.links-and-bin-column {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bin-icon, .links-icon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 30px 20px 0 ;
+  }
+}
+
+@media(max-width: 767px) {
+
+ // General statistic - calendar //
+
+.general-calendar {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.calendar-wrapper {
+  margin-top: 12px;
+  height: auto;
+  max-width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-calendar-input {
+  border-left: none;
+  border-top: 1px solid $divider-color;
+  transform: translateY(-4px);
+}
+
+.left-calendar-input {
+  transform: translateY(8px);
+}
+
+.calendar-icon {
+display: none;
+}
+
+// General statistic - table //
+
+.r1 {
+  flex: 5;
+  width: 150px;
+}
+
+.r2 {
+  flex: 1;
+  width: 25px;
+  }
+
+// Topbar elements on sidbar //
+
+  .bell-icon {
+    //margin: 0 auto;
+    fill: $link-color;
+  }
+  
+  .wallet-element, .profile-element {
+    //width: 180px;
+    border: none;
+    //display: block;
+  }
+  
+  .exit-element, .notification-element {
+    margin: 0 auto;
+  }
+
+.topbar {
+  display: none;
+  }
+}
+
+@media(min-width: 767px) {
+
+.topbar-mobile-section {
+  display: none;
+  }
 }
