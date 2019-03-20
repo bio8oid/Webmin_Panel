@@ -9,4 +9,7 @@
   font-family: $font;
   font-size: $button-font-size;
   text-align: center;
+  &:hover {
+    background-color: #f39c12;
+  }
 }

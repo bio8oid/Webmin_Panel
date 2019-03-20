@@ -3,15 +3,6 @@
 @import "normalize";
 @import "layout";
 
-body {
-  padding: 5%;
-}
-
-
-/* 
-================================== STYLEGUIDE STYLES ================================= 
-*/
-
 
 /* 
 ==== FONTS ==== 
@@ -119,26 +110,32 @@ li {
   background-color: #000;
   text-align: left;
   list-style-type: none;
-  width: 180px;
+  width: 185px;
   height: 39px;
   &:hover {
   background-color: #282828;
-  border-left: 5px solid orange;
+  border-left: 3px solid orange;
   }
 }
 
 .component-sidebar-menu-link {
   height: 39px;
   line-height: 39px;
-  padding: 0 15px;
+  padding: 0 20px;
   display: block;
   margin: 0 auto;
   text-decoration: none;
+  &:hover .link-paragraph {
+    color: $white;
+    } 
+    &:hover .component-sidebar-menu-icon {
+    fill: $white;
+    } 
   }
 
 .link-paragraph {
   margin: 0 auto;
-  font-weight: $menu-font-weight; 
+  font-weight: $menu-font-weight;
 }
 
 .component-sidebar-menu-icon {
@@ -147,6 +144,7 @@ li {
   height: 18px;
   text-align: left;
   transform: translateY(3px);
+  margin-right: 10px;
 }
 
 
@@ -378,7 +376,7 @@ li {
 
 .bin-icon {
  transform: translateY(5px);
- margin: 0 15px;
+ margin: 0 10px;
 }
 
 .links-icon {
@@ -386,344 +384,3 @@ li {
  margin-top: 15px;
 }
 
-
-/* 
-================================================ SECTIONS ================================= 
-*/
-
-
-
-
-
-/* 
-==== SIDEBAR SECTION ==== 
-*/
-
-
-.sidebar {
-  display: block;
-  width: 188px;
-  height: 100%;
-  background-color: #000;
-  //position: fixed;
-  //bottom: 0;
-  //left: 0;
-  //right: 0;
-}
-
-ul {
-  padding: 0;
-  margin: 0 auto;
-}
-
-.sidebar-manager-section {
-  height: 100px;
-  width: 80%;
-  padding: 10%;
-  border-top: 1px solid $calendar-entry-color;
-  margin-top: 20px;
-  p{
-    font-size: $menu-font-size;
-    display: inline-block;
-    padding-left: 5px;
-    transform: translateY(-20px);
-    }
-    p:last-child {
-      color: $link-color;
-      font-size: $paragraph-font-size;
-      font-weight: $menu-font-weight;
-    }
-}
-
-.sidebar-mobile-section {
-  height: 300px;
-  margin-top: 50px;
-}
-
-
-/* 
-==== TOPBAR SECTION ==== 
-*/
-
-
-.topbar {
-  width: 100%;
-  height: 60px;
-  border: 1px solid #e3e3e3;
-  display: block;
-}
-
- .row {
-  display: flex;
-  justify-content: flex-end;
-}
-
-
-/* 
-==== GENERAL SECTION ==== 
-*/
-
-
-// Wrapper //
-
-.wrapper {
-width: 80%;
-height: auto;
-margin: 0 auto;  
-}
-
-// General heading //
-
-.general {
-max-width: 100%; 
-height: auto;
-border: 1px solid #e3e3e3;
-h3 {
-  font-size: $paragraph-font-size;
-  margin: 12px;
-  }
-}
-
-// General calendar //
-
-.general-calendar {
-  width: 100%;
-  min-height: 110px;
-  border-top: 1px solid $divider-color;
-  border-bottom: 1px solid $divider-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.calendar-wrapper {
-  height: 40px;
-  max-width: 100%;
-  display: flex;
-  border-radius: 5px;
-  box-shadow:inset 0px 0px 0px 5px $white;
-  border: 1px solid $divider-color;
-  justify-content: center;
-}
-
-.left-calendar-input, .right-calendar-input {
-  border: none;
-  color: $calendar-entry-color;
-  font-family: $font;
-  font-size: $paragraph-font-size;
-  flex: 1;
-  padding: 5px 0 5px 20px;
-  margin: 5px;
-}
-.right-calendar-input {
-  border-left: 1px solid $divider-color;
-}
-
-.calendar-icon {
-  height: 15px;
-  width: 15px;
-  margin: 12px;
-  fill: $font-color;
-}
-
-.calendar-button {
-  margin: 12px;
-}
-
-// General table //
-
-.general-table {
-  width: 100%;
-  min-height: 150px;
-}
-.row-table {
-  display: flex;
-  height: auto;
-  flex-direction: row;
-}
-.row-left, .row-right {
-  display: flex;
-  flex-direction: column;
-}
-.row-left {
-  align-items: center;
-  flex: 1;
-}
-.row-right {
-  align-items: center;
-  flex: 1;
-}
-
-// Chart //
-
-.heading {
-  max-width: 650px;
-  margin: 0 auto;
-}
-.general-chart {
-  width: 100%; 
-  height: auto;
-}
-
-.chart {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.chart-image {
-  max-width: 100%;
-  height: auto;
-}
-
-
-/* 
-==== LINKS SECTION ==== 
-*/
-
-
-.links-heading {
-  border-bottom: 1px solid #e3e3e3;
-  h3{
-    font-size: $paragraph-font-size;
-    margin: 12px;
-  }
-}
-
-.button-links-top {
-  margin: 30px auto;
-}
-
-
-      // MEDIA //
-
-@media(max-width: 992px) {
-
-// Small statistic general section table //
-
-  .row-table {
-    height: auto;
-    flex-direction: column;
-  }
-
-  .row-left {
-    align-items: center;
-    flex: 1 ;
-  }
-
-  .row-right {
-    margin-bottom: 50px;
-    align-items: center;
-    flex: 1 ;
-  }
-
-  .heading {
-    text-align: center;
-  }
-
-// Links section - main table //
-
-.table-row {
-  width: 100%;
-  flex: wrap;
-  flex-direction: column;
-}
-.name-column {
-  width: 100%;
-  text-align: center;
-  p{
-    padding: 0;
-    line-height: 60px;
-    text-decoration: underline;
-  }
-}
-.link-column {
-  width: 100%;
-  text-align: center;
-  a {
-    line-height: 30px;
-  }
-}
-.links-and-bin-column {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.bin-icon, .links-icon {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin: 0 30px 20px 0 ;
-  }
-}
-
-@media(max-width: 767px) {
-
- // General statistic - calendar //
-
-.general-calendar {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.calendar-wrapper {
-  margin-top: 12px;
-  height: auto;
-  max-width: 100%;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.right-calendar-input {
-  border-left: none;
-  border-top: 1px solid $divider-color;
-  transform: translateY(-4px);
-}
-
-.left-calendar-input {
-  transform: translateY(8px);
-}
-
-.calendar-icon {
-display: none;
-}
-
-// General statistic - table //
-
-.r1 {
-  flex: 5;
-  width: 150px;
-}
-
-.r2 {
-  flex: 1;
-  width: 25px;
-  }
-
-// Topbar elements on sidbar //
-
-.bell-icon {
-  fill: $link-color;
-}
-
-.wallet-element, .profile-element {
-  border: none;
-}
-
-.exit-element, .notification-element {
-  margin: 0 auto;
-}
-
-.topbar {
-  display: none;
-  }
-}
-
-@media(min-width: 767px) {
-
-.topbar-mobile-section {
-  display: none;
-  }
-}
