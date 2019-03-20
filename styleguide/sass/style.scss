@@ -81,6 +81,26 @@ li {
   }
 }
 
+/* 
+==== MENU HAMBURGER LO-RES POP-UP ==== 
+*/
+
+.menu-lo-res-hamburger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 7;
+  margin: 25px;
+  padding-right: 3px;
+}
+
+.hamburger-lo-res-icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  fill: $button-color;
+ }
+
 
 /* 
 ==== LOGO ==== 
@@ -109,6 +129,9 @@ li {
   fill: $font-color;
 }
 
+.show {
+  line-height: 100px;
+}
 
 /* 
 ==== SIDEBAR MENU LINKS ==== 

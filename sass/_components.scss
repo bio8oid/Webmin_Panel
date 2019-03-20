@@ -50,6 +50,7 @@ li {
   font-weight: $button-font-weight;
   padding: 10px;
   fill: $white;
+  cursor: pointer;
   svg {
     width: 25px;
     height: 25px;
@@ -67,10 +68,31 @@ li {
   border: none;
   background-color: $button-color;
   padding: 10px;
+  cursor: pointer;
   &:hover {
     background-color: #f39c12;
   }
 }
+
+/* 
+==== MENU HAMBURGER LO-RES POP-UP ==== 
+*/
+
+.menu-lo-res-hamburger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 7;
+  margin: 25px;
+  padding-right: 3px;
+}
+
+.hamburger-lo-res-icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  fill: $button-color;
+ }
 
 
 /* 
@@ -84,19 +106,18 @@ li {
 }
 
 .logo-img {
-  width: 90px;
-  height: 40px;
-  padding-left: 20px;
-  padding-top:10px;
+  width: 130px;
+  height: 60px;
+  padding-top:5px;
   line-height: 60px;
 }
 
 .hamburger-img {
-  width: 20px;
-  height: 22px;
+  width: 22px;
+  height: 20px;
   float: right;
-  padding-top:20px;
-  padding-right:20px;
+  margin-top: 20px;
+  margin-right: 20px;
   fill: $font-color;
 }
 
@@ -146,6 +167,10 @@ li {
   transform: translateY(3px);
   margin-right: 10px;
 }
+
+ .show {
+    background-color: white;
+  }
 
 
 /* 
@@ -207,7 +232,7 @@ li {
   height: 8px;
   background-color: $button-color;
   border-radius: 50%;
-  transform: translate(30px, -48px);
+  transform: translate(30px, -45px);
 }
 
     /*  Profile  */ 
@@ -276,7 +301,7 @@ li {
 }
 
 .r1, .r2 {
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid $divider-color;
   line-height: 20px;
   p{
   transform: translateY(10px);
@@ -299,7 +324,7 @@ li {
 }
 
 .c1, .c2 {
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid $divider-color;
   line-height: 20px;
   p{
   transform: translateY(10px);
@@ -330,17 +355,21 @@ li {
   width: 100%;
   height: auto;
   flex: wrap;
-  border-top: 1px solid #e3e3e3;
+  border-top: 1px solid $divider-color;
   &:hover {
     background-color: #f1f3f3;
   }
   &:hover .links-icon {
     fill: $button-color;
+    display: inline-block;
+  }
+  &:hover .bin-icon {
+    display: inline-block;
   }
 }
 
 .bottom-border {
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid $divider-color;
 }
 
 .name-column {
@@ -356,12 +385,16 @@ li {
   flex: 4;
   a {
     flex: 4;
-    display: block;
+    display: inline-block;
     line-height: 60px;
     font-size: 16px;
     text-decoration: none;
+    &:hover {
+      color: $button-color;
+    }
   }
 }
+
 .links-and-bin-column {
   flex: 2;
   padding: 0 20px;
@@ -372,7 +405,9 @@ li {
   height:20px;
   width: 20px;
   fill: $font-color;
+  display: none;
 }
+
 
 .bin-icon {
  transform: translateY(5px);

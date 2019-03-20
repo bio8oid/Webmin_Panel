@@ -5,11 +5,16 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script  src="js/script.js"></script>
+
+
+
 </head>
+
 <body class="registration-form-template">
 			
 		<section class="container bar">
-			<div class="topbar">
+			<div class="topbar col-lg-12 col-md-12">
 				<div class="row">
 					<div class="wallet-element">
 						<a class="" href="#">
@@ -64,14 +69,26 @@
 			</div>
 		</section>
 
-		<section class="container">
-	<div class="sidebar">
+		<div id="menu-burger" class="menu-lo-res-hamburger">
+			<a class="" href="#">
+				<svg class="hamburger-lo-res-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="344.339px" height="344.339px" viewBox="0 0 344.339 344.339" style="enable-background:new 0 0 344.339 344.339;"
+					xml:space="preserve">
+					<g><rect y="46.06" width="344.339" height="29.52"/></g>
+					<g><rect y="156.506" width="344.339" height="29.52"/></g>
+					<g><rect y="268.748" width="344.339" height="29.531"/></g>
+				</svg>
+			</a>
+		</div>
+
+<section class="container">
+	<div id="sidebar-section" class="sidebar col-lg-12 col-md-12">
 
 		<div class="sidebar-logo-and-hamburger">
 			<div>
 				<img class="logo-img" src="images/logo.png">
-				<a class="component-sidebar-hamburger-link" href="#">
-					<svg class="hamburger-img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				<a id="menu-burger2" class="component-sidebar-hamburger-link" href="#">
+					<svg  class="hamburger-img" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						width="344.339px" height="344.339px" viewBox="0 0 344.339 344.339" style="enable-background:new 0 0 344.339 344.339;"
 						xml:space="preserve">
 						<g><rect y="46.06" width="344.339" height="29.52"/></g>
@@ -81,6 +98,8 @@
 				</a>
 			</div>
 		</div>
+
+		
 
 		<div class="sidebar-menu-list">
 			<ul>
@@ -99,8 +118,7 @@
 				<li class="component-sidebar-menu side-strip">
 					<a class="component-sidebar-menu-link">
 						<p class="link-paragraph">
-							<svg class="component-sidebar-menu-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 17 16" style="enable-background:new 0 0 17 16;" xml:space="preserve">
+							<svg class="component-sidebar-menu-icon">
 								<path d="M0,13h14v-1H0V13z M0,10h14V6H0V10z M9,7h4v2H9V7z M1,7h7v2H1V7z M0,0v4h14V0H0z M5,3H1V1h4V3z M13,3H6V1h7V3z"></path>
 							</svg>
 							Details
@@ -236,10 +254,10 @@
 </section>
 
 <section class="container-fluid">
-	<div class="general col-lg-8">
+	<div class="general col-lg-10 col-md-12">
 		<h3>GENERAL STATISTIC</h3>
 
-		<div class="general-calendar">
+		<div class="general-calendar col-md-12">
 			<form class="calendar-wrapper">				
 					<input class="left-calendar-input" type="date" value="2016-05-16" type="week" type="month">
 					<input class="right-calendar-input" type="date" value="2016-05-16" type="week" type="month">
@@ -257,9 +275,9 @@
 			</button>
 		</div>
 
-		<div class="general-table">
-			<div class="wrapper row-table">
-				<div class="row-left">
+		<div class="general-table col-md-12">
+			<div class="wrapper-table row-table">
+				<div class="row-left col-lg-12">
 					<div class="general-table-top">
 						<div class="r1"><p>Visit Signups</p></div>
 						<div class="r2"><p>124</p></div>
@@ -272,7 +290,7 @@
 					
 				</div>
 
-				<div class="row-right">
+				<div class="row-right col-lg-12">
 					<div class="general-table-top">
 						<div class="r1"><p>Net deposit</p></div>
 						<div class="r2"><p>564</p></div>
@@ -286,7 +304,7 @@
 			</div>
 		</div>
 
-		<div class="general-chart">
+		<div class="general-chart col-lg-12 col-sm-12">
 			<div class="wrapper">
 				<div class="heading">
 					<p>Earnings chart</p>
@@ -300,7 +318,7 @@
 </section>
 
 <section class="container-fluid">
-	<div class="links general">
+	<div class="links general col-lg-12 col-sm-12 col-md-12 col-sm-12">
 		
 
 		<div class="links-heading"><h3>LINKS</h3></div>
@@ -309,7 +327,7 @@
 
 			<div class="btn btn-success button-links-top">+ add new</div>
 
-			<div class="table-row">
+			<div class="table-row col-md-12 col-sm-12">
 				<div class="name-column"><p>Home page</p></div>
 				<div class="link-column">
 					<a href="#">http://www.homepage.com</a>
@@ -331,7 +349,7 @@
 				</div>
 			</div>
 
-			<div class="table-row">
+			<div class="table-row col-md-12 col-sm-12">
 				<div class="name-column"><p>Currently offer</p></div>
 				<div class="link-column">
 					<a href="#">http://www.currently.com</a>
@@ -353,7 +371,7 @@
 				</div>
 			</div>
 
-			<div class="table-row">
+			<div class="table-row col-md-12 col-sm-12">
 				<div class="name-column"><p>Blurpix</p></div>
 				<div class="link-column">
 					<a href="#">http://www.blurpix.com</a>
@@ -375,7 +393,7 @@
 				</div>
 			</div>
 
-			<div class="table-row">
+			<div class="table-row col-md-12 col-sm-12">
 				<div class="name-column"><p>Yoursite</p></div>
 				<div class="link-column">
 					<a href="#">http://www.yoursite.com</a>
@@ -397,7 +415,7 @@
 				</div>
 			</div>
 
-			<div class="table-row">
+			<div class="table-row col-md-12 col-sm-12">
 				<div class="name-column"><p>Google</p></div>
 				<div class="link-column">
 					<a href="#">http://www.google.com</a>
@@ -419,7 +437,7 @@
 				</div>
 			</div>
 
-			<div class="table-row">
+			<div class="table-row col-md-12 col-sm-12">
 				<div class="name-column"><p>Facebook</p></div>
 				<div class="link-column">
 					<a href="#">http://www.facebook.com</a>
@@ -441,7 +459,7 @@
 				</div>
 			</div>
 
-			<div class="table-row">
+			<div class="table-row col-md-12 col-sm-12">
 				<div class="name-column"><p>Dashboard</p></div>
 				<div class="link-column">
 					<a href="#">http://www.dashboard.com</a>
@@ -463,7 +481,7 @@
 				</div>
 			</div>
 
-			<div class="table-row">
+			<div class="table-row col-md-12 col-sm-12">
 				<div class="name-column"><p>Blurax</p></div>
 				<div class="link-column">
 					<a href="#">http://www.blurax.com</a>
@@ -485,7 +503,7 @@
 				</div>
 			</div>
 
-			<div class="table-row">
+			<div class="table-row col-md-12 col-sm-12">
 				<div class="name-column"><p>Piece of wine</p></div>
 				<div class="link-column">
 					<a href="#">http://www.pieceofwine.com</a>
@@ -507,7 +525,7 @@
 				</div>
 			</div>
 
-			<div class="table-row bottom-border">
+			<div class="table-row bottom-border col-md-12 col-sm-12">
 				<div class="name-column"><p>Twitter</p></div>
 				<div class="link-column">
 					<a href="#">http://www.twitter.com</a>

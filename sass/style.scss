@@ -82,6 +82,7 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
+  display: none;
   }
  .links-icon {
   margin: 0 20px 20px 0 ;
@@ -143,7 +144,14 @@ display: none;
 }
 
 .wallet-element, .profile-element {
-  border: none;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid $calendar-entry-color;
+  border-bottom: 1px solid $calendar-entry-color;
+  width: 99%;
+  &:hover {
+    background-color: #282828;
+  }
 }
 
 .exit-element, .notification-element {
@@ -153,12 +161,25 @@ display: none;
 .topbar {
   display: none;
   }
+
 .sidebar{
   display: none;
   }
   body {
   padding: 0;
   }
+
+.sidebar.show {
+  display: block;
+}
+
+.sidebar-mobile-section {
+  display: block;
+}
+
+// Menu show \\
+
+
 }
 
 @media(min-width: 767px) {
@@ -166,5 +187,11 @@ display: none;
 .topbar-mobile-section {
   display: none;
   }
+
+  // Menu hamburger lo-res pop-up \\
+
+.menu-lo-res-hamburger {
+display: none;
+}
 
 }
