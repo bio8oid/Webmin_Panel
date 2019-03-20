@@ -2394,10 +2394,6 @@ li {
   margin-right: 10px;
 }
 
-.show {
-  background-color: white;
-}
-
 /* 
 ==== TOPBAR ELEMENTS ==== 
 */
@@ -2426,12 +2422,20 @@ li {
   transform: translateY(2px);
 }
 
+.wallet-icon:hover {
+  fill: #f58220;
+}
+
 .icon-arrow-down {
   width: 18px;
   height: 18px;
   margin: 0 10px;
   fill: #a6a6a6;
   transform: translateY(8px);
+}
+
+.icon-arrow-down:hover {
+  fill: #f58220;
 }
 
 /*  Notification  */
@@ -2446,6 +2450,10 @@ li {
   height: 20px;
   margin: 20px;
   fill: #a6a6a6;
+}
+
+.bell-icon:hover {
+  fill: #f58220;
 }
 
 .orange-dot {
@@ -2473,6 +2481,10 @@ li {
   color: #56819f;
 }
 
+.profile-element p:hover {
+  color: #f58220;
+}
+
 .profile-icon {
   width: 20px;
   height: 20px;
@@ -2493,6 +2505,10 @@ li {
   width: 20px;
   height: 20px;
   margin: 22px 20px 20px 22px;
+}
+
+.exit-icon:hover {
+  fill: #f58220;
 }
 
 /* 
@@ -2641,6 +2657,10 @@ li {
   width: 20px;
   fill: #a6a6a6;
   display: none;
+}
+
+.bin-icon:hover, .links-icon:hover {
+  fill: #f58220;
 }
 
 .bin-icon {

@@ -5,10 +5,10 @@
 
 
 /* Components */
-@import "components";
+@import "components/components";
 
 /* Sections */
-@import "sections";
+@import "sections/sections";
 
 /* Pages / Views */
 //@import "pages/registration";
@@ -137,7 +137,7 @@ display: none;
   width: 25px;
   }
 
-// Topbar elements on sidbar //
+// Topbar elements on sidebar //
 
 .bell-icon {
   fill: $link-color;
