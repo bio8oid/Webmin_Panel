@@ -1,9 +1,0 @@
-# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
-# ignores vulnerabilities until expiry date; change duration by modifying expiry date
-ignore:
-  'npm:ua-parser-js:20180227':
-    - browser-sync > ua-parser-js:
-        reason: None given
-        expires: '2019-06-02T13:25:02.934Z'
-patch: {}
