@@ -1,1 +1,1 @@
-https://bio8oid.github.io/9/
+[Administration Panel](https://bio8oid.github.io/9__User_Panel/)
