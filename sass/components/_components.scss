@@ -3,13 +3,16 @@
 @import "normalize";
 @import "layout";
 
-
 /* 
 ==== FONTS ==== 
 */
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $font-color;
   font-family: $font;
   font-weight: $title-font-weight;
@@ -32,13 +35,12 @@ li {
   font-family: $font;
 }
 
-
 /* 
 ==== BUTTONS ==== 
 */
 
 .btn-success {
-@include button-style;
+  @include button-style;
 }
 
 .btn-square {
@@ -51,12 +53,16 @@ li {
   padding: 10px;
   fill: $white;
   cursor: pointer;
+
   svg {
     width: 25px;
     height: 25px;
   }
-  &:hover {
-    background-color: #f39c12;
+
+  @media not all and (hover: none) {
+    &:hover {
+      background-color: #f39c12;
+    }
   }
 }
 
@@ -69,8 +75,11 @@ li {
   background-color: $button-color;
   padding: 10px;
   cursor: pointer;
-  &:hover {
-    background-color: #f39c12;
+
+  @media not all and (hover: none) {
+    &:hover {
+      background-color: #f39c12;
+    }
   }
 }
 
@@ -92,8 +101,7 @@ li {
   height: 30px;
   display: inline-block;
   fill: $button-color;
- }
-
+}
 
 /* 
 ==== LOGO ==== 
@@ -108,7 +116,7 @@ li {
 .logo-img {
   width: 130px;
   height: 60px;
-  padding-top:5px;
+  padding-top: 5px;
   line-height: 60px;
 }
 
@@ -121,11 +129,9 @@ li {
   fill: $font-color;
 }
 
-
 /* 
 ==== SIDEBAR MENU LINKS ==== 
 */
-
 
 .component-sidebar-menu {
   background-color: #000;
@@ -133,10 +139,13 @@ li {
   list-style-type: none;
   width: 185px;
   height: 39px;
-  &:hover {
-  background-color: #282828;
-  border-left: 3px solid orange;
-  z-index: 5;
+
+  @media not all and (hover: none) {
+    &:hover {
+      background-color: #282828;
+      border-left: 3px solid orange;
+      z-index: 5;
+    }
   }
 }
 
@@ -147,13 +156,19 @@ li {
   display: block;
   margin: 0 auto;
   text-decoration: none;
-  &:hover .link-paragraph {
-    color: $white;
-    } 
-    &:hover .component-sidebar-menu-icon {
-    fill: $white;
-    } 
+
+  @media not all and (hover: none) {
+    &:hover .link-paragraph {
+      color: $white;
+    }
   }
+
+  @media not all and (hover: none) {
+    &:hover .component-sidebar-menu-icon {
+      fill: $white;
+    }
+  }
+}
 
 .link-paragraph {
   margin: 0 auto;
@@ -169,12 +184,11 @@ li {
   margin-right: 10px;
 }
 
-
 /* 
 ==== TOPBAR ELEMENTS ==== 
 */
 
-    /*  Wallet  */ 
+/*  Wallet  */
 
 .wallet-element {
   list-style-type: none;
@@ -183,6 +197,7 @@ li {
   line-height: 60px;
   border-left: 1px solid $divider-color;
   border-right: 1px solid $divider-color;
+
   p {
     display: inline-block;
     font-size: 20px;
@@ -192,57 +207,63 @@ li {
 }
 
 .wallet-icon {
-  width:20px;
+  width: 20px;
   height: 20px;
-  margin:0 10px 0 15px;
+  margin: 0 10px 0 15px;
   fill: $font-color;
   transform: translateY(2px);
-  &:hover {
-    fill: $button-color;
+
+  @media not all and (hover: none) {
+    &:hover {
+      fill: $button-color;
+    }
   }
 }
 
 .icon-arrow-down {
   width: 18px;
   height: 18px;
-  margin:0 10px;
+  margin: 0 10px;
   fill: $font-color;
   transform: translateY(8px);
-  &:hover {
-    fill: $button-color;
+
+  @media not all and (hover: none) {
+    &:hover {
+      fill: $button-color;
+    }
   }
 }
 
+/*  Notification  */
 
-    /*  Notification  */ 
-
-
-.notification-element{
-  width:60px;
+.notification-element {
+  width: 60px;
   height: 60px;
   list-style-type: none;
 }
 
 .bell-icon {
-  width:20px;
+  width: 20px;
   height: 20px;
   margin: 20px;
   fill: $font-color;
-  &:hover {
-    fill: $button-color;
+
+  @media not all and (hover: none) {
+    &:hover {
+      fill: $button-color;
+    }
   }
 }
 
 .orange-dot {
-  width:8px;
+  width: 8px;
   height: 8px;
   background-color: $button-color;
   border-radius: 50%;
   transform: translate(30px, -45px);
 }
 
-    /*  Profile  */ 
-
+/*  Profile  */
 
 .profile-element {
   list-style-type: none;
@@ -250,51 +271,56 @@ li {
   height: 60px;
   border-left: 1px solid $divider-color;
   border-right: 1px solid $divider-color;
+
   p {
     display: inline-block;
     line-height: 60px;
     font-size: 14px;
     margin: 0 auto;
     color: $link-color;
-    &:hover {
-    color: $button-color;
-  }
+
+    @media not all and (hover: none) {
+      &:hover {
+        color: $button-color;
+      }
+    }
   }
 }
+
 .profile-icon {
-  width:20px;
+  width: 20px;
   height: 20px;
-  margin:0 10px;
+  margin: 0 10px;
   fill: $link-color;
   transform: translateY(5px);
 }
 
-    /*  Exit  */ 
+/*  Exit  */
 
-
-.exit-element{
-  width:60px;
+.exit-element {
+  width: 60px;
   height: 60px;
   list-style-type: none;
 }
 
 .exit-icon {
   fill: $link-color;
-  width:20px;
+  width: 20px;
   height: 20px;
-  margin:22px 20px 20px 22px;
-  &:hover {
-    fill: $button-color;
+  margin: 22px 20px 20px 22px;
+
+  @media not all and (hover: none) {
+    &:hover {
+      fill: $button-color;
+    }
   }
 }
-
 
 /* 
 ==== GENERAL TABLE ==== 
 */
 
-
-.wrap{
+.wrap {
   width: 100%;
 }
 
@@ -312,11 +338,13 @@ li {
   flex: wrap;
 }
 
-.r1, .r2 {
+.r1,
+.r2 {
   border-bottom: 1px solid $divider-color;
   line-height: 20px;
-  p{
-  transform: translateY(10px);
+
+  p {
+    transform: translateY(10px);
   }
 }
 
@@ -329,17 +357,20 @@ li {
   flex: 1;
   width: 50px;
   text-align: right;
+
   p {
     color: #333;
     font-weight: $menu-font-weight;
   }
 }
 
-.c1, .c2 {
+.c1,
+.c2 {
   border-bottom: 1px solid $divider-color;
   line-height: 20px;
-  p{
-  transform: translateY(10px);
+
+  p {
+    transform: translateY(10px);
   }
 }
 
@@ -350,17 +381,16 @@ li {
 .c2 {
   width: 50px;
   text-align: right;
+
   p {
     color: #333;
     font-weight: $menu-font-weight;
   }
 }
 
-
 /* 
 ==== LINKS TABLE ROW ==== 
 */
-
 
 .table-row {
   display: flex;
@@ -368,15 +398,24 @@ li {
   height: auto;
   flex: wrap;
   border-top: 1px solid $divider-color;
-  &:hover {
-    background-color: #f1f3f3;
+
+  @media not all and (hover: none) {
+    &:hover {
+      background-color: #f1f3f3;
+    }
   }
-  &:hover .links-icon {
-    fill: $button-color;
-    display: inline-block;
+
+  @media not all and (hover: none) {
+    &:hover .links-icon {
+      fill: $button-color;
+      display: inline-block;
+    }
   }
-  &:hover .bin-icon {
-    display: inline-block;
+
+  @media not all and (hover: none) {
+    &:hover .bin-icon {
+      display: inline-block;
+    }
   }
 }
 
@@ -386,7 +425,8 @@ li {
 
 .name-column {
   flex: 4;
-  p{
+
+  p {
     padding-left: 30px;
     line-height: 60px;
     margin: 0;
@@ -395,14 +435,18 @@ li {
 
 .link-column {
   flex: 4;
+
   a {
     flex: 4;
     display: inline-block;
     line-height: 60px;
     font-size: 16px;
     text-decoration: none;
-    &:hover {
-      color: $button-color;
+
+    @media not all and (hover: none) {
+      &:hover {
+        color: $button-color;
+      }
     }
   }
 }
@@ -413,26 +457,28 @@ li {
   text-align: right;
 }
 
-.bin-icon, .links-icon {
-  height:20px;
+.bin-icon,
+.links-icon {
+  height: 20px;
   width: 20px;
   fill: $font-color;
   display: none;
-  &:hover {
-    fill: $button-color;
+
+  @media not all and (hover: none) {
+    &:hover {
+      fill: $button-color;
+    }
   }
 }
 
-
 .bin-icon {
- transform: translateY(5px);
- margin: 0 10px;
-
+  transform: translateY(5px);
+  margin: 0 10px;
 }
 
 .links-icon {
- transform: translateY(10px);
- margin-top: 15px;
+  transform: translateY(10px);
+  margin-top: 15px;
 }
 
 /* 
@@ -448,17 +494,13 @@ li {
   top: 0;
   left: 0;
   z-index: 9999;
-
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
-
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-
   overflow: auto;
   padding: 30px;
-
   display: none;
 }
 
@@ -469,38 +511,42 @@ li {
 .overlay::webkit-scrollbar {
   display: none;
 }
+
 .modal {
-  //max-width: 600px;
   margin: auto;
   margin-top: 200px;
-  //background-color: $white;
   position: relative;
   display: none;
 }
+
 .modal-quit {
   width: 450px;
   height: 200px;
   border-radius: 3px;
   background-color: $white;
   padding: 20px;
-  p{
+
+  p {
     border-bottom: 1px solid $divider-color;
     padding-bottom: 30px;
-    }
+  }
 }
 
-
-
-.btn-quit, .btn-cancel {
+.btn-quit,
+.btn-cancel {
   @include button-style;
   border: none;
   margin-left: 20px;
   margin-top: 10px;
 }
+
 .btn-cancel {
   background-color: #ccc;
-  &:hover.btn-cancel {
-    background-color: $divider-color;
+
+  @media not all and (hover: none) {
+    &:hover.btn-cancel {
+      background-color: $divider-color;
+    }
   }
 }
 
@@ -514,7 +560,6 @@ li {
   padding: 10px;
 }
 
-
 // Login Modal \\
 
 .modal-login {
@@ -523,12 +568,10 @@ li {
   border-radius: 3px;
   background-color: $white;
 
-//padding: 20px;
-  h5{
+  h5 {
     border-bottom: 1px solid $divider-color;
     padding: 15px;
-    //border: 1px solid orange;
-    }
+  }
 }
 
 .btn-enter {
@@ -536,69 +579,47 @@ li {
   width: 180px;
   border: none;
   margin: 10px;
-  //margin-left: 20px;
-  //margin-top: 10px;
-  &:hover.btn-enter {
-    background-color: #f39c12;
+
+  @media not all and (hover: none) {
+    &:hover.btn-enter {
+      background-color: #f39c12;
+    }
   }
 }
 
 .modal-wrapper {
-  //height: 40px;
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
-  //border-radius: 5px;
-  //box-shadow:inset 0px 0px 0px 5px $white;
-  //border: 1px solid $divider-color;
   justify-content: center;
   align-items: center;
-
 }
+
 .key {
   transform: translate(-60px, 2px);
 }
+
 .logman {
   transform: translateX(-280px);
 }
-.key, .logman {
+
+.key,
+.logman {
   height: 15px;
   width: 25px;
   position: fixed;
-  //transform: translateX(50px);
-  //border: 1px solid orange;
   fill: $font-color;
 }
-//.left-login-input, .right-login-input
-.modal-form {
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
-  //border: 1px solid $divider-color;
-//height: 40px;
-  //max-width: 100%;
-  //display: flex;
-  //border-radius: 5px;
-  //box-shadow:inset 0px 0px 0px 5px $white;
-  //border: 1px solid $divider-color;
-  //justify-content: center;
-  //justify-direction: row;
-}
+
 .input {
-    //display: flex;
-    //justify-content: center;
   width: 200px;
   height: 40px;
   margin: 10px;
-  //flex: 1;
   border: 1px solid $divider-color;
   border-radius: 2px;
   color: $font-color;
   font-family: $font;
   font-size: $paragraph-font-size;
-  //display: inline;
   padding: 0 50px;
-  //margin: 5px;
 }
-
