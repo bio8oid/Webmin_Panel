@@ -1,7 +1,7 @@
-@import "variables";
-@import "mixins";
-@import "normalize";
-@import "layout";
+//@import "variables";
+//@import "mixins";
+//@import "normalize";
+//@import "layout";
 
 /* 
 ==== FONTS ==== 
@@ -108,15 +108,15 @@ li {
 */
 
 .sidebar-logo-and-hamburger {
-  background-color: #191919;
+  background-color: #14141d;
   width: 188px;
   height: 60px;
 }
 
 .logo-img {
-  width: 130px;
+  width: 135px;
   height: 60px;
-  padding-top: 5px;
+  padding: 15px 10px;
   line-height: 60px;
 }
 
@@ -134,7 +134,7 @@ li {
 */
 
 .component-sidebar-menu {
-  background-color: #000;
+  background-color: #14141d;
   text-align: left;
   list-style-type: none;
   width: 185px;
@@ -179,8 +179,8 @@ li {
   fill: $font-color;
   width: 18px;
   height: 18px;
+  line-height: 18px; 
   text-align: left;
-  transform: translate(300px, 300px);
   margin-right: 10px;
 }
 
@@ -324,22 +324,13 @@ li {
   width: 100%;
 }
 
-.column-r {
-  flex-direction: column;
-  margin-left: 10%;
-}
-
-.column {
-  flex-direction: column;
-}
-
 .general-table-top {
   display: flex;
   flex: wrap;
 }
 
-.r1,
-.r2 {
+.table-name,
+.table-value {
   border-bottom: 1px solid $divider-color;
   line-height: 20px;
 
@@ -348,37 +339,13 @@ li {
   }
 }
 
-.r1 {
+.table-name {
   flex: 5;
   width: 250px;
 }
 
-.r2 {
+.table-value {
   flex: 1;
-  width: 50px;
-  text-align: right;
-
-  p {
-    color: #333;
-    font-weight: $menu-font-weight;
-  }
-}
-
-.c1,
-.c2 {
-  border-bottom: 1px solid $divider-color;
-  line-height: 20px;
-
-  p {
-    transform: translateY(10px);
-  }
-}
-
-.c1 {
-  width: 250px;
-}
-
-.c2 {
   width: 50px;
   text-align: right;
 
@@ -438,7 +405,6 @@ li {
 
   a {
     flex: 4;
-    display: inline-block;
     line-height: 60px;
     font-size: 16px;
     text-decoration: none;
@@ -463,7 +429,7 @@ li {
   width: 20px;
   fill: $font-color;
   display: none;
-
+  
   @media not all and (hover: none) {
     &:hover {
       fill: $button-color;

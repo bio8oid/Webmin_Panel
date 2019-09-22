@@ -1,0 +1,97 @@
+
+/* 
+=========  Details Subpage Table ========
+*/
+
+
+.table-wrapper {
+    overflow: auto;
+    padding: 25px;
+
+    div:first-of-type {
+      border: none;
+    }
+    
+    .details {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+       padding: 20px;
+        
+        p, div {
+            min-width: 100px;
+            //margin: 0 auto;
+            text-align: center;
+            padding: 0 10px;
+            //border: 1px solid rgba(255, 255, 255, 0);
+    }
+}
+}
+
+
+
+    /* 
+==== LINKS TABLE ROW ==== 
+
+
+.table-row {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex: wrap;
+    border-top: 1px solid $divider-color;
+  
+    @media not all and (hover: none) {
+      &:hover {
+        background-color: #f1f3f3;
+      }
+    }
+  
+    @media not all and (hover: none) {
+      &:hover .links-icon {
+        fill: $button-color;
+        display: inline-block;
+      }
+    }
+  
+    @media not all and (hover: none) {
+      &:hover .bin-icon {
+        display: inline-block;
+      }
+    }
+  }
+  
+  .bottom-border {
+    border-bottom: 1px solid $divider-color;
+  }
+  
+  .name-column {
+    flex: 4;
+  
+    p {
+      padding-left: 30px;
+      line-height: 60px;
+      margin: 0;
+    }
+  }
+  
+  .link-column {
+    flex: 4;
+  
+    a {
+      flex: 4;
+      line-height: 60px;
+      font-size: 16px;
+      text-decoration: none;
+  
+      @media not all and (hover: none) {
+        &:hover {
+          color: $button-color;
+        }
+      }
+    }
+  }
+
+
+
+  */

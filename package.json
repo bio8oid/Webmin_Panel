@@ -12,6 +12,7 @@
     "superagent": "^5.0.5"
   },
   "devDependencies": {
+    "autoprefixer": "^9.6.1",
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.7",
     "globstar": "^1.0.0",
@@ -40,9 +41,9 @@
     "build:dirs": "mkdirp docs",
     "build:copydir": "cp index.html links.html -r css fonts images js docs/",
     "watch": "npm-run-all -p watch:*",
-    "watch:sassprefixer": "onchange sass/*.scss -- npm-run-all -p sassprefixer:*",
-    "watch:browsersync": "browser-sync start --server --files css/*.css *.html",
-    "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "watch:sassprefixer": "onchange sass -- npm-run-all -p sassprefixer:*",
+    "watch:browsersync": "browser-sync start --reload-debounce 1000 --server --files css/*.css *.html",
+    "sassprefixer:sass": "node-sass --output-style expanded --source-map false -o css sass",
     "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css css/style.css"
   },
   "repository": {
