@@ -1296,10 +1296,10 @@ li {
 .component-sidebar-menu-icon {
   fill: #a6a6a6;
   width: 18px;
-  height: 18px;
-  line-height: 18px;
+  height: 22px;
   text-align: left;
   margin-right: 10px;
+  padding-top: 8px;
 }
 
 /* 
@@ -1991,16 +1991,21 @@ ul {
 }
 
 /* Pages / Views */
-/* 
-=========  Details Subpage Table ========
-*/
 .table-wrapper {
   overflow: auto;
   padding: 25px;
 }
 
-.table-wrapper div:first-of-type {
-  border: none;
+.table-wrapper .list {
+  height: 600px;
+}
+
+.table-wrapper .list .tr:last-child {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.table-wrapper .table-header {
+  border-top: none;
 }
 
 .table-wrapper .details {
@@ -2012,78 +2017,52 @@ ul {
   padding: 20px;
 }
 
-.table-wrapper .details p, .table-wrapper .details div {
+.table-wrapper .details div {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   min-width: 100px;
   text-align: center;
-  padding: 0 10px;
-  border: 1px solid rgba(255, 255, 255, 0);
+  margin: 0 auto;
 }
 
-/* 
-==== LINKS TABLE ROW ==== 
+.table-wrapper .details p {
+  margin: 0;
+}
 
+.table-wrapper .pagination {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
 
-.table-row {
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex: wrap;
-    border-top: 1px solid $divider-color;
-  
-    @media not all and (hover: none) {
-      &:hover {
-        background-color: #f1f3f3;
-      }
-    }
-  
-    @media not all and (hover: none) {
-      &:hover .links-icon {
-        fill: $button-color;
-        display: inline-block;
-      }
-    }
-  
-    @media not all and (hover: none) {
-      &:hover .bin-icon {
-        display: inline-block;
-      }
-    }
+.table-wrapper .pagination .active {
+  font-weight: 700;
+}
+
+.table-wrapper .pagination a {
+  text-decoration: none;
+}
+
+@media not all and (hover: none) {
+  .table-wrapper .pagination a:hover {
+    font-weight: 700;
   }
-  
-  .bottom-border {
-    border-bottom: 1px solid $divider-color;
-  }
-  
-  .name-column {
-    flex: 4;
-  
-    p {
-      padding-left: 30px;
-      line-height: 60px;
-      margin: 0;
-    }
-  }
-  
-  .link-column {
-    flex: 4;
-  
-    a {
-      flex: 4;
-      line-height: 60px;
-      font-size: 16px;
-      text-decoration: none;
-  
-      @media not all and (hover: none) {
-        &:hover {
-          color: $button-color;
-        }
-      }
-    }
-  }
+}
 
+.table-wrapper .pagination li {
+  margin: 20px 15px;
+  list-style: none;
+  font-size: 22px;
+}
 
+@media (max-width: 992px) {
+  .table-wrapper .table-row {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+}
 
-  */
 /* Fonts */
 body {
   background-color: #f5f5f2;

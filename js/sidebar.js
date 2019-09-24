@@ -13,7 +13,7 @@ document.getElementById('menu-burger').addEventListener('click', function(e) {
 });   
 
 
-// Modals \\
+
 
 
 function closeModal() {
@@ -58,7 +58,6 @@ document.getElementById('login').addEventListener('click', function(e) {
 });  
 
 
-// Chart \\
 
 
 var ctx = document.getElementById('myChart').getContext('2d');
@@ -95,13 +94,5 @@ var chart = new Chart(ctx, {
         }]
     },
 });
+}
 
-  }
-
-//  Pagination  \\
-
-var monkeyList = new List('paginated-list', {
-  valueNames: ['tr'],
-  page: 9,
-  pagination: true
-});
