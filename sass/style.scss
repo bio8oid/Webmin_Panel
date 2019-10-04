@@ -211,19 +211,25 @@ body.widen {
 .sidebar-small {
   width: 60px;
 
-.sidebar-logo-and-hamburger, .component-sidebar-menu  {
-  width: 60px;
-}
+  .sidebar-logo-and-hamburger,
+  .component-sidebar-menu {
+    width: 60px;
+  }
 
-.icon-notification, .icon-wallet, .icon-quit, .icon-profile, .component-sidebar-menu-link i {
-  margin: 0 auto;
-}
+  .icon-notification,
+  .icon-wallet,
+  .icon-quit,
+  .icon-profile,
+  .component-sidebar-menu-link i {
+    margin: 0 auto;
+  }
 
-.sidebar-manager-section, .link-paragraph, .wallet-element p, .icon-arrow-down, .profile-element p, .logo-img {
-  display: none;
-}
-}
-
-.dissapear {
-  display: none;
+  .sidebar-manager-section,
+  .link-paragraph,
+  .wallet-element p,
+  .icon-arrow-down,
+  .profile-element p,
+  .logo-img {
+    display: none;
+  }
 }

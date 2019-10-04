@@ -1,5 +1,4 @@
 .postback-section {
-
   .underline {
     border-top: 1px solid $divider-color;
     padding: 25px;
@@ -32,24 +31,24 @@
       width: 30%;
       position: relative;
 
-    select {
-      width: 100%;
-      appearance: none;
-      padding: 5px;
-      color: $calendar-entry-color;
-    }
+      select {
+        width: 100%;
+        appearance: none;
+        padding: 5px;
+        color: $calendar-entry-color;
+      }
 
-     i { 
-      font-size: 10px;
-      color: $font-color;
-      display: inline-block;
-      position: absolute;
-      top: 68px;
-      right: 10px;
-    }
+      i {
+        font-size: 10px;
+        color: $font-color;
+        display: inline-block;
+        position: absolute;
+        top: 68px;
+        right: 10px;
+      }
     }
   }
-  
+
   .postback-bottom {
     border-top: 1px solid $divider-color;
     border-bottom: 1px solid $divider-color;
@@ -185,16 +184,21 @@
 
 @media (max-width: 767px) {
   .postback-section {
-  .postback-top, .postback-middle, .postback-bottom {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
- }
+    .postback-top,
+    .postback-middle,
+    .postback-bottom {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
 
- .postback-top .signup,
- .postback-top .deposit, .postback-middle .select-wrap, .postback-bottom .left-box, .postback-bottom .right-box {
+    .postback-top .signup,
+    .postback-top .deposit,
+    .postback-middle .select-wrap,
+    .postback-bottom .left-box,
+    .postback-bottom .right-box {
       width: 100%;
     }
 
@@ -202,5 +206,5 @@
       border-left: none;
       border-top: 1px solid $divider-color;
     }
-}
+  }
 }

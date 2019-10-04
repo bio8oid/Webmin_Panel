@@ -1,14 +1,10 @@
-
 /* 
 =============== SECTIONS ===============
 */
 
-
-
 /* 
 ==== SIDEBAR SECTION ==== 
 */
-
 
 .sidebar {
   display: block;
@@ -43,19 +39,19 @@ ul {
     display: inline-block;
     padding-left: 5px;
     transform: translateY(-5px);
-    }
+  }
 
-    p:last-child {
-      color: $link-color;
-      font-size: $menu-font-size;
-      font-weight: $menu-font-weight;
-      transform: translate(10px, -20px);
-    }
+  p:last-child {
+    color: $link-color;
+    font-size: $menu-font-size;
+    font-weight: $menu-font-weight;
+    transform: translate(10px, -20px);
+  }
 
-    img {
-      height: 50px;
-      width: 50px;
-    }
+  img {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 .green-dottie {
@@ -71,11 +67,9 @@ ul {
   margin-top: 50px;
 }
 
-
 /* 
 ==== TOPBAR SECTION ==== 
 */
-
 
 .topbar {
   width: 100%;
@@ -90,38 +84,36 @@ ul {
   right: 0;
 }
 
- .row {
+.row {
   display: flex;
   justify-content: flex-end;
 }
-
 
 /* 
 ==== GENERAL SECTION ==== 
 */
 
-
 // Wrapper //
 
 .wrapper {
-width: 65%;
-height: auto;
-margin: 0 auto; 
+  width: 65%;
+  height: auto;
+  margin: 0 auto;
 }
 
 // General heading //
 
 .general {
-max-width: 100%; 
-height: auto;
-border: 1px solid $divider-color;
-background-color: $white;
-margin: 18px 2px;
-box-shadow: 0px 0px 16px -6px rgba(166,166,166,1);
+  max-width: 100%;
+  height: auto;
+  border: 1px solid $divider-color;
+  background-color: $white;
+  margin: 18px 2px;
+  box-shadow: 0px 0px 16px -6px rgba(166, 166, 166, 1);
 
-h3 {
-  font-size: $paragraph-font-size;
-  margin: 12px;
+  h3 {
+    font-size: $paragraph-font-size;
+    margin: 12px;
   }
 }
 
@@ -142,7 +134,7 @@ h3 {
   max-width: 100%;
   display: flex;
   border-radius: 5px;
-  box-shadow:inset 0px 0px 0px 5px $white;
+  box-shadow: inset 0px 0px 0px 5px $white;
   border: 1px solid $divider-color;
   justify-content: center;
 
@@ -151,10 +143,10 @@ h3 {
     margin: 12px;
     color: $font-color;
   }
-
 }
 
-.left-calendar-input, .right-calendar-input {
+.left-calendar-input,
+.right-calendar-input {
   border: none;
   color: $calendar-entry-color;
   font-family: $font;
@@ -167,8 +159,6 @@ h3 {
 .right-calendar-input {
   border-left: 1px solid $divider-color;
 }
-
-
 
 .calendar-button {
   margin: 12px;
@@ -190,10 +180,11 @@ h3 {
 .wrapper-table {
   width: 80%;
   height: auto;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
-.row-left, .row-right {
+.row-left,
+.row-right {
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -217,7 +208,7 @@ h3 {
 }
 
 .general-chart {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
@@ -231,16 +222,14 @@ h3 {
   height: auto;
 }
 
-
 /* 
 ==== LINKS SECTION ==== 
 */
 
-
 .links-heading {
   border-bottom: 1px solid $divider-color;
 
-  h3{
+  h3 {
     font-size: $paragraph-font-size;
     margin: 12px;
   }

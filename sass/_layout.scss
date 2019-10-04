@@ -2,11 +2,9 @@
 @import "mixins";
 @import "normalize";
 
-
 /* 
 ================================== GRID ================================= 
 */
-
 
 * {
   box-sizing: border-box;
@@ -30,7 +28,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-
 
 .col-sm-1 {
   flex: 0 0 8.33333%;
@@ -92,7 +89,6 @@
   max-width: 100%;
 }
 
-
 @for $i from 1 through 12 {
   .col-sm-#{$i} {
     $width: 100% / 12 * $i;
@@ -111,20 +107,18 @@
   }
 }
 
-
-@media(max-width: 767px) {
-  @include grid('sm');
+@media (max-width: 767px) {
+  @include grid("sm");
 }
 
-@media(min-width: 768px) {
-  @include grid('md');
+@media (min-width: 768px) {
+  @include grid("md");
 }
 
-@media(min-width: 992px) {
-  @include grid('lg');
+@media (min-width: 992px) {
+  @include grid("lg");
 }
 
-@media(min-width: 1200px) {
-  @include grid('xl');
+@media (min-width: 1200px) {
+  @include grid("xl");
 }
-
