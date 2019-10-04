@@ -1,11 +1,3 @@
-fetch("./top_side_bar_and_modals.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("#bars").innerHTML = data;
-  });
-
 
 
   window.onload = () => {
