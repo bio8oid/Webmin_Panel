@@ -5,10 +5,10 @@
   align-items: center;
   padding: 25px;
 
-   p {
+  p {
     white-space: nowrap;
     margin: 0;
-   }
+  }
 }
 
 .line-wrap {
@@ -25,19 +25,8 @@
   border-radius: 3px;
 }
 
-
-@media(max-width: 576px) {
+@media (max-width: 576px) {
   .line-wrap {
     flex-direction: column;
   }
 }
-
-
-
-
-
-
-
-
-
-
