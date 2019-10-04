@@ -1,4 +1,4 @@
-
+window.onload = () => {
 
 var ctx = document.getElementById('myChart');
 
@@ -35,3 +35,4 @@ var chart = new Chart(ctx, {
     },
 });
 
+}

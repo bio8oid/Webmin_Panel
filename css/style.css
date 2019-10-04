@@ -2023,7 +2023,8 @@ ul {
   color: #a6a6a6;
 }
 
-.left-calendar-input, .right-calendar-input {
+.left-calendar-input,
+.right-calendar-input {
   border: none;
   color: #333;
   font-family: "Open Sans", Helvetica, Arial;
@@ -2061,7 +2062,8 @@ ul {
   margin: 0 auto;
 }
 
-.row-left, .row-right {
+.row-left,
+.row-right {
   margin: 5px;
   display: -ms-flexbox;
   display: flex;
@@ -2738,6 +2740,10 @@ body {
   padding-left: 190px;
 }
 
+.dissapear {
+  display: none;
+}
+
 @media (max-width: 992px) {
   .row-table {
     height: auto;
@@ -2894,22 +2900,32 @@ body {
   }
 }
 
+body.widen {
+  padding-left: 60px;
+}
+
 .sidebar-small {
   width: 60px;
 }
 
-.sidebar-small .sidebar-logo-and-hamburger, .sidebar-small .component-sidebar-menu {
+.sidebar-small .sidebar-logo-and-hamburger,
+.sidebar-small .component-sidebar-menu {
   width: 60px;
 }
 
-.sidebar-small .icon-notification, .sidebar-small .icon-wallet, .sidebar-small .icon-quit, .sidebar-small .icon-profile, .sidebar-small .component-sidebar-menu-link i {
+.sidebar-small .icon-notification,
+.sidebar-small .icon-wallet,
+.sidebar-small .icon-quit,
+.sidebar-small .icon-profile,
+.sidebar-small .component-sidebar-menu-link i {
   margin: 0 auto;
 }
 
-.sidebar-small .sidebar-manager-section, .sidebar-small .link-paragraph, .sidebar-small .wallet-element p, .sidebar-small .icon-arrow-down, .sidebar-small .profile-element p, .sidebar-small .logo-img {
-  display: none;
-}
-
-.dissapear {
+.sidebar-small .sidebar-manager-section,
+.sidebar-small .link-paragraph,
+.sidebar-small .wallet-element p,
+.sidebar-small .icon-arrow-down,
+.sidebar-small .profile-element p,
+.sidebar-small .logo-img {
   display: none;
 }

@@ -1,62 +1,48 @@
-fetch("./spare_topbar.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("#bars").innerHTML = data;
-  });
-  
-  fetch("./general_content.html")
+
+// Fetch Pages Modules \\
+
+const modules = [
+  { id: "#bars", url: "./side-top-bar-modules_content.html" },
+  { id: "#general-content", url: "./general_content.html" },
+  { id: "#details-content", url: "./details_content.html" },
+  { id: "#links-content", url: "./links_content.html" },
+  { id: "#banners-content", url: "./banners_content.html" },
+  { id: "#personal-content", url: "./personal_content.html" },
+  { id: "#payout-content", url: "./payout_content.html" },
+  { id: "#postback-content", url: "./postback_content.html" }
+]
+
+
+modules.map(page => (
+
+  fetch(page.url)
     .then(response => {
+      console.log(page.url)
       return response.text()
     })
     .then(data => {
-      document.querySelector("#general-content").innerHTML = data;
-    });
+      console.log(page.id)
+      document.querySelector(page.id).innerHTML = data;
+    })
+
+))
 
 
 
+window.onload = () => {
 
 
+  //  Handle Sidebar Menu Buttons to load Modules  \\
 
-
-
-
-
-
-
-    
-
-  window.onload = () => {
-
-    
-      fetch("./details_content.html")
-      .then(response => {
-        return response.text()
-      })
-      .then(data => {
-        document.querySelector("#details-content").innerHTML = data;
-      });
-
-    fetch("./links_content.html")
-      .then(response => {
-        return response.text()
-      })
-      .then(data => {
-        document.querySelector("#links-content").innerHTML = data;
-      });
-
-
-const showPage = function(id){
-      document.getElementById(id).classList.remove('dissapear')
-    };
-    
+  const showPageContent = function (id) {
+    document.getElementById(id).classList.remove('dissapear')
+  };
 
   const buttons = document.querySelectorAll('.component-sidebar-menu-link')
 
 
   for (const button of buttons) {
-    button.addEventListener('click', function(event) {
+    button.addEventListener('click', function (event) {
 
       const id = this.getAttribute('data')
       console.log(id)
@@ -71,22 +57,19 @@ const showPage = function(id){
 
         const filteredPagesID = pagesID.filter(item => item !== id)
 
-        for( const page of filteredPagesID ){
+        for (const page of filteredPagesID) {
           document.getElementById(page).classList.add('dissapear');
-          }
-       };
+        }
+      };
 
-           showPage(id)
-          hideOtherPages()
+      showPageContent(id)
+      hideOtherPages()
     });
   }
 
 
 
-
-
-
-  // Hamburger menu function \\
+  // Top Right Window Hamburger menu function \\
 
   function toggleMenu(visible) {
     document.getElementById('sidebar-section').classList.toggle('show', visible)
@@ -101,6 +84,9 @@ const showPage = function(id){
 
   function toggleSmallMenu(visible) {
     document.getElementById('sidebar-section').classList.toggle('sidebar-small', visible)
+
+    document.body.classList.toggle('widen')
+
   }
 
   document.getElementById('sidebar-burger').addEventListener('click', function (e) {
@@ -143,29 +129,28 @@ const showPage = function(id){
     document.querySelector(modal).classList.add('show')
   }
 
-    document.getElementById('exit').addEventListener('click', function (e) {
-      e.preventDefault()
-      openModal('#myModal')
-    });
-  
-    document.getElementById('login').addEventListener('click', function (e) {
-      e.preventDefault()
-      openModal('#loginModal')
-    });
+  document.getElementById('exit').addEventListener('click', function (e) {
+    e.preventDefault()
+    openModal('#myModal')
+  });
 
-    document.getElementById('exit-sidebar').addEventListener('click', function (e) {
-      e.preventDefault()
-      openModal('#myModal')
-    });
-  
-    document.getElementById('login-sidebar').addEventListener('click', function (e) {
-      e.preventDefault()
-      openModal('#loginModal')
-    });
+  document.getElementById('login').addEventListener('click', function (e) {
+    e.preventDefault()
+    openModal('#loginModal')
+  });
 
-    document.getElementById('contact-manager').addEventListener('click', function (e) {
-      e.preventDefault()
-      openModal('#manager')
-      console.log('iam clicked')
-    });
-  };
+  document.getElementById('exit-sidebar').addEventListener('click', function (e) {
+    e.preventDefault()
+    openModal('#myModal')
+  });
+
+  document.getElementById('login-sidebar').addEventListener('click', function (e) {
+    e.preventDefault()
+    openModal('#loginModal')
+  });
+
+  document.getElementById('contact-manager').addEventListener('click', function (e) {
+    e.preventDefault()
+    openModal('#manager')
+  });
+};
