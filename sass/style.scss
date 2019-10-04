@@ -1,9 +1,8 @@
-@import 'variables';
-@import 'mixins';
-@import 'normalize';
-@import 'layout';
-
-
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
+@import "glyphter";
 
 /* Components */
 @import "components/components";
@@ -13,10 +12,14 @@
 
 /* Pages / Views */
 @import "pages/details";
+@import "pages/personal";
+@import "pages/payout";
+@import "pages/postback";
+@import "pages/banners";
+@import "pages/postback";
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=latin-ext');
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=latin-ext");
 
 body {
   background-color: $body-color;
@@ -24,11 +27,10 @@ body {
   padding-left: 190px;
 }
 
-      // MEDIA //
+// MEDIA //
 
-@media(max-width: 992px) {
-
-// Small statistic general section table //
+@media (max-width: 992px) {
+  // Small statistic general section table //
 
   .row-table {
     height: auto;
@@ -37,165 +39,187 @@ body {
 
   .row-left {
     align-items: center;
-    flex: 1 ;
+    flex: 1;
   }
 
   .row-right {
     margin-bottom: 50px;
     align-items: center;
-    flex: 1 ;
+    flex: 1;
   }
 
   .heading {
     text-align: center;
   }
 
-// Links section - main table //
+  // Links section - main table //
 
-.table-row {
-  width: 100%;
-  flex: wrap;
-  flex-direction: column;
-}
-.name-column {
-  width: 100%;
-  text-align: center;
-  p{
-    padding: 0;
-    line-height: 60px;
-    text-decoration: underline;
+  .table-row {
+    width: 100%;
+    flex: wrap;
+    flex-direction: column;
   }
-}
-.link-column {
-  width: 100%;
-  text-align: center;
-  a {
-    line-height: 30px;
+
+  .name-column {
+    width: 100%;
+    text-align: center;
+
+    p {
+      padding: 0;
+      line-height: 60px;
+      text-decoration: underline;
+    }
   }
-}
-.links-and-bin-column {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.bin-icon, .links-icon {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  display: none;
+
+  .link-column {
+    width: 100%;
+    text-align: center;
+
+    a {
+      line-height: 30px;
+    }
   }
- .links-icon {
-  margin: 0 20px 20px 0 ;
-  }
-  .bin-icon {
-  margin: 0 0px 20px 0 ;
+
+  .links-and-bin-column {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
+  // General statistic - calendar //
 
- // General statistic - calendar //
-
-.general-calendar {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.calendar-wrapper {
-  margin-top: 12px;
-  height: auto;
-  max-width: 100%;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.right-calendar-input {
-  border-left: none;
-  border-top: 1px solid $divider-color;
-  transform: translateY(-4px);
-}
-
-.left-calendar-input {
-  transform: translateY(8px);
-}
-
-.calendar-icon {
-display: none;
-}
-
-// General statistic - table //
-
-.r1 {
-  flex: 5;
-  width: 150px;
-}
-
-.r2 {
-  flex: 1;
-  width: 25px;
+  .general-calendar {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-// Topbar elements on sidebar //
-
-.bell-icon {
-  fill: $link-color;
-}
-
-.wallet-element, .profile-element {
-  border-left: none;
-  border-right: none;
-  border-top: 1px solid $calendar-entry-color;
-  border-bottom: 1px solid $calendar-entry-color;
-  width: 99%;
-  &:hover {
-    background-color: #282828;
-  }
-}
-
-.exit-element, .notification-element {
-  margin: 0 auto;
-}
-
-.topbar {
-  display: none;
+  .calendar-wrapper {
+    margin-top: 12px;
+    height: auto;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-.sidebar{
-  display: none;
+  .right-calendar-input {
+    border-left: none;
+    border-top: 1px solid $divider-color;
+    transform: translateY(-4px);
+  }
+
+  .left-calendar-input {
+    transform: translateY(8px);
+  }
+
+  .icon-calendar {
+    display: none;
+  }
+
+  // General statistic - table //
+
+  .table-name {
+    flex: 5;
+    width: 150px;
+  }
+
+  .table-value {
+    flex: 1;
+    width: 25px;
+  }
+
+  // Topbar elements on sidebar //
+
+  .wallet-element,
+  .profile-element {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid $calendar-entry-color;
+    border-bottom: 1px solid $calendar-entry-color;
+    width: 99%;
+
+    &:hover {
+      background-color: #282828;
+    }
+  }
+
+  .exit-element,
+  .notification-element {
+    margin: 0 auto;
+  }
+
+  .topbar {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
   }
   body {
-  padding: 0;
+    padding: 0;
   }
 
-.sidebar.show {
-  display: block;
+  .sidebar.show {
+    display: block;
+  }
+
+  .sidebar-mobile-section {
+    display: block;
+  }
+
+  // Modal Login Icons \\
+
+  .icon-login,
+  .icon-password {
+    display: none;
+  }
+
+  // Modal Quit \\
+
+  .modal-quit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 
-.sidebar-mobile-section {
-  display: block;
-}
-
-// Login Icons \\
-
-.key, .logman {
-display: none;
-}
-
-}
-
-@media(min-width: 767px) {
-
-.topbar-mobile-section {
-  display: none;
+@media (min-width: 767px) {
+  .topbar-mobile-section {
+    display: none;
   }
 
   // Menu hamburger lo-res pop-up \\
 
-.menu-lo-res-hamburger {
-display: none;
+  .menu-lo-res-hamburger {
+    display: none;
+  }
 }
 
+//  Small Sidebar Class  \\
+
+.sidebar-small {
+  width: 60px;
+
+.sidebar-logo-and-hamburger, .component-sidebar-menu  {
+  width: 60px;
+}
+
+.icon-notification, .icon-wallet, .icon-quit, .icon-profile, .component-sidebar-menu-link i {
+  margin: 0 auto;
+}
+
+.sidebar-manager-section, .link-paragraph, .wallet-element p, .icon-arrow-down, .profile-element p, .logo-img {
+  display: none;
+}
+}
+
+.dissapear {
+  display: none;
 }

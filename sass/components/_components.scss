@@ -1,8 +1,3 @@
-//@import "variables";
-//@import "mixins";
-//@import "normalize";
-//@import "layout";
-
 /* 
 ==== FONTS ==== 
 */
@@ -51,30 +46,11 @@ li {
   background-color: $button-color;
   font-weight: $button-font-weight;
   padding: 10px;
-  fill: $white;
   cursor: pointer;
 
-  svg {
-    width: 25px;
-    height: 25px;
+  i {
+    color: white;
   }
-
-  @media not all and (hover: none) {
-    &:hover {
-      background-color: #f39c12;
-    }
-  }
-}
-
-.button-refresh {
-  fill: $white;
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  border: none;
-  background-color: $button-color;
-  padding: 10px;
-  cursor: pointer;
 
   @media not all and (hover: none) {
     &:hover {
@@ -101,6 +77,12 @@ li {
   height: 30px;
   display: inline-block;
   fill: $button-color;
+
+  @media not all and (hover: none) {
+    &:hover {
+      fill: orange;
+    }
+  }
 }
 
 /* 
@@ -127,6 +109,12 @@ li {
   margin-top: 20px;
   margin-right: 20px;
   fill: $font-color;
+
+  @media not all and (hover: none) {
+    &:hover {
+      fill: orange;
+    }
+  }
 }
 
 /* 
@@ -135,7 +123,6 @@ li {
 
 .component-sidebar-menu {
   background-color: #14141d;
-  text-align: left;
   list-style-type: none;
   width: 185px;
   height: 39px;
@@ -145,6 +132,11 @@ li {
       background-color: #282828;
       border-left: 3px solid orange;
       z-index: 5;
+
+      i,
+      .link-paragraph {
+        color: $white;
+      }
     }
   }
 }
@@ -152,36 +144,21 @@ li {
 .component-sidebar-menu-link {
   height: 39px;
   line-height: 39px;
-  padding: 0 20px;
-  display: block;
-  margin: 0 auto;
+  display: flex;
   text-decoration: none;
+  justify-content: flex-start;
+  padding-top: 3px;
 
-  @media not all and (hover: none) {
-    &:hover .link-paragraph {
-      color: $white;
-    }
+  i {
+    font-size: 16px;
+    color: $font-color;
+    margin: 0 15px;
   }
 
-  @media not all and (hover: none) {
-    &:hover .component-sidebar-menu-icon {
-      fill: $white;
-    }
+  .link-paragraph {
+    line-height: 0;
+    font-weight: $menu-font-weight;
   }
-}
-
-.link-paragraph {
-  margin: 0 auto;
-  font-weight: $menu-font-weight;
-}
-
-.component-sidebar-menu-icon {
-  fill: $font-color;
-  width: 18px;
-  height: 22px;
-  text-align: left;
-  margin-right: 10px;
-  padding-top: 8px;
 }
 
 /* 
@@ -191,45 +168,25 @@ li {
 /*  Wallet  */
 
 .wallet-element {
-  list-style-type: none;
   width: 190px;
   height: 60px;
-  line-height: 60px;
   border-left: 1px solid $divider-color;
   border-right: 1px solid $divider-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color: $font-color;
 
   p {
     display: inline-block;
-    font-size: 20px;
-    margin: 0 auto;
-    color: $font-color;
   }
-}
 
-.wallet-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 10px 0 15px;
-  fill: $font-color;
-  transform: translateY(2px);
-
-  @media not all and (hover: none) {
-    &:hover {
-      fill: $button-color;
-    }
-  }
-}
-
-.icon-arrow-down {
-  width: 18px;
-  height: 18px;
-  margin: 0 10px;
-  fill: $font-color;
-  transform: translateY(8px);
-
-  @media not all and (hover: none) {
-    &:hover {
-      fill: $button-color;
+  i {
+    @media not all and (hover: none) {
+      &:hover {
+        color: $button-color;
+      }
     }
   }
 }
@@ -239,44 +196,9 @@ li {
 .notification-element {
   width: 60px;
   height: 60px;
-  list-style-type: none;
-}
+  padding: 20px;
 
-.bell-icon {
-  width: 20px;
-  height: 20px;
-  margin: 20px;
-  fill: $font-color;
-
-  @media not all and (hover: none) {
-    &:hover {
-      fill: $button-color;
-    }
-  }
-}
-
-.orange-dot {
-  width: 8px;
-  height: 8px;
-  background-color: $button-color;
-  border-radius: 50%;
-  transform: translate(30px, -45px);
-}
-
-/*  Profile  */
-
-.profile-element {
-  list-style-type: none;
-  width: 190px;
-  height: 60px;
-  border-left: 1px solid $divider-color;
-  border-right: 1px solid $divider-color;
-
-  p {
-    display: inline-block;
-    line-height: 60px;
-    font-size: 14px;
-    margin: 0 auto;
+  i {
     color: $link-color;
 
     @media not all and (hover: none) {
@@ -285,14 +207,49 @@ li {
       }
     }
   }
+
+  .orange-dot {
+    width: 10px;
+    height: 10px;
+    background-color: $button-color;
+    border-radius: 50%;
+    transform: translate(15px, -30px);
+  }
 }
 
-.profile-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 10px;
-  fill: $link-color;
-  transform: translateY(5px);
+/*  Profile  */
+
+.profile-element {
+  width: 190px;
+  height: 60px;
+  border-left: 1px solid $divider-color;
+  border-right: 1px solid $divider-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .profile-link {
+    text-decoration: none;
+  }
+
+  p,
+  i {
+    display: inline-block;
+    color: $link-color;
+  }
+
+  i {
+    font-size: 18px;
+    margin-right: 20px;
+    transform: translateY(3px);
+  }
+
+  @media not all and (hover: none) {
+    &:hover i,
+    &:hover p {
+      color: $button-color;
+    }
+  }
 }
 
 /*  Exit  */
@@ -300,18 +257,15 @@ li {
 .exit-element {
   width: 60px;
   height: 60px;
-  list-style-type: none;
-}
+  padding: 20px 22px;
 
-.exit-icon {
-  fill: $link-color;
-  width: 20px;
-  height: 20px;
-  margin: 22px 20px 20px 22px;
+  i {
+    color: $link-color;
 
-  @media not all and (hover: none) {
-    &:hover {
-      fill: $button-color;
+    @media not all and (hover: none) {
+      &:hover {
+        color: $button-color;
+      }
     }
   }
 }
@@ -373,14 +327,14 @@ li {
   }
 
   @media not all and (hover: none) {
-    &:hover .links-icon {
-      fill: $button-color;
+    &:hover .icon-links {
+      color: $button-color;
       display: inline-block;
     }
   }
 
   @media not all and (hover: none) {
-    &:hover .bin-icon {
+    &:hover .icon-trash {
       display: inline-block;
     }
   }
@@ -421,30 +375,22 @@ li {
   flex: 2;
   padding: 0 20px;
   text-align: right;
-}
 
-.bin-icon,
-.links-icon {
-  height: 20px;
-  width: 20px;
-  fill: $font-color;
-  display: none;
-  
-  @media not all and (hover: none) {
-    &:hover {
-      fill: $button-color;
+  a {
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 16px;
+    padding: 20px 8px;
+    display: none;
+
+    @media not all and (hover: none) {
+      &:hover {
+        color: $button-color;
+      }
     }
   }
-}
-
-.bin-icon {
-  transform: translateY(5px);
-  margin: 0 10px;
-}
-
-.links-icon {
-  transform: translateY(10px);
-  margin-top: 15px;
 }
 
 /* 
@@ -485,6 +431,62 @@ li {
   display: none;
 }
 
+.modal.show {
+  display: block;
+}
+
+// Manager Modal \\
+
+.modal-manager {
+  width: 500px;
+  border-radius: 3px;
+  background-color: $white;
+
+  p {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .modal-header {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid $divider-color;
+    border-bottom: 1px solid $divider-color;
+    padding: 10px;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .online-lable {
+      margin-left: 10px;
+      width: 65px;
+      height: 25px;
+      line-height: 25px;
+      background: limegreen;
+    }
+  }
+
+  .modal-buttons {
+    border-top: 1px solid $divider-color;
+    display: flex;
+    margin-top: 150px;
+
+    button {
+      border: none;
+      margin: 8px;
+    }
+
+    .input {
+      width: 80%;
+      padding-left: 10px;
+    }
+  }
+}
+
+// Quit Modal \\
+
 .modal-quit {
   width: 450px;
   height: 200px;
@@ -496,34 +498,30 @@ li {
     border-bottom: 1px solid $divider-color;
     padding-bottom: 30px;
   }
-}
 
-.btn-quit,
-.btn-cancel {
-  @include button-style;
-  border: none;
-  margin-left: 20px;
-  margin-top: 10px;
-}
+  .btn-quit,
+  .btn-cancel {
+    @include button-style;
+    border: none;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
 
-.btn-cancel {
-  background-color: #ccc;
+  .btn-cancel {
+    background-color: #ccc;
 
-  @media not all and (hover: none) {
-    &:hover.btn-cancel {
-      background-color: $divider-color;
+    @media not all and (hover: none) {
+      &:hover.btn-cancel {
+        background-color: $divider-color;
+      }
     }
   }
-}
 
-.modal.show {
-  display: block;
-}
-
-.modal-buttons {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
 }
 
 // Login Modal \\
@@ -538,44 +536,35 @@ li {
     border-bottom: 1px solid $divider-color;
     padding: 15px;
   }
-}
 
-.btn-enter {
-  @include button-style;
-  width: 180px;
-  border: none;
-  margin: 10px;
+  .btn-enter {
+    @include button-style;
+    width: 180px;
+    border: none;
+    margin: 10px;
 
-  @media not all and (hover: none) {
-    &:hover.btn-enter {
-      background-color: #f39c12;
+    @media not all and (hover: none) {
+      &:hover.btn-enter {
+        background-color: #f39c12;
+      }
     }
   }
-}
 
-.modal-wrapper {
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px;
-  justify-content: center;
-  align-items: center;
-}
+  .modal-wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 
-.key {
-  transform: translate(-60px, 2px);
-}
-
-.logman {
-  transform: translateX(-280px);
-}
-
-.key,
-.logman {
-  height: 15px;
-  width: 25px;
-  position: fixed;
-  fill: $font-color;
+  .icon-login,
+  .icon-password {
+    font-size: 18px;
+    color: $font-color;
+    transform: translate(40px, 2px);
+  }
 }
 
 .input {

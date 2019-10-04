@@ -4,25 +4,26 @@
   "description": "My project link:",
   "main": "index.js",
   "dependencies": {
+    "ajax": "^0.0.4",
     "chart.js": "^2.8.0",
     "imagemin-cli": "^4.0.1",
     "postcss-cli": "^6.1.1",
     "postcss-cli-simple": "^3.0.0",
-    "rimraf": "^2.6.3",
-    "superagent": "^5.0.5"
+    "rimraf": "^2.6.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.7",
-    "globstar": "^1.0.0",
-    "mixin-deep": "^2.0.1",
+    "core-js": "^3.2.1",
+    "lib": "^4.0.5",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.12.0",
-    "npm-check-updates": "^3.1.8",
     "npm-run-all": "^4.1.5",
-    "nu-html-checker": "^0.1.0",
-    "onchange": "^5.2.0"
+    "onchange": "^5.2.0",
+    "posthtml-modules": "^0.4.2",
+    "prettier": "^1.18.2",
+    "psl": "^1.4.0"
   },
   "scripts": {
     "test": "npm run test:html",
@@ -42,8 +43,11 @@
     "build:copydir": "cp index.html links.html -r css fonts images js docs/",
     "watch": "npm-run-all -p watch:*",
     "watch:sassprefixer": "onchange sass -- npm-run-all -p sassprefixer:*",
-    "watch:browsersync": "browser-sync start --reload-debounce 1000 --server --files css/*.css *.html",
-    "sassprefixer:sass": "node-sass --output-style expanded --source-map false -o css sass",
+    "watch:browsersync": "browser-sync start --reload-debounce 500 --server --files css/*.css *.html",
+    "styleguide": "npm-run-all -p styleguide:*",
+    "styleguide:sassprefixer": "onchange sass -- npm-run-all -p sassprefixer:*",
+    "styleguide:browsersync": "browser-sync start --reload-debounce 500 --server --files  css/*.css styleguide.html",
+    "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css css/style.css"
   },
   "repository": {
