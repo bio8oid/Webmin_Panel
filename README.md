@@ -1,1 +1,1 @@
-[Administration Panel](https://bio8oid.github.io/9__User_Panel/)
+[Administration Panel](https://webmin-master.netlify.com/postback.html)
