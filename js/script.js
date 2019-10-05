@@ -86,7 +86,6 @@ window.onload = () => {
     document.getElementById('sidebar-section').classList.toggle('sidebar-small', visible)
 
     document.body.classList.toggle('widen')
-
   }
 
   document.getElementById('sidebar-burger').addEventListener('click', function (e) {
