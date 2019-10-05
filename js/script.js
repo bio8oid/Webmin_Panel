@@ -10,7 +10,10 @@
       document.querySelector("#bars").innerHTML = data;
     })
 
-
+    document.getElementById('menu-burger').addEventListener('click', function (e) {
+      e.preventDefault();
+      toggleMenu()
+    });
 
 window.onload = () => {
 
@@ -21,10 +24,7 @@ window.onload = () => {
     document.getElementById('sidebar-section').classList.toggle('show', visible)
   }
 
-  document.getElementById('menu-burger').addEventListener('click', function (e) {
-    e.preventDefault();
-    toggleMenu()
-  });
+
 
   // Sidebar-burger menu function \\
 
