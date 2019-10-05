@@ -44,7 +44,7 @@ window.onload = () => {
   for (const button of buttons) {
     button.addEventListener('click', function (event) {
 
-      const id = this.getAttribute('data')
+      const id = this.getAttribute('data-id')
       console.log(id)
 
       const hideOtherPages = event => {
