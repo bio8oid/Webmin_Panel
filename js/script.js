@@ -2,7 +2,7 @@
 // Fetch Sidebar Topbar and modals Module \\
 
 
-  fetch("./top_side_bar_and_modals-module.html")
+  fetch("../pages/top_side_bar_and_modals-module.html")
     .then(response => {
       return response.text()
     })
