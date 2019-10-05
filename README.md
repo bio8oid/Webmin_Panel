@@ -1,1 +1,1 @@
-[Administration Panel](https://webmin-master.netlify.com/postback.html)
+[Administration Panel](https://webmin-master.netlify.com/)
