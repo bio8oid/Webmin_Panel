@@ -1,0 +1,1 @@
+{"version":3,"sources":["node_modules/bs-recipes/recipes/html.injection/app/css/main.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"main.edfa03a3.css","sourceRoot":"..","sourcesContent":["body {\n\tbackground: white;\n\tcolor: black;\n}\n\np.lede {\n\tfont-size: 2em;\n}"]}
