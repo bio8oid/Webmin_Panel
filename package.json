@@ -20,12 +20,9 @@
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^5.2.0",
-    "parcel-bundler": "^1.12.4",
     "prettier": "^1.18.2"
   },
   "scripts": {
-    "dev": "parcel index.html ./**/*.html",
-    "prod": "parcel build src/index.html src/products.html --no-cache --no-minify --public-url ./",
     "test": "npm run test:html",
     "test:html": "prettier --write \"docs/**/*.{js,html,scss}\"",
     "init-project": "npm install && npm-run-all init:*",
