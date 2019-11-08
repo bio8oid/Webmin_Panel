@@ -1,8 +1,14 @@
 
-
   window.onload = () => {
 
-    
+  // Reset General Statistic Calendar \\
+
+  if (window.location.href.indexOf('index') > -1 || window.location.href.indexOf('details') > -1 || window.location.href.indexOf('payout') > -1) {
+    document.getElementById("general-calendar-reset").addEventListener('click', function() {
+      document.getElementById("general-calendar-form").reset();
+    });
+  }
+  
   // Hamburger menu function \\
 
   function toggleMenu(visible) {

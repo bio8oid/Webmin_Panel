@@ -4,18 +4,14 @@
   "description": "My project link:",
   "main": "index.js",
   "dependencies": {
-    "ajax": "^0.0.4",
     "chart.js": "^2.8.0",
     "imagemin-cli": "^4.0.1",
-    "postcss-cli": "^6.1.1",
-    "postcss-cli-simple": "^3.0.0",
     "rimraf": "^2.6.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.7",
-    "core-js": "^3.2.1",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
