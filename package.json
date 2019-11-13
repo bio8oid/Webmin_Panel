@@ -36,7 +36,7 @@
     "build:copydir": "cp *.html -r css fonts images js docs/",
     "watch": "npm-run-all -p watch:*",
     "watch:sassprefixer": "onchange sass -- npm-run-all -p sassprefixer:*",
-    "watch:browsersync": "browser-sync start --reload-debounce 500 --server --files css/*.css *.html",
+    "watch:browsersync": "browser-sync start --reload-debounce 500 --server --files css/*.css *.html pages/*.html",
     "styleguide": "npm-run-all -p styleguide:*",
     "styleguide:sassprefixer": "onchange sass -- npm-run-all -p sassprefixer:*",
     "styleguide:browsersync": "browser-sync start --reload-debounce 500 --server --files  css/*.css styleguide.html",
