@@ -8,26 +8,26 @@ h3,
 h4,
 h5,
 h6 {
-  color: $font-color;
-  font-family: $font;
-  font-weight: $title-font-weight;
+	color: $font-color;
+	font-family: $font;
+	font-weight: $title-font-weight;
 }
 
 p {
-  color: $font-color;
-  font-size: 16px;
-  font-weight: $paragraph-font-weight;
-  font-family: $font;
+	color: $font-color;
+	font-size: 16px;
+	font-weight: $paragraph-font-weight;
+	font-family: $font;
 }
 
 a {
-  color: $link-color;
-  font-family: $font;
+	color: $link-color;
+	font-family: $font;
 }
 
 li {
-  color: $font-color;
-  font-family: $font;
+	color: $font-color;
+	font-family: $font;
 }
 
 /* 
@@ -35,28 +35,28 @@ li {
 */
 
 .btn-success {
-  @include button-style;
+	@include button-style;
 }
 
 .btn-square {
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  border: none;
-  background-color: $button-color;
-  font-weight: $button-font-weight;
-  padding: 10px;
-  cursor: pointer;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	background-color: $button-color;
+	font-weight: $button-font-weight;
+	padding: 10px;
+	cursor: pointer;
 
-  i {
-    color: white;
-  }
+	i {
+		color: white;
+	}
 
-  @media not all and (hover: none) {
-    &:hover {
-      background-color: #f39c12;
-    }
-  }
+	@media not all and (hover: none) {
+		&:hover {
+			background-color: #f39c12;
+		}
+	}
 }
 
 /* 
@@ -64,25 +64,25 @@ li {
 */
 
 .menu-lo-res-hamburger {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 7;
-  margin: 25px;
-  padding-right: 3px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 7;
+	margin: 25px;
+	padding-right: 3px;
 }
 
 .hamburger-lo-res-icon {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  fill: $button-color;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	fill: $button-color;
 
-  @media not all and (hover: none) {
-    &:hover {
-      fill: orange;
-    }
-  }
+	@media not all and (hover: none) {
+		&:hover {
+			fill: orange;
+		}
+	}
 }
 
 /* 
@@ -90,31 +90,31 @@ li {
 */
 
 .sidebar-logo-and-hamburger {
-  background-color: #14141d;
-  width: 188px;
-  height: 60px;
+	background-color: #14141d;
+	width: 188px;
+	height: 60px;
 }
 
 .logo-img {
-  width: 135px;
-  height: 60px;
-  padding: 15px 10px;
-  line-height: 60px;
+	width: 135px;
+	height: 60px;
+	padding: 15px 10px;
+	line-height: 60px;
 }
 
 .hamburger-img {
-  width: 22px;
-  height: 20px;
-  float: right;
-  margin-top: 20px;
-  margin-right: 20px;
-  fill: $font-color;
+	width: 22px;
+	height: 20px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	fill: $font-color;
 
-  @media not all and (hover: none) {
-    &:hover {
-      fill: orange;
-    }
-  }
+	@media not all and (hover: none) {
+		&:hover {
+			fill: orange;
+		}
+	}
 }
 
 /* 
@@ -122,43 +122,43 @@ li {
 */
 
 .component-sidebar-menu {
-  background-color: #14141d;
-  list-style-type: none;
-  width: 185px;
-  height: 39px;
+	background-color: #14141d;
+	list-style-type: none;
+	width: 185px;
+	height: 39px;
 
-  @media not all and (hover: none) {
-    &:hover {
-      background-color: #282828;
-      border-left: 3px solid orange;
-      z-index: 5;
+	@media not all and (hover: none) {
+		&:hover {
+			background-color: #282828;
+			border-left: 3px solid orange;
+			z-index: 5;
 
-      i,
-      .link-paragraph {
-        color: $white;
-      }
-    }
-  }
+			i,
+			.link-paragraph {
+				color: $white;
+			}
+		}
+	}
 }
 
 .component-sidebar-menu-link {
-  height: 39px;
-  line-height: 39px;
-  display: flex;
-  text-decoration: none;
-  justify-content: flex-start;
-  padding-top: 3px;
+	height: 39px;
+	line-height: 39px;
+	display: flex;
+	text-decoration: none;
+	justify-content: flex-start;
+	padding-top: 3px;
 
-  i {
-    font-size: 16px;
-    color: $font-color;
-    margin: 0 15px;
-  }
+	i {
+		font-size: 16px;
+		color: $font-color;
+		margin: 0 15px;
+	}
 
-  .link-paragraph {
-    line-height: 0;
-    font-weight: $menu-font-weight;
-  }
+	.link-paragraph {
+		line-height: 0;
+		font-weight: $menu-font-weight;
+	}
 }
 
 /* 
@@ -168,106 +168,106 @@ li {
 /*  Wallet  */
 
 .wallet-element {
-  width: 190px;
-  height: 60px;
-  border-left: 1px solid $divider-color;
-  border-right: 1px solid $divider-color;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-decoration: none;
-  color: $font-color;
+	width: 190px;
+	height: 60px;
+	border-left: 1px solid $divider-color;
+	border-right: 1px solid $divider-color;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-decoration: none;
+	color: $font-color;
 
-  p {
-    display: inline-block;
-  }
+	p {
+		display: inline-block;
+	}
 
-  i {
-    @media not all and (hover: none) {
-      &:hover {
-        color: $button-color;
-      }
-    }
-  }
+	i {
+		@media not all and (hover: none) {
+			&:hover {
+				color: $button-color;
+			}
+		}
+	}
 }
 
 /*  Notification  */
 
 .notification-element {
-  width: 60px;
-  height: 60px;
-  padding: 20px;
+	width: 60px;
+	height: 60px;
+	padding: 20px;
 
-  i {
-    color: $link-color;
+	i {
+		color: $link-color;
 
-    @media not all and (hover: none) {
-      &:hover {
-        color: $button-color;
-      }
-    }
-  }
+		@media not all and (hover: none) {
+			&:hover {
+				color: $button-color;
+			}
+		}
+	}
 
-  .orange-dot {
-    width: 10px;
-    height: 10px;
-    background-color: $button-color;
-    border-radius: 50%;
-    transform: translate(12px, -30px);
-  }
+	.orange-dot {
+		width: 10px;
+		height: 10px;
+		background-color: $button-color;
+		border-radius: 50%;
+		transform: translate(12px, -30px);
+	}
 }
 
 /*  Profile  */
 
 .profile-element {
-  width: 190px;
-  height: 60px;
-  border-left: 1px solid $divider-color;
-  border-right: 1px solid $divider-color;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	width: 190px;
+	height: 60px;
+	border-left: 1px solid $divider-color;
+	border-right: 1px solid $divider-color;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 
-  .profile-link {
-    text-decoration: none;
-  }
+	.profile-link {
+		text-decoration: none;
+	}
 
-  p,
-  i {
-    display: inline-block;
-    color: $link-color;
-  }
+	p,
+	i {
+		display: inline-block;
+		color: $link-color;
+	}
 
-  i {
-    font-size: 18px;
-    margin-right: 20px;
-    transform: translateY(3px);
-  }
+	i {
+		font-size: 18px;
+		margin-right: 20px;
+		transform: translateY(3px);
+	}
 
-  @media not all and (hover: none) {
-    &:hover i,
-    &:hover p {
-      color: $button-color;
-    }
-  }
+	@media not all and (hover: none) {
+		&:hover i,
+		&:hover p {
+			color: $button-color;
+		}
+	}
 }
 
 /*  Exit  */
 
 .exit-element {
-  width: 60px;
-  height: 60px;
-  padding: 20px 22px;
+	width: 60px;
+	height: 60px;
+	padding: 20px 22px;
 
-  i {
-    color: $link-color;
+	i {
+		color: $link-color;
 
-    @media not all and (hover: none) {
-      &:hover {
-        color: $button-color;
-      }
-    }
-  }
+		@media not all and (hover: none) {
+			&:hover {
+				color: $button-color;
+			}
+		}
+	}
 }
 
 /* 
@@ -275,38 +275,38 @@ li {
 */
 
 .wrap {
-  width: 100%;
+	width: 100%;
 }
 
 .general-table-top {
-  display: flex;
-  flex: wrap;
+	display: flex;
+	flex: wrap;
 }
 
 .table-name,
 .table-value {
-  border-bottom: 1px solid $divider-color;
-  line-height: 20px;
+	border-bottom: 1px solid $divider-color;
+	line-height: 20px;
 
-  p {
-    transform: translateY(10px);
-  }
+	p {
+		transform: translateY(10px);
+	}
 }
 
 .table-name {
-  flex: 5;
-  width: 250px;
+	flex: 5;
+	width: 250px;
 }
 
 .table-value {
-  flex: 1;
-  width: 50px;
-  text-align: right;
+	flex: 1;
+	width: 50px;
+	text-align: right;
 
-  p {
-    color: #333;
-    font-weight: $menu-font-weight;
-  }
+	p {
+		color: #333;
+		font-weight: $menu-font-weight;
+	}
 }
 
 /* 
@@ -314,83 +314,83 @@ li {
 */
 
 .table-row {
-  display: flex;
-  width: 100%;
-  height: auto;
-  flex: wrap;
-  border-top: 1px solid $divider-color;
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex: wrap;
+	border-top: 1px solid $divider-color;
 
-  @media not all and (hover: none) {
-    &:hover {
-      background-color: #f1f3f3;
-    }
-  }
+	@media not all and (hover: none) {
+		&:hover {
+			background-color: #f1f3f3;
+		}
+	}
 
-  @media not all and (hover: none) {
-    &:hover .icon-links {
-      color: $button-color;
-      display: inline-block;
-    }
-  }
+	@media not all and (hover: none) {
+		&:hover .icon-links {
+			color: $button-color;
+			display: inline-block;
+		}
+	}
 
-  @media not all and (hover: none) {
-    &:hover .icon-trash {
-      display: inline-block;
-    }
-  }
+	@media not all and (hover: none) {
+		&:hover .icon-trash {
+			display: inline-block;
+		}
+	}
 }
 
 .bottom-border {
-  border-bottom: 1px solid $divider-color;
+	border-bottom: 1px solid $divider-color;
 }
 
 .name-column {
-  flex: 4;
+	flex: 4;
 
-  p {
-    padding-left: 30px;
-    line-height: 60px;
-    margin: 0;
-  }
+	p {
+		padding-left: 30px;
+		line-height: 60px;
+		margin: 0;
+	}
 }
 
 .link-column {
-  flex: 4;
+	flex: 4;
 
-  a {
-    flex: 4;
-    line-height: 60px;
-    font-size: 16px;
-    text-decoration: none;
+	a {
+		flex: 4;
+		line-height: 60px;
+		font-size: 16px;
+		text-decoration: none;
 
-    @media not all and (hover: none) {
-      &:hover {
-        color: $button-color;
-      }
-    }
-  }
+		@media not all and (hover: none) {
+			&:hover {
+				color: $button-color;
+			}
+		}
+	}
 }
 
 .links-and-bin-column {
-  flex: 2;
-  padding: 0 20px;
-  text-align: right;
+	flex: 2;
+	padding: 0 20px;
+	text-align: right;
 
-  a {
-    text-decoration: none;
-  }
+	a {
+		text-decoration: none;
+	}
 
-  i {
-    font-size: 16px;
-    padding: 20px 8px;
-    display: none;
+	i {
+		font-size: 16px;
+		padding: 20px 8px;
+		display: none;
 
-    @media not all and (hover: none) {
-      &:hover {
-        color: $button-color;
-      }
-    }
-  }
+		@media not all and (hover: none) {
+			&:hover {
+				color: $button-color;
+			}
+		}
+	}
 }
 
 /* 
@@ -398,183 +398,209 @@ li {
 */
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-  overflow: auto;
-  padding: 30px;
-  display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+	padding: 30px;
+	display: none;
 }
 
 .overlay.show {
-  display: flex;
+	display: flex;
 }
 
 .overlay::webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 .modal {
-  margin: auto;
-  margin-top: 200px;
-  position: relative;
-  display: none;
+	margin: auto;
+	margin-top: 200px;
+	position: relative;
+	display: none;
+	border-radius: 3px;
+	background-color: $white;
 }
 
 .modal.show {
-  display: block;
+	display: block;
 }
 
 // Manager Modal \\
 
 .modal-manager {
-  width: 500px;
-  border-radius: 3px;
-  background-color: $white;
+	width: 500px;
 
-  p {
-    padding: 10px;
-    margin: 0;
-  }
+	p {
+		padding: 10px;
+		margin: 0;
+	}
 
-  .modal-header {
-    width: 100%;
-    display: flex;
-    border-top: 1px solid $divider-color;
-    border-bottom: 1px solid $divider-color;
-    padding: 10px;
+	.modal-header {
+		width: 100%;
+		display: flex;
+		border-top: 1px solid $divider-color;
+		border-bottom: 1px solid $divider-color;
+		padding: 10px;
 
-    img {
-      width: 60px;
-      height: 60px;
-    }
+		img {
+			width: 60px;
+			height: 60px;
+		}
 
-    .online-lable {
-      margin-left: 10px;
-      width: 65px;
-      height: 25px;
-      line-height: 25px;
-      background: limegreen;
-    }
-  }
+		.online-lable {
+			margin-left: 10px;
+			width: 65px;
+			height: 25px;
+			line-height: 25px;
+			background: limegreen;
+		}
+	}
 
-  .modal-buttons {
-    border-top: 1px solid $divider-color;
-    display: flex;
-    margin-top: 150px;
+	.modal-buttons {
+		border-top: 1px solid $divider-color;
+		display: flex;
+		margin-top: 150px;
 
-    button {
-      border: none;
-      margin: 8px;
-    }
+		button {
+			border: none;
+			margin: 8px;
+		}
 
-    .input {
-      width: 80%;
-      padding-left: 10px;
-    }
-  }
+		.input {
+			width: 80%;
+			padding-left: 10px;
+		}
+	}
 }
 
 // Quit Modal \\
 
 .modal-quit {
-  width: 450px;
-  height: 200px;
-  border-radius: 3px;
-  background-color: $white;
-  padding: 20px;
+	width: 450px;
+	height: 200px;
+	padding: 20px;
 
-  p {
-    border-bottom: 1px solid $divider-color;
-    padding-bottom: 30px;
-  }
+	p {
+		border-bottom: 1px solid $divider-color;
+		padding-bottom: 30px;
+	}
 
-  .btn-quit,
-  .btn-cancel {
-    @include button-style;
-    border: none;
-    margin-left: 20px;
-    margin-top: 10px;
-  }
+	.btn-quit,
+	.btn-cancel {
+		@include button-style;
+		border: none;
+		margin-left: 20px;
+		margin-top: 10px;
+	}
 
-  .btn-cancel {
-    background-color: #ccc;
+	.btn-cancel {
+		background-color: #ccc;
 
-    @media not all and (hover: none) {
-      &:hover.btn-cancel {
-        background-color: $divider-color;
-      }
-    }
-  }
+		@media not all and (hover: none) {
+			&:hover.btn-cancel {
+				background-color: $divider-color;
+			}
+		}
+	}
 
-  .modal-buttons {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-  }
+	.modal-buttons {
+		display: flex;
+		justify-content: flex-end;
+		padding: 10px;
+	}
 }
 
 // Login Modal \\
 
 .modal-login {
-  max-width: 800px;
-  min-height: 200px;
-  border-radius: 3px;
-  background-color: $white;
+	max-width: 800px;
+	min-height: 200px;
 
-  h5 {
-    border-bottom: 1px solid $divider-color;
-    padding: 15px;
-  }
+	h5 {
+		border-bottom: 1px solid $divider-color;
+		padding: 15px;
+	}
 
-  .btn-enter {
-    @include button-style;
-    width: 180px;
-    border: none;
-    margin: 10px;
+	.btn-enter {
+		@include button-style;
+		width: 180px;
+		border: none;
+		margin: 10px;
 
-    @media not all and (hover: none) {
-      &:hover.btn-enter {
-        background-color: #f39c12;
-      }
-    }
-  }
+		@media not all and (hover: none) {
+			&:hover.btn-enter {
+				background-color: #f39c12;
+			}
+		}
+	}
 
-  .modal-wrapper {
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
-  }
+	.modal-wrapper {
+		max-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 20px;
+		justify-content: center;
+		align-items: center;
+	}
 
-  .icon-login,
-  .icon-password {
-    font-size: 18px;
-    color: $font-color;
-    transform: translate(40px, 2px);
-  }
+	.icon-login,
+	.icon-password {
+		font-size: 18px;
+		color: $font-color;
+		transform: translate(40px, 2px);
+	}
 }
 
 .input {
-  width: 200px;
-  height: 40px;
-  margin: 10px;
-  border: 1px solid $divider-color;
-  border-radius: 2px;
-  color: $font-color;
-  font-family: $font;
-  font-size: $paragraph-font-size;
-  padding: 0 50px;
+	width: 200px;
+	height: 40px;
+	margin: 10px;
+	border: 1px solid $divider-color;
+	border-radius: 2px;
+	color: $font-color;
+	font-family: $font;
+	font-size: $paragraph-font-size;
+	padding: 0 50px;
+}
+
+// Add Link Modal \\
+
+.modal-add-link {
+	width: 100%;
+
+	p {
+		padding: 10px;
+		margin: 0;
+		border-bottom: 1px solid $divider-color;
+	}
+  
+	.btn-success {
+    border: none;
+		margin: 10px 0;
+	}
+  
+	.add-link-form {
+    padding: 10px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.input {
+		width: 100%;
+		padding-left: 10px;
+		margin: 10px auto;
+	}
 }
