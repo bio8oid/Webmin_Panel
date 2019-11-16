@@ -127,10 +127,10 @@
                 <p>ADD URL</p>
                 <div class="add-link-form">
                     <form>
-                        <input class="input" type="text" placeholder="New Name">
-                        <input class="input" type="text" placeholder="New Link">
+                        <input id="link-name-input" class="input" type="text" placeholder="New Name">
+                        <input id="link-value-input" class="input" type="text" placeholder="New Link">
                     </form>
-                    <button class="btn-success js--close-modal">Save</button>
+                    <button id="add-link-button" class="btn-success js--close-modal">Save</button>
                 </div>
             </div>
         </div>
@@ -344,11 +344,11 @@
                 <h3>LINKS</h3>
             </div>
 
-            <div class="wrapper ">
+            <div id="link-table" class="wrapper ">
 
                 <div class="btn btn-success button-links-top add-link-button">+ add new</div>
 
-                <div class="table-row">
+                <div id="link-element" class="table-row">
                     <div class="name-column">
                         <p>Home page</p>
                     </div>
@@ -518,9 +518,9 @@
                     </div>
                 </div>
 
-                <div class="btn btn-success button-links-top add-link-button">+ add new</div>
-
+                
             </div>
+            <div class="btn btn-success button-links-top add-link-button">+ add new</div>
         </div>
 
     </section>
@@ -528,6 +528,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script type="module" src="js/chart.js"></script>
     <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/addLink.js"></script>
 </body>
 
 </html>
