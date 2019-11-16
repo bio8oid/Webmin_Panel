@@ -1576,7 +1576,7 @@ li {
   height: auto;
   -ms-flex: wrap;
       flex: wrap;
-  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 @media not all and (hover: none) {
@@ -1598,8 +1598,8 @@ li {
   }
 }
 
-.bottom-border {
-  border-bottom: 1px solid #e3e3e3;
+.top-border {
+  border-top: 1px solid #e3e3e3;
 }
 
 .name-column {
@@ -1875,7 +1875,7 @@ li {
 }
 
 .modal-add-link {
-  width: 100%;
+  width: 500px;
 }
 
 .modal-add-link p {
@@ -1891,6 +1891,9 @@ li {
 
 .modal-add-link .add-link-form {
   padding: 10px 20px;
+}
+
+.modal-add-link .add-link-form form {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;

@@ -126,11 +126,11 @@
             <div class="modal-add-link">
                 <p>ADD URL</p>
                 <div class="add-link-form">
-                    <form>
-                        <input id="link-name-input" class="input" type="text" placeholder="New Name">
-                        <input id="link-value-input" class="input" type="text" placeholder="New Link">
+                    <form autocomplete="on">
+                        <input id="link-name-input" class="input" type="text" placeholder="New Name" required />
+                        <input id="link-value-input" class="input" type="url" placeholder="New URL" required />
+                        <button type="submit" id="add-link-button" class="btn-success js--close-modal">Save</button>
                     </form>
-                    <button id="add-link-button" class="btn-success js--close-modal">Save</button>
                 </div>
             </div>
         </div>
@@ -348,7 +348,7 @@
 
                 <div class="btn btn-success button-links-top add-link-button">+ add new</div>
 
-                <div id="link-element" class="table-row">
+                <div id="link-element" class="table-row top-border">
                     <div class="name-column">
                         <p>Home page</p>
                     </div>
@@ -359,7 +359,7 @@
                         <a href="#">
                             <i class="icon-links"></i>
                         </a>
-                        <a href="#">
+                        <a class="trash-button">
                             <i class="icon-trash"></i>
                         </a>
                     </div>
@@ -376,7 +376,7 @@
                         <a href="#">
                             <i class="icon-links"></i>
                         </a>
-                        <a href="#">
+                        <a class="trash-button">
                             <i class="icon-trash"></i>
                         </a>
                     </div>
@@ -393,7 +393,7 @@
                         <a href="#">
                             <i class="icon-links"></i>
                         </a>
-                        <a href="#">
+                        <a class="trash-button">
                             <i class="icon-trash"></i>
                         </a>
                     </div>
@@ -410,7 +410,7 @@
                         <a href="#">
                             <i class="icon-links"></i>
                         </a>
-                        <a href="#">
+                        <a class="trash-button">
                             <i class="icon-trash"></i>
                         </a>
                     </div>
@@ -427,7 +427,7 @@
                         <a href="#">
                             <i class="icon-links"></i>
                         </a>
-                        <a href="#">
+                        <a class="trash-button">
                             <i class="icon-trash"></i>
                         </a>
                     </div>
@@ -444,7 +444,7 @@
                         <a href="#">
                             <i class="icon-links"></i>
                         </a>
-                        <a href="#">
+                        <a class="trash-button">
                             <i class="icon-trash"></i>
                         </a>
                     </div>
@@ -461,7 +461,7 @@
                         <a href="#">
                             <i class="icon-links"></i>
                         </a>
-                        <a href="#">
+                        <a class="trash-button">
                             <i class="icon-trash"></i>
                         </a>
                     </div>
@@ -478,7 +478,7 @@
                         <a href="#">
                             <i class="icon-links"></i>
                         </a>
-                        <a href="#">
+                        <a class="trash-button">
                             <i class="icon-trash"></i>
                         </a>
                     </div>
@@ -495,13 +495,13 @@
                         <a href="#">
                             <i class="icon-links"></i>
                         </a>
-                        <a href="#">
+                        <a class="trash-button">
                             <i class="icon-trash"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="table-row bottom-border">
+                <div class="table-row">
                     <div class="name-column">
                         <p>Twitter</p>
                     </div>
@@ -512,13 +512,12 @@
                         <a href="#">
                             <i class="icon-links"></i>
                         </a>
-                        <a href="#">
+                        <a class="trash-button">
                             <i class="icon-trash"></i>
                         </a>
                     </div>
                 </div>
 
-                
             </div>
             <div class="btn btn-success button-links-top add-link-button">+ add new</div>
         </div>
