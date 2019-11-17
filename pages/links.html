@@ -118,6 +118,22 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Add Link Modal -->
+		
+		<div class="modal" id="add-link">
+			<div class="modal-add-link">
+				<p>ADD URL</p>
+				<div class="add-link-form">
+					<form autocomplete="on">
+						<input id="link-name-input" class="input" type="text" placeholder="New Name" required />
+						<input id="link-value-input" class="input" type="url" placeholder="New URL" required />
+						<button type="submit" id="add-link-button" class="btn-success js--close-modal">Save</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 	<!--  Sidebar -->
@@ -250,9 +266,9 @@
 				<h3>LINKS</h3>
 			</div>
 
-			<div class="wrapper">
+			<div id="link-table" class="wrapper">
 
-				<div class="btn btn-success button-links-top">+ add new</div>
+				<div class="btn btn-success button-links-top add-link-button">+ add new</div>
 
 				<div class="table-row">
 					<div class="name-column">
@@ -262,8 +278,8 @@
 						<a href="https://www.homepage.org/" target="_blank">http://www.homepage.com</a>
 					</div>
 					<div class="links-and-bin-column">
-						<a href="#"><i class="icon-links"></i></a>
-						<a href="#"><i class="icon-trash"></i></a>
+						<a><i class="icon-links"></i></a>
+						<a class="trash-button"><i class="icon-trash"></i></a>
 					</div>
 				</div>
 
@@ -275,8 +291,8 @@
 						<a href="http://www.currently.com" target="_blank">http://www.currently.com</a>
 					</div>
 					<div class="links-and-bin-column">
-						<a href="#"><i class="icon-links"></i></a>
-						<a href="#"><i class="icon-trash"></i></a>
+						<a><i class="icon-links"></i></a>
+						<a class="trash-button"><i class="icon-trash"></i></a>
 					</div>
 				</div>
 
@@ -288,8 +304,8 @@
 						<a href="http://www.blurpix.com" target="_blank">http://www.blurpix.com</a>
 					</div>
 					<div class="links-and-bin-column">
-						<a href="#"><i class="icon-links"></i></a>
-						<a href="#"><i class="icon-trash"></i></a>
+						<a><i class="icon-links"></i></a>
+						<a class="trash-button"><i class="icon-trash"></i></a>
 					</div>
 				</div>
 
@@ -301,8 +317,8 @@
 						<a href="http://www.yoursite.com" target="_blank">http://www.yoursite.com</a>
 					</div>
 					<div class="links-and-bin-column">
-						<a href="#"><i class="icon-links"></i></a>
-						<a href="#"><i class="icon-trash"></i></a>
+						<a><i class="icon-links"></i></a>
+						<a class="trash-button"><i class="icon-trash"></i></a>
 					</div>
 				</div>
 
@@ -314,8 +330,8 @@
 						<a href="http://www.google.com" target="_blank">http://www.google.com</a>
 					</div>
 					<div class="links-and-bin-column">
-						<a href="#"><i class="icon-links"></i></a>
-						<a href="#"><i class="icon-trash"></i></a>
+						<a><i class="icon-links"></i></a>
+						<a class="trash-button"><i class="icon-trash"></i></a>
 					</div>
 				</div>
 
@@ -327,8 +343,8 @@
 						<a href="http://www.facebook.com" target="_blank">http://www.facebook.com</a>
 					</div>
 					<div class="links-and-bin-column">
-						<a href="#"><i class="icon-links"></i></a>
-						<a href="#"><i class="icon-trash"></i></a>
+						<a><i class="icon-links"></i></a>
+						<a class="trash-button"><i class="icon-trash"></i></a>
 					</div>
 				</div>
 
@@ -340,8 +356,8 @@
 						<a href="http://www.dashboard.com" target="_blank">http://www.dashboard.com</a>
 					</div>
 					<div class="links-and-bin-column">
-						<a href="#"><i class="icon-links"></i></a>
-						<a href="#"><i class="icon-trash"></i></a>
+						<a><i class="icon-links"></i></a>
+						<a class="trash-button"><i class="icon-trash"></i></a>
 					</div>
 				</div>
 
@@ -353,8 +369,8 @@
 						<a href="http://www.blurax.com" target="_blank">http://www.blurax.com</a>
 					</div>
 					<div class="links-and-bin-column">
-						<a href="#"><i class="icon-links"></i></a>
-						<a href="#"><i class="icon-trash"></i></a>
+						<a><i class="icon-links"></i></a>
+						<a class="trash-button"><i class="icon-trash"></i></a>
 					</div>
 				</div>
 
@@ -366,8 +382,8 @@
 						<a href="http://www.pieceofwine.com" target="_blank">http://www.pieceofwine.com</a>
 					</div>
 					<div class="links-and-bin-column">
-						<a href="#"><i class="icon-links"></i></a>
-						<a href="#"><i class="icon-trash"></i></a>
+						<a><i class="icon-links"></i></a>
+						<a class="trash-button"><i class="icon-trash"></i></a>
 					</div>
 				</div>
 
@@ -379,18 +395,19 @@
 						<a href="http://www.twitter.com" target="_blank">http://www.twitter.com</a>
 					</div>
 					<div class="links-and-bin-column">
-						<a href="#"><i class="icon-links"></i></a>
-						<a href="#"><i class="icon-trash"></i></a>
+						<a><i class="icon-links"></i></a>
+						<a class="trash-button"><i class="icon-trash"></i></a>
 					</div>
 				</div>
 
-				<div class="btn btn-success button-links-top">+ add new</div>
-
 			</div>
+
+			<div class="btn btn-success button-links-top add-link-button">+ add new</div>
 		</div>
 	</section>
 
 	<script src="../js/script.js"></script>
+	<script src="../js/addLink.js"></script>
 
 </body>
 
