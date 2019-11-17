@@ -1,3 +1,5 @@
+///     ADD NEW LINK HANDLE    \\\
+
 const createElement = () => {
 
     // Links Table Element
@@ -23,6 +25,7 @@ const createElement = () => {
     const LinkText = document.createTextNode(linkInputValue);
     link.setAttribute('href', linkInputValue);
     link.setAttribute('target', "_blank");
+    link.classList.add('copy-link-value');
     link.appendChild(LinkText);
     const newLink = document.createElement('div');
     newLink.appendChild(link);
@@ -36,6 +39,7 @@ const createElement = () => {
     const linkIcon = document.createElement('i');
     linkIcon.classList.add('icon-links');
     const linkElement = document.createElement('a');
+    linkElement.classList.add('copy-link');
     linkElement.appendChild(linkIcon);
     newIcons.appendChild(linkElement);
 
@@ -57,9 +61,17 @@ const createElement = () => {
     }
 }
 
+// Remove Link function
 const removeElement = (e) => {
     const toRemove = e.target;
     toRemove.parentNode.parentNode.parentNode.parentNode.removeChild(toRemove.parentNode.parentNode.parentNode);
+}
+
+// Copy Link to clipboard
+const copyLink = (e) => {
+    const linkContent = e.target.parentNode.parentNode.parentNode.children[1].children[0].innerHTML;
+    navigator.clipboard.writeText(linkContent)
+    alert("Your Link has been copied to CLIPBOARD!");
 }
 
 // Add New Link Button
@@ -70,4 +82,10 @@ addLinkButton.addEventListener('click', createElement);
 const removeLinkButtons = document.querySelectorAll('.trash-button');
 for (const button of removeLinkButtons) {
     button.addEventListener('click', removeElement);
+}
+
+// Copy Link Button
+const copyLinkButtons = document.querySelectorAll('.copy-link');
+for (const button of copyLinkButtons) {
+    button.addEventListener('click', copyLink);
 }
