@@ -40,6 +40,7 @@ const createElement = () => {
     linkIcon.classList.add('icon-links');
     const linkElement = document.createElement('a');
     linkElement.classList.add('copy-link');
+    linkElement.addEventListener('click', copyLink);
     linkElement.appendChild(linkIcon);
     newIcons.appendChild(linkElement);
 
