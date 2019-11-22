@@ -90,3 +90,7 @@ const copyLinkButtons = document.querySelectorAll('.copy-link');
 for (const button of copyLinkButtons) {
     button.addEventListener('click', copyLink);
 }
+
+
+// export * from 'addLink.js';
+export default createElement;

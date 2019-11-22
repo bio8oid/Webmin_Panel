@@ -34,3 +34,5 @@ var chart = new Chart(ctx, {
     },
 });
 
+// export * from 'chart.js';
+export default chart;

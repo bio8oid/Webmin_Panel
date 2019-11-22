@@ -3,3 +3,6 @@
         page: 9,
         pagination: true
     });
+
+// export * from 'pagination.js';
+export default monkeyList;
