@@ -4,7 +4,11 @@
   "description": "My project link:",
   "main": "index.js",
   "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "chart.js": "^2.8.0",
+    "gulp": "^4.0.2",
     "imagemin-cli": "^4.0.1",
     "rimraf": "^2.6.3"
   },
@@ -34,7 +38,7 @@
     "build:remove": "rm -r docs",
     "build:dirs": "mkdirp docs",
     "build:copydir": "cp *.html -r css fonts images js docs/",
-    "pbuild": "parcel build js/script.js --no-cache -d build/output --public-url ./",
+    "pbuild": "parcel build js/script.js **/*.html --no-cache -d build/output --public-url ./",
     "watch": "npm-run-all -p watch:*",
     "watch:sassprefixer": "onchange sass -- npm-run-all -p sassprefixer:*",
     "watch:browsersync": "browser-sync start --reload-debounce 500 --server --files css/*.css index.html pages/details.html",
