@@ -8,4 +8,4 @@ $(".js-range-slider").ionRangeSlider({
 });
 
 // export * from 'slider.js';
-export default ionRangeSlider;
+// export default ionRangeSlider;

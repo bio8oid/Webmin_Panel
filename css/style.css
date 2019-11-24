@@ -1752,12 +1752,12 @@ li {
 .modal-quit {
   width: 450px;
   height: 200px;
-  padding: 20px;
 }
 
 .modal-quit p {
   border-bottom: 1px solid #e3e3e3;
-  padding-bottom: 30px;
+  margin: 0;
+  padding: 10px;
 }
 
 .modal-quit .btn-quit,
@@ -1774,8 +1774,7 @@ li {
   text-align: center;
   cursor: pointer;
   border: none;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 80px;
 }
 
 @media not all and (hover: none) {
@@ -1786,6 +1785,7 @@ li {
 }
 
 .modal-quit .btn-cancel {
+  margin-right: 20px;
   background-color: #ccc;
 }
 
@@ -1800,7 +1800,9 @@ li {
   display: flex;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  padding: 10px;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  padding: 20px;
 }
 
 .modal-login {
@@ -1810,7 +1812,9 @@ li {
 
 .modal-login h5 {
   border-bottom: 1px solid #e3e3e3;
-  padding: 15px;
+  margin: 0;
+  padding: 10px;
+  font-weight: 700;
 }
 
 .modal-login .btn-enter {
@@ -2161,10 +2165,6 @@ ul {
   height: 600px;
 }
 
-.table-wrapper .list .tr:last-child {
-  border-bottom: 1px solid #e3e3e3;
-}
-
 .table-wrapper .table-header {
   border-top: none;
 }
@@ -2271,10 +2271,6 @@ ul {
 
 .table-wrapper .list {
   height: 600px;
-}
-
-.table-wrapper .list .tr:last-child {
-  border-bottom: 1px solid #e3e3e3;
 }
 
 .table-wrapper .table-header {
@@ -2924,6 +2920,15 @@ body {
     -ms-flex-align: center;
         align-items: center;
     width: 100%;
+  }
+  .modal-quit p {
+    width: 100%;
+  }
+  .modal-quit .modal-buttons {
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
 }
 

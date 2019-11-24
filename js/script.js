@@ -1,7 +1,7 @@
-import ionRangeSlider from '/slider';
-import monkeyList from './pagination';
-import chart from '/chart';
-import createElement from '/addLink';
+// import ionRangeSlider from '/slider';
+// import monkeyList from './pagination';
+// import chart from '/chart';
+// import createElement from '/addLink';
 
   window.onload = () => {
 
