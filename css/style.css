@@ -1732,11 +1732,50 @@ li {
   background: limegreen;
 }
 
+.modal-manager .chat-content {
+  height: 300px;
+  overflow: auto;
+}
+
+.modal-manager .chat-content .your-post,
+.modal-manager .chat-content .admin-post {
+  width: 70%;
+  min-height: 50px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 25%;
+  background: #cff4ff;
+  padding: 5px;
+}
+
+.modal-manager .chat-content .your-post p,
+.modal-manager .chat-content .admin-post p {
+  color: #333;
+}
+
+.modal-manager .chat-content .admin-post {
+  margin: 10px 25% 10px 10px;
+  background: #d5ffcf;
+}
+
+.modal-manager .chat-content::-webkit-scrollbar-thumb {
+  background: #a6a6a6;
+}
+
+.modal-manager .chat-content::-webkit-scrollbar {
+  background: #e3e3e3;
+}
+
 .modal-manager .modal-buttons {
   border-top: 1px solid #e3e3e3;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 150px;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.modal-manager .modal-buttons form {
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modal-manager .modal-buttons button {
@@ -1784,17 +1823,6 @@ li {
   }
 }
 
-.modal-quit .btn-cancel {
-  margin-right: 20px;
-  background-color: #ccc;
-}
-
-@media not all and (hover: none) {
-  .modal-quit .btn-cancel:hover.btn-cancel {
-    background-color: #e3e3e3;
-  }
-}
-
 .modal-quit .modal-buttons {
   display: -ms-flexbox;
   display: flex;
@@ -1803,6 +1831,17 @@ li {
   -ms-flex-align: end;
       align-items: flex-end;
   padding: 20px;
+}
+
+.btn-cancel {
+  margin-right: 20px;
+  background-color: #ccc;
+}
+
+@media not all and (hover: none) {
+  .btn-cancel:hover.btn-cancel {
+    background-color: #e3e3e3;
+  }
 }
 
 .modal-login {
@@ -2920,15 +2959,6 @@ body {
     -ms-flex-align: center;
         align-items: center;
     width: 100%;
-  }
-  .modal-quit p {
-    width: 100%;
-  }
-  .modal-quit .modal-buttons {
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
   }
 }
 

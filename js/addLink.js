@@ -58,24 +58,24 @@ const createElement = () => {
     if (linkInputValue.length && nameInputValue.length > 0) {
         linkTable.appendChild(newTableRow);
     } else {
-        alert("Enter Name and URL")
-    }
-}
+        alert("Enter Name and URL");
+    };
+};
 
 // Remove Link function
 const removeElement = (e) => {
     const toRemove = e.target;
     toRemove.parentNode.parentNode.parentNode.parentNode.removeChild(toRemove.parentNode.parentNode.parentNode);
-}
+};
 
 // Copy Link to clipboard
 const copyLink = (e) => {
     const linkContent = e.target.parentNode.parentNode.parentNode.children[1].children[0].innerHTML;
-    navigator.clipboard.writeText(linkContent)
+    navigator.clipboard.writeText(linkContent);
     alert("Your Link has been copied to CLIPBOARD!");
-}
+};
 
-// Add New Link Button
+// Add New Link Element Handle
 const addLinkButton = document.getElementById('add-link-button');
 addLinkButton.addEventListener('click', createElement);
 
@@ -83,14 +83,10 @@ addLinkButton.addEventListener('click', createElement);
 const removeLinkButtons = document.querySelectorAll('.trash-button');
 for (const button of removeLinkButtons) {
     button.addEventListener('click', removeElement);
-}
+};
 
 // Copy Link Button
 const copyLinkButtons = document.querySelectorAll('.copy-link');
 for (const button of copyLinkButtons) {
     button.addEventListener('click', copyLink);
-}
-
-
-// export * from 'addLink.js';
-// export default createElement;
+};

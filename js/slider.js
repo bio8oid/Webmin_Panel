@@ -6,6 +6,3 @@ $(".js-range-slider").ionRangeSlider({
   from: 104,
   postfix: ' hours'
 });
-
-// export * from 'slider.js';
-// export default ionRangeSlider;

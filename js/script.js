@@ -1,7 +1,3 @@
-// import ionRangeSlider from '/slider';
-// import monkeyList from './pagination';
-// import chart from '/chart';
-// import createElement from '/addLink';
 
   window.onload = () => {
 
@@ -28,10 +24,10 @@
 
   const toggleSmallMenu = visible => {
     document.getElementById('sidebar-section').classList.toggle('sidebar-small', visible);
-
+    
     document.body.classList.toggle('widen');
   };
-
+  
   document.getElementById('sidebar-burger').addEventListener('click', e  => {
     e.preventDefault();
     toggleSmallMenu();
@@ -43,7 +39,7 @@
 
   const closeModal = () => {
     document.getElementById('overlay').classList.remove('show');
-  }
+  };
 
   document.querySelectorAll('#overlay .js--close-modal').forEach(btn => {
     btn.addEventListener('click', e  => {
