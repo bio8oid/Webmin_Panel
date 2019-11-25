@@ -10,7 +10,7 @@
 
 <body class="registration-form-template">
 
-    <!-- Topbar Siedebar and Modals -->
+    <!-- Topbar -->
 
     <section class="container bar">
         <div class="topbar">
@@ -46,7 +46,7 @@
         </div>
     </section>
 
-    <!-- Menu Sidebar -->
+    <!-- Topbar Burger -->
 
     <div id="menu-burger" class="menu-lo-res-hamburger">
         <a href="#">
@@ -91,20 +91,20 @@
                     <img src="images/main-manager.png" alt="manager image">
                     <div class="status-wrapper">
                         <p>John Doe</p>
-                        <div class="btn-success online-lable">online</div>
+                        <div id="label" class="btn-success online-label">online</div>
                     </div>
                 </div>
                 <div id="chat" class="chat-content">
                     <div class="admin-post">
-                        <p>Hello. How can I help?</p>
+                        <p>Hello.<br>How can I help?</p>
                     </div>
                 </div>
                 <div class="modal-buttons">
-                   <form>
+                    <form>
                         <input id="chat-input" class="input" type="text" placeholder="Enter your message">
                         <button type="submit" id="chat-button" class="btn-success send-button">Send</button>
                     </form>
-                    <button class="btn-success btn-cancel js--close-modal">Close </button>
+                    <button class="btn-success btn-cancel js--close-modal">Close</button>
                 </div>
             </div>
         </div>
@@ -226,7 +226,7 @@
             <div class="sidebar-manager-section">
                 <p>YOUR ADMIN</p>
                 <a id="contact-manager" href="#">
-                    <div class="green-dottie"></div>
+                    <div id="dottie" class="green-dottie"></div>
                     <img src="images/main-manager.png" alt="manager image">
                     <p>John Doe</p>
                 </a>

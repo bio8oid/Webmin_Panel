@@ -10,7 +10,7 @@
 
 <body class="registration-form-template">
 
-	<!--  Topbar Siedebar and Modals -->
+	<!--  Topbar  -->
 
 	<section class="container bar">
 		<div class="topbar">
@@ -46,7 +46,7 @@
 		</div>
 	</section>
 
-	<!-- Menu Sidebar Toggle and Modals -->
+	<!-- Topbar Burger -->
 
 	<div id="menu-burger" class="menu-lo-res-hamburger">
 		<a href="#">
@@ -85,17 +85,25 @@
 
 		<div class="modal" id="manager">
 			<div class="modal-manager">
-				<p>ONLINE CHAT WITH YOUR PERSONAL MANAGER</p>
+				<p>ONLINE CHAT WITH YOUR PERSONAL ADMIN</p>
 				<div class="modal-header">
 					<img src="../images/main-manager.png" alt="manager image">
 					<div class="status-wrapper">
 						<p>John Doe</p>
-						<div class="btn-success online-lable">online</div>
+						<div id="label" class="btn-success online-label">online</div>
+					</div>
+				</div>
+				<div id="chat" class="chat-content">
+					<div class="admin-post">
+						<p>Hello.<br>How can I help?</p>
 					</div>
 				</div>
 				<div class="modal-buttons">
-					<input class="input" type="text" placeholder="Enter your message">
-					<button class="btn-success js--close-modal">Send</button>
+					<form>
+						<input id="chat-input" class="input" type="text" placeholder="Enter your message">
+						<button type="submit" id="chat-button" class="btn-success send-button">Send</button>
+					</form>
+					<button class="btn-success btn-cancel js--close-modal">Close</button>
 				</div>
 			</div>
 		</div>
@@ -201,8 +209,8 @@
 			<div class="sidebar-manager-section">
 				<p>YOUR ADMIN</p>
 				<a id="contact-manager" href="#">
-					<div class="green-dottie"></div>
-					<img src="../images/main-manager.png" alt="manager image">
+					<div id="dottie" class="green-dottie"></div>
+					<img src="../../images/main-manager.png" alt="manager image">
 					<p>John Doe</p>
 				</a>
 			</div>
@@ -254,7 +262,7 @@
 					<input class="right-calendar-input" type="date" value="2016-05-16">
 					<i class="icon-calendar"></i>
 				</form>
-				<button id="general-calendar-reset" class="btn-square calendar-button" type="button"  value="Reset form">
+				<button id="general-calendar-reset" class="btn-square calendar-button" type="button" value="Reset form">
 					<i class="icon-refresh"></i>
 				</button>
 			</div>
@@ -672,6 +680,7 @@
 
 	<script type="module" src="../js/pagination.js"></script>
 	<script type="module" src="../js/script.js"></script>
+	<script type="module" src="../js/chat.js"></script>
 
 </body>
 

@@ -1,3 +1,9 @@
+// Posts counter
+let posts = 0;
+
+
+// Post Element Handle Function
+
 const chatElement = (e) => {
     e.preventDefault();
 
@@ -5,7 +11,7 @@ const chatElement = (e) => {
     const chatContentElement = document.getElementById('chat');
 
     // Chat Element
-    const postElement = document.createElement('div');
+    let postElement = document.createElement('div');
     postElement.classList.add('your-post');
 
     // Post
@@ -15,6 +21,45 @@ const chatElement = (e) => {
     postParagraph.appendChild(postValue);
     postElement.appendChild(postParagraph);
     chatContentElement.appendChild(postElement);
+    document.getElementById('chat-input').value = "";
+
+    // Admin Answeres Handle
+
+    setTimeout(() => {
+        if (posts === 1) {
+            // Second Admin Post
+            postElement = document.createElement('div');
+            postElement.classList.add('admin-post');
+            const postParagraph = document.createElement('p');
+            const postValue = document.createTextNode('Can you tell me more about your problem?');
+            postParagraph.appendChild(postValue);
+            postElement.appendChild(postParagraph);
+            chatContentElement.appendChild(postElement);
+        }
+        if (posts === 2) {
+            // Third Admin Post
+            postElement = document.createElement('div');
+            postElement.classList.add('admin-post');
+            const postParagraph = document.createElement('p');
+            const postValue = document.createTextNode('Try this solution mate: ');
+            const solutionLink = document.createElement('a');
+            const linkContent = document.createTextNode('Solution Link');
+            solutionLink.setAttribute('href', 'https://www.google.com/');
+            solutionLink.setAttribute('target', "_blank");
+            solutionLink.appendChild(linkContent);
+            solutionLink.style.marginLeft='20px';
+            postParagraph.appendChild(postValue);
+            postElement.appendChild(postParagraph);
+            postElement.appendChild(solutionLink);
+            chatContentElement.appendChild(postElement);
+            const label = document.getElementById('label');
+            label.style.background='red';
+            label.innerHTML="offline";
+            const dottie = document.getElementById('dottie');
+            dottie.style.background='red';
+        }
+ }, 1000);
+    posts++
 };
 
 // Add New Post
