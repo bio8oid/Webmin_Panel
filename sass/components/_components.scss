@@ -501,8 +501,6 @@ li {
 
 	.modal-buttons {
 		border-top: 1px solid $divider-color;
-		display: flex;
-		justify-content: flex-end;
 
 		form {
 			display: flex;
@@ -545,15 +543,15 @@ li {
 		align-items: flex-end;
 		padding: 20px;
 	}
-}
 
-.btn-cancel {
-	margin-right: 20px;
-	background-color: #ccc;
+	.btn-cancel {
+		margin-right: 20px;
+		background-color: #ccc;
 
-	@media not all and (hover: none) {
-		&:hover.btn-cancel {
-			background-color: $divider-color;
+		@media not all and (hover: none) {
+			&:hover.btn-cancel {
+				background-color: $divider-color;
+			}
 		}
 	}
 }

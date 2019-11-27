@@ -1767,10 +1767,6 @@ li {
 
 .modal-manager .modal-buttons {
   border-top: 1px solid #e3e3e3;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
 }
 
 .modal-manager .modal-buttons form {
@@ -1833,13 +1829,13 @@ li {
   padding: 20px;
 }
 
-.btn-cancel {
+.modal-quit .btn-cancel {
   margin-right: 20px;
   background-color: #ccc;
 }
 
 @media not all and (hover: none) {
-  .btn-cancel:hover.btn-cancel {
+  .modal-quit .btn-cancel:hover.btn-cancel {
     background-color: #e3e3e3;
   }
 }
@@ -2587,6 +2583,15 @@ ul {
   }
 }
 
+.pixel-modal-body h1 {
+  color: #f58220;
+}
+
+.pixel-modal-body p,
+.pixel-modal-body h1 {
+  text-align: center;
+}
+
 .banners-wrapper {
   width: 80%;
   margin: 0 auto;
@@ -2806,6 +2811,15 @@ ul {
     border-left: none;
     border-top: 1px solid #e3e3e3;
   }
+}
+
+.pixel-modal-body h1 {
+  color: #f58220;
+}
+
+.pixel-modal-body p,
+.pixel-modal-body h1 {
+  text-align: center;
 }
 
 /* Fonts */

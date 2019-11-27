@@ -48,8 +48,8 @@ window.onload = () => {
     });
   });
 
-  document.querySelectorAll('#overlay').addEventListener('click', e => {
-    if (e.target === this) {
+  document.querySelector('#overlay').addEventListener('click', e => {
+    if (e.target.id === 'overlay') {
       closeModal();
     };
   });
@@ -68,31 +68,37 @@ window.onload = () => {
     document.querySelector(modal).classList.add('show');
   };
 
+  // Quit Modal
   document.getElementById('exit').addEventListener('click', e => {
     e.preventDefault();
     openModal('#myModal');
   });
 
+  // Login Modal
   document.getElementById('login').addEventListener('click', e => {
     e.preventDefault();
     openModal('#loginModal');
   });
 
+  // Sidebar Quit Modal
   document.getElementById('exit-sidebar').addEventListener('click', e => {
     e.preventDefault();
     openModal('#myModal');
   });
 
+  // Sidebar Login Modal
   document.getElementById('login-sidebar').addEventListener('click', e => {
     e.preventDefault();
     openModal('#loginModal');
   });
 
+  // Sidebar Admin Modal
   document.getElementById('contact-manager').addEventListener('click', e => {
     e.preventDefault();
     openModal('#manager');
   });
 
+  // Add-Link/Banner Modal
   document.querySelectorAll('.add-link-button').forEach(item => {
     item.addEventListener('click', e => {
       e.preventDefault();
@@ -100,8 +106,11 @@ window.onload = () => {
     });
   });
 
-  document.getElementById('contact-manager').addEventListener('click', e => {
-    e.preventDefault();
-    openModal('#manager');
-  });
+  // Create Pixel Modal
+  if (window.location.href.indexOf('postback') > -1) {
+    document.getElementById('create-pixel').addEventListener('click', e => {
+      e.preventDefault();
+      openModal('#pixel');
+    });
+  };
 };
