@@ -1,14 +1,6 @@
 
 window.onload = () => {
 
-  // Reset General Statistic Calendar \\
-
-  if (window.location.href.indexOf('index') > -1 || window.location.href.indexOf('details') > -1 || window.location.href.indexOf('payout') > -1) {
-    document.getElementById("general-calendar-reset").addEventListener('click', () => {
-      document.getElementById("general-calendar-form").reset();
-    });
-  };
-
   // Hamburger menu function \\
 
   const toggleMenu = visible => {
@@ -111,6 +103,14 @@ window.onload = () => {
     document.getElementById('create-pixel').addEventListener('click', e => {
       e.preventDefault();
       openModal('#pixel');
+    });
+  };
+
+  // Reset General Statistic Calendar \\
+
+  if (window.location.href.indexOf('index') > -1 || window.location.href.indexOf('details') > -1 || window.location.href.indexOf('payout') > -1) {
+    document.getElementById("general-calendar-reset").addEventListener('click', () => {
+      document.getElementById("general-calendar-form").reset();
     });
   };
 };
