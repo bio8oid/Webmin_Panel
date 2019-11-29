@@ -6,4 +6,5 @@ if (url.indexOf('details') > -1 || url.indexOf('payout') > -1) {
         page: 9,
         pagination: true
     });
+    
 };

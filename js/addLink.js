@@ -96,4 +96,5 @@ if (url.indexOf('pages') > -1 === false ||
     for (const button of copyLinkButtons) {
         button.addEventListener('click', copyLink);
     };
-}
+    
+};

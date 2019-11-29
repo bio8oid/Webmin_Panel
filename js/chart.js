@@ -36,4 +36,5 @@ if (url.indexOf('pages') > -1 === false || url.indexOf('index') > -1) {
             }]
         },
     });
+    
 };

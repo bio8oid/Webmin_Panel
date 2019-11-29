@@ -8,4 +8,4 @@ if (window.location.href.indexOf('postback') > -1) {
     postfix: ' hours'
   });
 
-}
+};

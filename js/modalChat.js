@@ -24,7 +24,7 @@ const chatElement = (e) => {
     chatContentElement.appendChild(postElement);
     document.getElementById('chat-input').value = "";
 
-    // Admin Answeres Handle
+    // Admin Answers Handle
 
     setTimeout(() => {
         if (posts === 1) {
@@ -58,7 +58,7 @@ const chatElement = (e) => {
             label.innerHTML="offline";
             const dottie = document.getElementById('dottie');
             dottie.style.background='red';
-        }
+        };
  }, 1000);
     posts++
 };
