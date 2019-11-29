@@ -1,6 +1,7 @@
+///   ADMIN MODAL CHAT   \\\
+
 // Posts counter
 let posts = 0;
-
 
 // Post Element Handle Function
 

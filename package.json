@@ -1,54 +1,30 @@
 {
-  "name": "learning-git-2",
+  "name": "webmin-panel",
   "version": "1.0.0",
-  "description": "My project link:",
+  "description": "My project link: https://github.com/bio8oid/9__User_Panel",
   "main": "index.js",
   "dependencies": {
-    "chart.js": "^2.8.0"
+    "chart.js": "^2.8.0",
+    "core-js": "^3.4.5"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
-    "autoprefixer-cli": "^1.0.0",
-    "browser-sync": "^2.26.7",
-    "imagemin-cli": "^5.0.0",
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.12.0",
-    "npm-run-all": "^4.1.5",
-    "onchange": "^5.2.0",
-    "prettier": "^1.18.2",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.12.4",
     "rimraf": "^3.0.0"
   },
   "scripts": {
-    "test": "npm run test:html",
-    "test:html": "prettier --write \"docs/**/*.{js,html,scss}\"",
-    "init-project": "npm install && npm-run-all init:*",
-    "init:dirs": "mkdirp sass css vendor images js",
-    "init:files": "touch README.md index.html sass/style.scss js/script.js",
-    "init:gitignore": "curl -k https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-    "build": "npm-run-all build:* ",
-    "build:clean": "rimraf css",
-    "build:sass": "node-sass --output-style compressed -o css sass",
-    "build:autoprefixer": "autoprefixer-cli css/style.css",
-    "build-dev:sass": "node-sass --output-style expanded --source-map false -o css sass",
-    "build:imagemin-cli": "imagemin src/images/* --out-dir=images",
-    "build:remove": "rm -r docs",
-    "build:dirs": "mkdirp docs",
-    "build:copydir": "cp *.html -r css fonts images js docs/",
-    "watch": "npm-run-all -p watch:*",
-    "watch:sassprefixer": "onchange sass -- npm-run-all -p sassprefixer:*",
-    "watch:browsersync": "browser-sync start --reload-debounce 500 --server --files css/*.css index.html pages/details.html",
-    "styleguide": "npm-run-all -p styleguide:*",
-    "styleguide:sassprefixer": "onchange sass -- npm-run-all -p sassprefixer:*",
-    "styleguide:browsersync": "browser-sync start --reload-debounce 500 --server --files  css/*.css styleguide.html",
-    "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
-    "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css css/style.css"
+    "predev": "rimraf dist .cache",
+    "dev": "parcel index.html /pages/*.html --open --no-source-maps --no-cache --port 8080",
+    "prebuild": "rimraf dist .cache",
+    "build": "parcel build index.html ../pages/*.html  --no-source-maps --no-cache --experimental-scope-hoisting --no-minify"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/8bollod8/git-study.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "bio8oid",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/8bollod8/learning-git-2/issues"

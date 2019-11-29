@@ -1,3 +1,9 @@
+import './chart';
+import './modalChat';
+import './addLink';
+import './pagination';
+import './slider';
+import './calendarReset';
 
 window.onload = () => {
 
@@ -106,11 +112,4 @@ window.onload = () => {
     });
   };
 
-  // Reset General Statistic Calendar \\
-
-  if (window.location.href.indexOf('index') > -1 || window.location.href.indexOf('details') > -1 || window.location.href.indexOf('payout') > -1) {
-    document.getElementById("general-calendar-reset").addEventListener('click', () => {
-      document.getElementById("general-calendar-form").reset();
-    });
-  };
 };
