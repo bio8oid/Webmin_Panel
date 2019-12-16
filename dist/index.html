@@ -1,1 +1,555 @@
-<!DOCTYPE html><html lang="en"><head><title>Webmin</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="/style.90db9a46.css"></head><body class="registration-form-template">  <section class="container bar"> <div class="topbar"> <div class="row"> <div class="wallet-element"> <i class="icon-wallet"></i> <p>$1,500.00</p> <i class="icon-arrow-down"></i> </div> <div class="notification-element"> <a href="#"> <i class="icon-notification"></i> <div class="orange-dot"></div> </a> </div> <div class="profile-element"> <a class="profile-link" id="login" href="#"> <i class="icon-profile"></i> <p>Jack Smith</p> </a> </div> <div class="exit-element"> <a id="exit" href="#"> <i class="icon-quit"></i> </a> </div> </div> </div> </section>  <div id="menu-burger" class="menu-lo-res-hamburger"> <a href="#"> <svg class="hamburger-lo-res-icon" xmlns="http://www.w3.org/2000/svg" width="344.339" height="344.339"><g><rect y="46.06" width="344.339" height="29.52"/></g><g><rect y="156.506" width="344.339" height="29.52"/></g><g><rect y="268.748" width="344.339" height="29.531"/></g></svg> </a> </div>  <div class="overlay" id="overlay"> <div class="modal" id="myModal"> <div class="modal-quit"> <div class="paragraph"> <p>Do you really want to Quit?</p> </div> <div class="modal-buttons"> <button class="btn-cancel js--close-modal">Cancel</button> <button class="btn-quit js--close-modal">Quit</button> </div> </div> </div>  <div class="modal" id="manager"> <div class="modal-manager"> <p>ONLINE CHAT WITH YOUR PERSONAL ADMIN</p> <div class="modal-header"> <img src="/main-manager.1be97eee.png" alt="manager image"> <div class="status-wrapper"> <p>John Doe</p> <div id="label" class="btn-success online-label">online</div> </div> </div> <div id="chat" class="chat-content"> <div class="admin-post"> <p>Hello.<br>How can I help?</p> </div> </div> <div class="modal-buttons"> <form> <input id="chat-input" class="input" type="text" placeholder="Enter your message"> <button type="submit" id="chat-button" class="btn-success send-button">Send</button> </form> </div> </div> </div>  <div class="modal" id="loginModal"> <div class="modal-login"> <div> <h5>LOGIN</h5> </div> <div class="modal-form"> <form class="modal-wrapper"> <i class="icon-login"></i> <input class="input" type="text" placeholder="login name"> <i class="icon-password"></i> <input class="input" type="text" placeholder="password"> <button class="btn-enter js--close-modal">Enter</button> </form> </div> </div> </div>  <div class="modal" id="add-link"> <div class="modal-add-link"> <p>ADD URL</p> <div class="add-link-form"> <form autocomplete="on"> <input id="link-name-input" class="input" type="text" placeholder="New Name" required> <input id="link-value-input" class="input" type="url" placeholder="New URL" required> <button type="submit" id="add-link-button" class="btn-success js--close-modal">Save</button> </form> </div> </div> </div> </div>  <section class="container"> <div id="sidebar-section" class="sidebar"> <div class="sidebar-logo-and-hamburger"> <img class="logo-img" src="/webmin.6aa1a58c.png" alt="webmin"> <a id="sidebar-burger" class="component-sidebar-hamburger-link" href="#"> <svg class="hamburger-img" xmlns="http://www.w3.org/2000/svg" width="344.339" height="344.339"><g><rect y="46.06" width="344.339" height="29.52"/></g><g><rect y="156.506" width="344.339" height="29.52"/></g><g><rect y="268.748" width="344.339" height="29.531"/></g></svg> </a> </div> <div class="sidebar-menu-list"> <ul> <li class="component-sidebar-menu side-strip"> <a class="component-sidebar-menu-link" href="#"> <i class="icon-general"></i> <p class="link-paragraph">General</p> </a> </li> <li class="component-sidebar-menu side-strip"> <a class="component-sidebar-menu-link" href="/pages\details.html"> <i class="icon-details"></i> <p class="link-paragraph">Details</p> </a> </li> <li class="component-sidebar-menu side-strip"> <a class="component-sidebar-menu-link" href="/pages\links.html"> <i class="icon-links"></i> <p class="link-paragraph">Links</p> </a> </li> <li class="component-sidebar-menu side-strip"> <a class="component-sidebar-menu-link" href="/pages\banners.html"> <i class="icon-banners"></i> <p class="link-paragraph">Banners</p> </a> </li> <li class="component-sidebar-menu side-strip"> <a class="component-sidebar-menu-link" href="/pages\personal.html"> <i class="icon-personaldata"></i> <p class="link-paragraph">Personal data</p> </a> </li> <li class="component-sidebar-menu side-strip"> <a class="component-sidebar-menu-link" href="/pages\payout.html"> <i class="icon-payout"></i> <p class="link-paragraph">Payout</p> </a> </li> <li class="component-sidebar-menu side-strip"> <a class="component-sidebar-menu-link" href="/pages\postback.html"> <i class="icon-postback"></i> <p class="link-paragraph">Postback</p> </a> </li> </ul> </div>  <div class="sidebar-manager-section"> <p>YOUR ADMIN</p> <a id="contact-manager" href="#"> <div id="dottie" class="green-dottie"></div> <img src="/main-manager.1be97eee.png" alt="manager image"> <p>John Doe</p> </a> </div> <div class="sidebar-mobile-section"> <div class="topbar-mobile-section"> <div class="wallet-element"> <i class="icon-wallet"></i> <p>$1,500.00</p> <i class="icon-arrow-down"></i> </div> <div class="notification-element"> <a href="#"> <i class="icon-notification"></i> <div class="orange-dot"></div> </a> </div> <div class="profile-element"> <a class="profile-link" id="login-sidebar" href="#"> <i class="icon-profile"></i> <p>Jack Smith</p> </a> </div> <div class="exit-element"> <a id="exit-sidebar" href="#"> <i class="icon-quit"></i> </a> </div> </div> </div> </div> </section>  <section class="container-fluid"> <div class="general"> <h3>GENERAL STATISTIC</h3> <div class="general-calendar"> <form id="general-calendar-form" class="calendar-wrapper"> <input class="left-calendar-input" type="date" value="2016-05-16"> <input class="right-calendar-input" type="date" value="2016-05-16"> <i class="icon-calendar"></i> </form> <button id="general-calendar-reset" class="btn-square calendar-button" type="button" value="Reset form"> <i class="icon-refresh"></i> </button> </div> <div class="general-table"> <div class="wrapper-table row-table"> <div class="row-left"> <div class="general-table-top"> <div class="table-name"> <p>Visit Signups</p> </div> <div class="table-value"> <p>124</p> </div> </div> <div class="general-table-top"> <div class="table-name"> <p>FTD</p> </div> <div class="table-value"> <p>445</p> </div> </div> </div> <div class="row-right"> <div class="general-table-top"> <div class="table-name"> <p>Net deposit</p> </div> <div class="table-value"> <p>564</p> </div> </div> <div class="general-table-top"> <div class="table-name"> <p>Turn over</p> </div> <div class="table-value"> <p>432</p> </div> </div> </div> </div> </div> <div class="general-chart"> <div class="wrapper"> <div class="heading"> <p>Earnings chart</p> </div> <div class="chart"> <canvas id="myChart"></canvas> </div> </div> </div> </div> </section>  <section class="container-fluid"> <div class="links general"> <div class="links-heading"> <h3>LINKS</h3> </div> <div id="link-table" class="wrapper"> <div class="btn btn-success button-links-top add-link-button">+ add new</div> <div id="link-element" class="table-row top-border"> <div class="name-column"> <p>Home page</p> </div> <div class="link-column"> <a class="copy-link-value" href="https://www.homepage.org/" target="_blank">http://www.homepage.com</a> </div> <div class="links-and-bin-column"> <a class="copy-link"> <i class="icon-links"></i> </a> <a class="trash-button"> <i class="icon-trash"></i> </a> </div> </div> <div class="table-row"> <div class="name-column"> <p>Currently offer</p> </div> <div class="link-column"> <a class="copy-link-value" href="http://www.currently.com" target="_blank">http://www.currently.com</a> </div> <div class="links-and-bin-column"> <a class="copy-link"> <i class="icon-links"></i> </a> <a class="trash-button"> <i class="icon-trash"></i> </a> </div> </div> <div class="table-row"> <div class="name-column"> <p>Blurpix</p> </div> <div class="link-column"> <a class="copy-link-value" href="http://www.blurpix.com" target="_blank">http://www.blurpix.com</a> </div> <div class="links-and-bin-column"> <a class="copy-link"> <i class="icon-links"></i> </a> <a class="trash-button"> <i class="icon-trash"></i> </a> </div> </div> <div class="table-row"> <div class="name-column"> <p>Yoursite</p> </div> <div class="link-column"> <a class="copy-link-value" href="http://www.yoursite.com" target="_blank">http://www.yoursite.com</a> </div> <div class="links-and-bin-column"> <a class="copy-link"> <i class="icon-links"></i> </a> <a class="trash-button"> <i class="icon-trash"></i> </a> </div> </div> <div class="table-row"> <div class="name-column"> <p>Google</p> </div> <div class="link-column"> <a class="copy-link-value" href="http://www.google.com" target="_blank">http://www.google.com</a> </div> <div class="links-and-bin-column"> <a class="copy-link"> <i class="icon-links"></i> </a> <a class="trash-button"> <i class="icon-trash"></i> </a> </div> </div> <div class="table-row"> <div class="name-column"> <p>Facebook</p> </div> <div class="link-column"> <a class="copy-link-value" href="http://www.facebook.com" target="_blank">http://www.facebook.com</a> </div> <div class="links-and-bin-column"> <a class="copy-link"> <i class="icon-links"></i> </a> <a class="trash-button"> <i class="icon-trash"></i> </a> </div> </div> <div class="table-row"> <div class="name-column"> <p>Dashboard</p> </div> <div class="link-column"> <a class="copy-link-value" href="http://www.dashboard.com" target="_blank">http://www.dashboard.com</a> </div> <div class="links-and-bin-column"> <a class="copy-link"> <i class="icon-links"></i> </a> <a class="trash-button"> <i class="icon-trash"></i> </a> </div> </div> <div class="table-row"> <div class="name-column"> <p>Blurax</p> </div> <div class="link-column"> <a class="copy-link-value" href="http://www.blurax.com" target="_blank">http://www.blurax.com</a> </div> <div class="links-and-bin-column"> <a class="copy-link"> <i class="icon-links"></i> </a> <a class="trash-button"> <i class="icon-trash"></i> </a> </div> </div> <div class="table-row"> <div class="name-column"> <p>Piece of wine</p> </div> <div class="link-column"> <a class="copy-link-value" href="http://www.pieceofwine.com" target="_blank">http://www.pieceofwine.com</a> </div> <div class="links-and-bin-column"> <a class="copy-link"> <i class="icon-links"></i> </a> <a class="trash-button"> <i class="icon-trash"></i> </a> </div> </div> <div class="table-row"> <div class="name-column"> <p>Twitter</p> </div> <div class="link-column"> <a class="copy-link-value" href="http://www.twitter.com" target="_blank">http://www.twitter.com</a> </div> <div class="links-and-bin-column"> <a class="copy-link"> <i class="icon-links"></i> </a> <a class="trash-button"> <i class="icon-trash"></i> </a> </div> </div> </div> <div class="btn btn-success button-links-top add-link-button">+ add new</div> </div> </section> <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>  <script type="module" src="/script.d23c1190.js"></script>   </body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Webmin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Author: A.N. Author,Category: Admin-Panel">
+    <link rel="stylesheet" type="text/css" href="/style.500aa19d.css">
+<script src="/style.500aa19d.js"></script><script src="/details.js"></script></head>
+
+<body class="registration-form-template">
+
+    <!-- Topbar -->
+
+    <section class="container bar">
+        <div class="topbar">
+            <div class="row">
+
+                <div class="wallet-element">
+                    <i class="icon-wallet"></i>
+                    <p>$1,500.00</p>
+                    <i class="icon-arrow-down"></i>
+                </div>
+
+                <div class="notification-element">
+                    <a id="indicator" href="#">
+                        <i class="icon-notification"></i>
+                        <div id="orange-dot" class="orange-dot"></div>
+                    </a>
+                </div>
+
+                <div class="profile-element">
+                    <a class="profile-link" id="login" href="#">
+                        <i class="icon-profile"></i>
+                        <p>Jack Smith</p>
+                    </a>
+                </div>
+
+                <div class="exit-element">
+                    <a id="exit" href="#">
+                        <i class="icon-quit"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Topbar Burger -->
+
+    <div id="menu-burger" class="menu-lo-res-hamburger">
+        <a href="#">
+            <svg class="hamburger-lo-res-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="344.339px" height="344.339px" viewbox="0 0 344.339 344.339" style="enable-background:new 0 0 344.339 344.339;" xml:space="preserve">
+                <g>
+                    <rect y="46.06" width="344.339" height="29.52"></rect>
+                </g>
+                <g>
+                    <rect y="156.506" width="344.339" height="29.52"></rect>
+                </g>
+                <g>
+                    <rect y="268.748" width="344.339" height="29.531"></rect>
+                </g>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Quit Modal -->
+
+    <div class="overlay" id="overlay">
+
+        <div class="modal" id="myModal">
+            <div class="modal-quit">
+                <div class="paragraph">
+                    <p>Do you really want to Quit?</p>
+                </div>
+                <div class="modal-buttons">
+                    <button class="btn-cancel js--close-modal">Cancel</button>
+                    <button class="btn-quit js--close-modal">Quit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manager Modal -->
+
+        <div class="modal" id="manager">
+            <div class="modal-manager">
+                <p>ONLINE CHAT WITH YOUR PERSONAL ADMIN</p>
+                <div class="modal-header">
+                    <img src="/main-manager.c83374b9.png" alt="manager image">
+                    <div class="status-wrapper">
+                        <p>John Doe</p>
+                        <div id="label" class="btn-success online-label">online</div>
+                    </div>
+                </div>
+                <div id="chat" class="chat-content">
+                    <div class="admin-post">
+                        <p>Hello.<br>How can I help?</p>
+                    </div>
+                </div>
+                <div class="modal-buttons">
+                    <form>
+                        <input id="chat-input" class="input" type="text" placeholder="Enter your message">
+                        <button type="submit" id="chat-button" class="btn-success send-button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Modal -->
+        
+        <div class="modal" id="message">
+            <div class="modal-manager modal-message">
+                <p>UNREADED MESSAGES</p>
+                <div class="modal-header">
+                    <img src="/main-manager.c83374b9.png" alt="manager image">
+                    <div class="status-wrapper">
+                        <p>John Doe</p>
+                        <div class="btn-success online-label">online</div>
+                    </div>
+                </div>
+                <div class="chat-content">
+                    <div class="admin-post">
+                        <p>Hello.<br>Jack, contact me ASAP, plese.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Modal -->
+
+        <div class="modal" id="loginModal">
+            <div class="modal-login">
+                <div class="">
+                    <h5>LOGIN</h5>
+                </div>
+                <div class="modal-form">
+                    <form class="modal-wrapper">
+                        <i class="icon-login"></i>
+                        <input class="input" type="text" placeholder="login name">
+                        <i class="icon-password"></i>
+                        <input class="input" type="text" placeholder="password">
+                        <button class="btn-enter js--close-modal">Enter</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Link Modal -->
+
+        <div class="modal" id="add-link">
+            <div class="modal-add-link">
+                <p>ADD URL</p>
+                <div class="add-link-form">
+                    <form autocomplete="on">
+                        <input id="link-name-input" class="input" type="text" placeholder="New Name" required="">
+                        <input id="link-value-input" class="input" type="url" placeholder="New URL" required="">
+                        <button type="submit" id="add-link-button" class="btn-success js--close-modal">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Sidebar -->
+
+    <section class="container">
+        <div id="sidebar-section" class="sidebar">
+
+            <div class="sidebar-logo-and-hamburger">
+                <img class="logo-img" src="/webmin.e7124583.png" alt="webmin">
+                <a id="sidebar-burger" class="component-sidebar-hamburger-link" href="#">
+                    <svg class="hamburger-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="344.339px" height="344.339px" viewbox="0 0 344.339 344.339" style="enable-background:new 0 0 344.339 344.339;" xml:space="preserve">
+                        <g>
+                            <rect y="46.06" width="344.339" height="29.52"></rect>
+                        </g>
+                        <g>
+                            <rect y="156.506" width="344.339" height="29.52"></rect>
+                        </g>
+                        <g>
+                            <rect y="268.748" width="344.339" height="29.531"></rect>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="sidebar-menu-list">
+                <ul>
+                    <li class="component-sidebar-menu side-strip">
+                        <a class="component-sidebar-menu-link" href="#">
+                            <i class="icon-general"></i>
+                            <p class="link-paragraph">General</p>
+                        </a>
+                    </li>
+
+                    <li class="component-sidebar-menu side-strip">
+                        <a class="component-sidebar-menu-link" href="/pages\details.html">
+                            <i class="icon-details"></i>
+                            <p class="link-paragraph">Details</p>
+                        </a>
+                    </li>
+
+                    <li class="component-sidebar-menu side-strip">
+                        <a class="component-sidebar-menu-link" href="/pages\links.html">
+                            <i class="icon-links"></i>
+                            <p class="link-paragraph">Links</p>
+                        </a>
+                    </li>
+
+                    <li class="component-sidebar-menu side-strip">
+                        <a class="component-sidebar-menu-link" href="/pages\banners.html">
+                            <i class="icon-banners"></i>
+                            <p class="link-paragraph">Banners</p>
+                        </a>
+                    </li>
+
+                    <li class="component-sidebar-menu side-strip">
+                        <a class="component-sidebar-menu-link" href="/pages\personal.html">
+                            <i class="icon-personaldata"></i>
+                            <p class="link-paragraph">Personal data</p>
+                        </a>
+                    </li>
+
+                    <li class="component-sidebar-menu side-strip">
+                        <a class="component-sidebar-menu-link" href="/pages\payout.html">
+                            <i class="icon-payout"></i>
+                            <p class="link-paragraph">Payout</p>
+                        </a>
+                    </li>
+
+                    <li class="component-sidebar-menu side-strip">
+                        <a class="component-sidebar-menu-link" href="/pages\postback.html">
+                            <i class="icon-postback"></i>
+                            <p class="link-paragraph">Postback</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--  -->
+            <div class="sidebar-manager-section">
+                <p>YOUR ADMIN</p>
+                <a id="contact-manager" href="#">
+                    <div id="dottie" class="green-dottie"></div>
+                    <img src="/main-manager.c83374b9.png" alt="manager image">
+                    <p>John Doe</p>
+                </a>
+            </div>
+
+            <div class="sidebar-mobile-section">
+                <div class="topbar-mobile-section">
+
+                    <div class="wallet-element">
+                        <i class="icon-wallet"></i>
+                        <p>$1,500.00</p>
+                        <i class="icon-arrow-down"></i>
+                    </div>
+
+                    <div class="notification-element">
+                        <a href="#">
+                            <i class="icon-notification"></i>
+                            <div class="orange-dot"></div>
+                        </a>
+                    </div>
+
+                    <div class="profile-element">
+                        <a class="profile-link" id="login-sidebar" href="#">
+                            <i class="icon-profile"></i>
+                            <p>Jack Smith</p>
+                        </a>
+                    </div>
+
+                    <div class="exit-element">
+                        <a id="exit-sidebar" href="#">
+                            <i class="icon-quit"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- General Section -->
+
+    <section class="container-fluid">
+        <div class="general">
+            <h3>GENERAL STATISTIC</h3>
+
+            <div class="general-calendar">
+                <form id="general-calendar-form" class="calendar-wrapper">
+                    <input class="left-calendar-input" type="date" value="2016-05-16">
+                    <input class="right-calendar-input" type="date" value="2016-05-16">
+                    <i class="icon-calendar"></i>
+                </form>
+                <button id="general-calendar-reset" class="btn-square calendar-button" type="button" value="Reset form">
+                    <i class="icon-refresh"></i>
+                </button>
+            </div>
+
+            <div class="general-table">
+                <div class="wrapper-table row-table">
+
+                    <div class="row-left">
+                        <div class="general-table-top">
+                            <div class="table-name">
+                                <p>Visit Signups</p>
+                            </div>
+                            <div class="table-value">
+                                <p>124</p>
+                            </div>
+                        </div>
+
+                        <div class="general-table-top">
+                            <div class="table-name">
+                                <p>FTD</p>
+                            </div>
+                            <div class="table-value">
+                                <p>445</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-right">
+                        <div class="general-table-top">
+                            <div class="table-name">
+                                <p>Net deposit</p>
+                            </div>
+                            <div class="table-value">
+                                <p>564</p>
+                            </div>
+                        </div>
+
+                        <div class="general-table-top">
+                            <div class="table-name">
+                                <p>Turn over</p>
+                            </div>
+                            <div class="table-value">
+                                <p>432</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="general-chart">
+                <div class="wrapper">
+                    <div class="heading">
+                        <p>Earnings chart</p>
+                    </div>
+                    <div class="chart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Links Section -->
+
+    <section class="container-fluid">
+        <div class="links general">
+            <div class="links-heading">
+                <h3>LINKS</h3>
+            </div>
+
+            <div id="link-table" class="wrapper ">
+
+                <div class="btn btn-success button-links-top add-link-button">+ add new</div>
+
+                <div id="link-element" class="table-row top-border">
+                    <div class="name-column">
+                        <p>Home page</p>
+                    </div>
+                    <div class="link-column">
+                        <a class="copy-link-value" href="https://www.homepage.org/" rel="noopener" target="_blank">http://www.homepage.com</a>
+                    </div>
+                    <div class="links-and-bin-column">
+                        <a class="copy-link">
+                            <i class="icon-links"></i>
+                        </a>
+                        <a class="trash-button">
+                            <i class="icon-trash"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="name-column">
+                        <p>Currently offer</p>
+                    </div>
+                    <div class="link-column">
+                        <a class="copy-link-value" href="http://www.currently.com" rel="noopener" target="_blank">http://www.currently.com</a>
+                    </div>
+                    <div class="links-and-bin-column">
+                        <a class="copy-link">
+                            <i class="icon-links"></i>
+                        </a>
+                        <a class="trash-button">
+                            <i class="icon-trash"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="name-column">
+                        <p>Blurpix</p>
+                    </div>
+                    <div class="link-column">
+                        <a class="copy-link-value" href="http://www.blurpix.com" rel="noopener" target="_blank">http://www.blurpix.com</a>
+                    </div>
+                    <div class="links-and-bin-column">
+                        <a class="copy-link">
+                            <i class="icon-links"></i>
+                        </a>
+                        <a class="trash-button">
+                            <i class="icon-trash"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="name-column">
+                        <p>Yoursite</p>
+                    </div>
+                    <div class="link-column">
+                        <a class="copy-link-value" href="http://www.yoursite.com" rel="noopener" target="_blank">http://www.yoursite.com</a>
+                    </div>
+                    <div class="links-and-bin-column">
+                        <a class="copy-link">
+                            <i class="icon-links"></i>
+                        </a>
+                        <a class="trash-button">
+                            <i class="icon-trash"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="name-column">
+                        <p>Google</p>
+                    </div>
+                    <div class="link-column">
+                        <a class="copy-link-value" href="http://www.google.com" rel="noopener" target="_blank">http://www.google.com</a>
+                    </div>
+                    <div class="links-and-bin-column">
+                        <a class="copy-link">
+                            <i class="icon-links"></i>
+                        </a>
+                        <a class="trash-button">
+                            <i class="icon-trash"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="name-column">
+                        <p>Facebook</p>
+                    </div>
+                    <div class="link-column">
+                        <a class="copy-link-value" href="http://www.facebook.com" rel="noopener" target="_blank">http://www.facebook.com</a>
+                    </div>
+                    <div class="links-and-bin-column">
+                        <a class="copy-link">
+                            <i class="icon-links"></i>
+                        </a>
+                        <a class="trash-button">
+                            <i class="icon-trash"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="name-column">
+                        <p>Dashboard</p>
+                    </div>
+                    <div class="link-column">
+                        <a class="copy-link-value" href="http://www.dashboard.com" rel="noopener" target="_blank">http://www.dashboard.com</a>
+                    </div>
+                    <div class="links-and-bin-column">
+                        <a class="copy-link">
+                            <i class="icon-links"></i>
+                        </a>
+                        <a class="trash-button">
+                            <i class="icon-trash"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="name-column">
+                        <p>Blurax</p>
+                    </div>
+                    <div class="link-column">
+                        <a class="copy-link-value" href="http://www.blurax.com" rel="noopener" target="_blank">http://www.blurax.com</a>
+                    </div>
+                    <div class="links-and-bin-column">
+                        <a class="copy-link">
+                            <i class="icon-links"></i>
+                        </a>
+                        <a class="trash-button">
+                            <i class="icon-trash"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="name-column">
+                        <p>Piece of wine</p>
+                    </div>
+                    <div class="link-column">
+                        <a class="copy-link-value" href="http://www.pieceofwine.com" rel="noopener" target="_blank">http://www.pieceofwine.com</a>
+                    </div>
+                    <div class="links-and-bin-column">
+                        <a class="copy-link">
+                            <i class="icon-links"></i>
+                        </a>
+                        <a class="trash-button">
+                            <i class="icon-trash"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="name-column">
+                        <p>Twitter</p>
+                    </div>
+                    <div class="link-column">
+                        <a class="copy-link-value" href="http://www.twitter.com" rel="noopener" target="_blank">http://www.twitter.com</a>
+                    </div>
+                    <div class="links-and-bin-column">
+                        <a class="copy-link">
+                            <i class="icon-links"></i>
+                        </a>
+                        <a class="trash-button">
+                            <i class="icon-trash"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn btn-success button-links-top add-link-button">+ add new</div>
+        </div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+
+    <script type="module" src="/script.d573be0b.js"></script>
+</body>
+
+</html>

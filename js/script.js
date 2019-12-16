@@ -66,6 +66,14 @@ window.onload = () => {
     document.querySelector(modal).classList.add('show');
   };
 
+  // Message Modal
+  
+  document.getElementById('indicator').addEventListener('click', e => {
+    e.preventDefault();
+    document.getElementById('orange-dot').classList.remove('orange-dot');
+    openModal('#message');
+  });
+
   // Quit Modal
   document.getElementById('exit').addEventListener('click', e => {
     e.preventDefault();

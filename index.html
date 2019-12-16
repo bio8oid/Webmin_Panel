@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Author: A.N. Author,Category: Admin-Panel">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="sass/style.scss">
 </head>
 
 <body class="registration-form-template">
@@ -24,9 +24,9 @@
                 </div>
 
                 <div class="notification-element">
-                    <a href="#">
+                    <a id="indicator" href="#">
                         <i class="icon-notification"></i>
-                        <div class="orange-dot"></div>
+                        <div id="orange-dot" class="orange-dot"></div>
                     </a>
                 </div>
 
@@ -105,6 +105,26 @@
                         <input id="chat-input" class="input" type="text" placeholder="Enter your message">
                         <button type="submit" id="chat-button" class="btn-success send-button">Send</button>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Modal -->
+        
+        <div class="modal" id="message">
+            <div class="modal-manager modal-message">
+                <p>UNREADED MESSAGES</p>
+                <div class="modal-header">
+                    <img src="images/main-manager.png" alt="manager image">
+                    <div class="status-wrapper">
+                        <p>John Doe</p>
+                        <div class="btn-success online-label">online</div>
+                    </div>
+                </div>
+                <div class="chat-content">
+                    <div class="admin-post">
+                        <p>Hello.<br>Jack, contact me ASAP, plese.</p>
+                    </div>
                 </div>
             </div>
         </div>
