@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!-- Quit Modal -->
+
+<div class="overlay" id="overlay">
+
+    <div class="modal" id="myModal">
+        <div class="modal-quit">
+            <div class="paragraph">
+                <p>Do you really want to Quit?</p>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn-cancel js--close-modal">Cancel</button>
+                <button class="btn-quit js--close-modal">Quit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Manager Modal -->
+
+    <div class="modal" id="manager">
+        <div class="modal-manager">
+            <p>ONLINE CHAT WITH YOUR PERSONAL ADMIN</p>
+            <div class="modal-header">
+                <img src="images/main-manager.png" alt="manager image">
+                <div class="status-wrapper">
+                    <p>John Doe</p>
+                    <div id="label" class="btn-success online-label">online</div>
+                </div>
+            </div>
+            <div id="chat" class="chat-content">
+                <div class="admin-post">
+                    <p>Hello.<br>How can I help?</p>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <form>
+                    <input id="chat-input" class="input" type="text" placeholder="Enter your message">
+                    <button type="submit" id="chat-button" class="btn-success send-button">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Modal -->
+
+    <div class="modal" id="message">
+        <div class="modal-manager modal-message">
+            <p>UNREADED MESSAGES</p>
+            <div class="modal-header">
+                <img src="images/main-manager.png" alt="manager image">
+                <div class="status-wrapper">
+                    <p>John Doe</p>
+                    <div class="btn-success online-label">online</div>
+                </div>
+            </div>
+            <div class="chat-content">
+                <div class="admin-post">
+                    <p>Hello.<br>Jack, contact me ASAP, plese.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+
+    <div class="modal" id="loginModal">
+        <div class="modal-login">
+            <div class="">
+                <h5>LOGIN</h5>
+            </div>
+            <div class="modal-form">
+                <form class="modal-wrapper">
+                    <i class="icon-login"></i>
+                    <input class="input" type="text" placeholder="login name">
+                    <i class="icon-password"></i>
+                    <input class="input" type="text" placeholder="password">
+                    <button class="btn-enter js--close-modal">Enter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Link Modal -->
+
+    <div class="modal" id="add-link">
+        <div class="modal-add-link">
+            <p>ADD URL</p>
+            <div class="add-link-form">
+                <form autocomplete="on">
+                    <input id="link-name-input" class="input" type="text" placeholder="New Name" required />
+                    <input id="link-value-input" class="input" type="url" placeholder="New URL" required />
+                    <button type="submit" id="add-link-button" class="btn-success js--close-modal">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
