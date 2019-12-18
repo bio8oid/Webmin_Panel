@@ -1,5 +1,44 @@
 <!DOCTYPE html>
 
+<!-- Message Modal -->
+
+<div class="modal" id="message">
+    <div class="modal-manager modal-message">
+        <p>UNREADED MESSAGES</p>
+        <div class="modal-header">
+            <img src="../images/main-manager.png" alt="manager image">
+            <div class="status-wrapper">
+                <p>John Doe</p>
+                <div class="btn-success online-label">online</div>
+            </div>
+        </div>
+        <div class="chat-content">
+            <div class="admin-post">
+                <p>Hello.<br>Jack, contact me ASAP, plese.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Login Modal -->
+
+<div class="modal" id="loginModal">
+    <div class="modal-login">
+        <div class="">
+            <h5>LOGIN</h5>
+        </div>
+        <div class="modal-form">
+            <form class="modal-wrapper">
+                <i class="icon-login"></i>
+                <input class="input" type="text" placeholder="login name">
+                <i class="icon-password"></i>
+                <input class="input" type="text" placeholder="password">
+                <button class="btn-enter js--close-modal">Enter</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 <!-- Quit Modal -->
 
 <div class="overlay" id="overlay">
@@ -37,45 +76,6 @@
                 <form>
                     <input id="chat-input" class="input" type="text" placeholder="Enter your message">
                     <button type="submit" id="chat-button" class="btn-success send-button">Send</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Message Modal -->
-
-    <div class="modal" id="message">
-        <div class="modal-manager modal-message">
-            <p>UNREADED MESSAGES</p>
-            <div class="modal-header">
-                <img src="../images/main-manager.png" alt="manager image">
-                <div class="status-wrapper">
-                    <p>John Doe</p>
-                    <div class="btn-success online-label">online</div>
-                </div>
-            </div>
-            <div class="chat-content">
-                <div class="admin-post">
-                    <p>Hello.<br>Jack, contact me ASAP, plese.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Login Modal -->
-
-    <div class="modal" id="loginModal">
-        <div class="modal-login">
-            <div class="">
-                <h5>LOGIN</h5>
-            </div>
-            <div class="modal-form">
-                <form class="modal-wrapper">
-                    <i class="icon-login"></i>
-                    <input class="input" type="text" placeholder="login name">
-                    <i class="icon-password"></i>
-                    <input class="input" type="text" placeholder="password">
-                    <button class="btn-enter js--close-modal">Enter</button>
                 </form>
             </div>
         </div>
