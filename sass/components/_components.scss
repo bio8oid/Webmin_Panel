@@ -189,6 +189,10 @@ li {
 			}
 		}
 	}
+
+	.select-selected:after {
+ display: none;
+}
 }
 
 /*  Notification  */

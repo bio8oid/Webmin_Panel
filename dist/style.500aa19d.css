@@ -1397,6 +1397,9 @@ li {
     color: #f58220;
   }
 }
+.wallet-element .select-selected:after {
+  display: none;
+}
 
 /*  Notification  */
 .notification-element {
