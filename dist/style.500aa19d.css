@@ -1389,16 +1389,18 @@ li {
   text-decoration: none;
   color: #a6a6a6;
 }
-.wallet-element p {
-  display: inline-block;
-}
-@media not all and (hover: none) {
-  .wallet-element i:hover {
-    color: #f58220;
-  }
-}
-.wallet-element .select-selected:after {
-  display: none;
+.wallet-element .select-wallet {
+  color: #a6a6a6;
+  font-weight: 700;
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(/down-3.e0d4d812.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right 0 top 50%;
+  width: 120px;
 }
 
 /*  Notification  */

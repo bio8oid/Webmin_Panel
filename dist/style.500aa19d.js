@@ -122,7 +122,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\Glyphter.eot":[["Glyphter.724e50d6.eot","fonts/Glyphter.eot"],"fonts/Glyphter.eot"],"./..\\fonts\\Glyphter.woff":[["Glyphter.0f7149fb.woff","fonts/Glyphter.woff"],"fonts/Glyphter.woff"],"./..\\fonts\\Glyphter.ttf":[["Glyphter.4589cfb0.ttf","fonts/Glyphter.ttf"],"fonts/Glyphter.ttf"],"./..\\fonts\\Glyphter.svg":[["Glyphter.c50226e3.svg","fonts/Glyphter.svg"],"fonts/Glyphter.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\fonts\\Glyphter.eot":[["Glyphter.724e50d6.eot","fonts/Glyphter.eot"],"fonts/Glyphter.eot"],"./..\\fonts\\Glyphter.woff":[["Glyphter.0f7149fb.woff","fonts/Glyphter.woff"],"fonts/Glyphter.woff"],"./..\\fonts\\Glyphter.ttf":[["Glyphter.4589cfb0.ttf","fonts/Glyphter.ttf"],"fonts/Glyphter.ttf"],"./..\\fonts\\Glyphter.svg":[["Glyphter.c50226e3.svg","fonts/Glyphter.svg"],"fonts/Glyphter.svg"],"./..\\images\\down-3.png":[["down-3.e0d4d812.png","images/down-3.png"],"images/down-3.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -150,7 +150,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60035" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61820" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
