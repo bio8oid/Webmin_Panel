@@ -33,6 +33,8 @@
 
 			select {
 				width: 100%;
+				-webkit-appearance: none;
+				-moz-appearance: none;
 				appearance: none;
 				padding: 5px;
 				color: $calendar-entry-color;
