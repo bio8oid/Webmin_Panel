@@ -2222,6 +2222,8 @@ ul {
 }
 .postback-section .postback-middle .select-wrap select {
   width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   padding: 5px;
   color: #333;
@@ -2399,6 +2401,8 @@ ul {
 }
 .postback-section .postback-middle .select-wrap select {
   width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   padding: 5px;
   color: #333;
