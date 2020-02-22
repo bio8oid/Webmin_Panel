@@ -33,11 +33,11 @@
                 <form class="modal-wrapper">
                     <i class="icon-login"></i>
                     <label>
-                        <input class="input" type="text" placeholder="login name">
+                        <input class="input" type="text" placeholder="login name" aria-labelledby="login">
                     </label>
                     <i class="icon-password"></i>
                     <label>
-                        <input class="input" type="text" placeholder="password">
+                        <input class="input" type="text" placeholder="password" aria-labelledby="login">
                     </label>
                     <button class="btn-enter js--close-modal">Enter</button>
                 </form>
@@ -79,7 +79,7 @@
             <div class="modal-buttons">
                 <form>
                     <label>
-                        <input id="chat-input" class="input" type="text" placeholder="Enter your message">
+                        <input id="chat-input" class="input" type="text" placeholder="Enter your message" aria-labelledby="chat">
                     </label>
                     <button type="submit" id="chat-button" class="btn-success send-button">Send</button>
                 </form>
@@ -95,10 +95,10 @@
             <div class="add-link-form">
                 <form autocomplete="on">
                     <label>
-                        <input id="link-name-input" class="input" type="text" placeholder="New Name" required />
+                        <input id="link-name-input" class="input" type="text" placeholder="New Name" aria-labelledby="modal" required />
                     </label>
                     <label>
-                        <input id="link-value-input" class="input" type="url" placeholder="New URL" required />
+                        <input id="link-value-input" class="input" type="url" placeholder="New URL" aria-labelledby="modal" required />
                     </label>
                     <button type="submit" id="add-link-button" class="btn-success js--close-modal">Save</button>
                 </form>
