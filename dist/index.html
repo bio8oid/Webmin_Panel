@@ -5,7 +5,7 @@
     <title>Webmin</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="General" content="Author: bio8oid Author,Category: Admin-Panel">
+    <meta name="Description" content="Author: bio8oid Author,Category: Admin-Panel">
     <link rel="icon" href="/favicon.21b6e204.ico">
     <link rel="stylesheet" type="text/css" href="/style.500aa19d.css">
 <script src="/style.500aa19d.js"></script><script src="/details.js"></script></head>
@@ -78,7 +78,7 @@
         <div class="modal-manager modal-message">
             <p>NOTIFICATIONS</p>
             <div class="modal-header">
-                <img src="/main-manager.c83374b9.png" alt="manager image">
+                <img src="/main-manager.e0a5abd1.webp" alt="manager image">
                 <div class="status-wrapper">
                     <p>John Doe</p>
                     <div class="btn-success online-label">online</div>
@@ -102,9 +102,13 @@
             <div class="modal-form">
                 <form class="modal-wrapper">
                     <i class="icon-login"></i>
-                    <input class="input" type="text" placeholder="login name">
+                    <label>
+                        <input class="input" type="text" placeholder="login name">
+                    </label>
                     <i class="icon-password"></i>
-                    <input class="input" type="text" placeholder="password">
+                    <label>
+                        <input class="input" type="text" placeholder="password">
+                    </label>
                     <button class="btn-enter js--close-modal">Enter</button>
                 </form>
             </div>
@@ -131,7 +135,7 @@
         <div class="modal-manager">
             <p>ONLINE CHAT WITH YOUR PERSONAL ADMIN</p>
             <div class="modal-header">
-                <img src="/main-manager.c83374b9.png" alt="manager image">
+                <img src="/main-manager.e0a5abd1.webp" alt="manager image">
                 <div class="status-wrapper">
                     <p>John Doe</p>
                     <div id="label" class="btn-success online-label">online</div>
@@ -144,7 +148,9 @@
             </div>
             <div class="modal-buttons">
                 <form>
-                    <input id="chat-input" class="input" type="text" placeholder="Enter your message">
+                    <label>
+                        <input id="chat-input" class="input" type="text" placeholder="Enter your message">
+                    </label>
                     <button type="submit" id="chat-button" class="btn-success send-button">Send</button>
                 </form>
             </div>
@@ -158,8 +164,12 @@
             <p>ADD URL</p>
             <div class="add-link-form">
                 <form autocomplete="on">
-                    <input id="link-name-input" class="input" type="text" placeholder="New Name" required="">
-                    <input id="link-value-input" class="input" type="url" placeholder="New URL" required="">
+                    <label>
+                        <input id="link-name-input" class="input" type="text" placeholder="New Name" required="">
+                    </label>
+                    <label>
+                        <input id="link-value-input" class="input" type="url" placeholder="New URL" required="">
+                    </label>
                     <button type="submit" id="add-link-button" class="btn-success js--close-modal">Save</button>
                 </form>
             </div>
@@ -175,7 +185,7 @@
     <div id="sidebar-section" class="sidebar">
 
         <div class="sidebar-logo-and-hamburger">
-            <img class="logo-img" src="/webmin.e7124583.png" alt="webmin">
+            <img class="logo-img" src="/webmin.532c5311.webp" alt="webmin">
             <a id="sidebar-burger" class="component-sidebar-hamburger-link" href="#">
                 <svg class="hamburger-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="344.339px" height="344.339px" viewbox="0 0 344.339 344.339" style="enable-background:new 0 0 344.339 344.339;" xml:space="preserve">
                     <g>
@@ -248,7 +258,7 @@
             <p>YOUR ADMIN</p>
             <a id="contact-manager" href="#">
                 <div id="dottie" class="green-dottie"></div>
-                <img src="/main-manager.c83374b9.png" alt="manager image">
+                <img src="/main-manager.e0a5abd1.webp" alt="manager image">
                 <p>John Doe</p>
             </a>
         </div>
@@ -297,11 +307,15 @@
 
         <div class="general-calendar">
             <form id="general-calendar-form" class="calendar-wrapper">
-                <input class="left-calendar-input" type="date" value="2016-05-16">
-                <input class="right-calendar-input" type="date" value="2016-05-16">
+                <label>
+                    <input class="left-calendar-input" type="date" value="2016-05-16">
+                </label>
+                <label>
+                    <input class="right-calendar-input" type="date" value="2016-05-16">
+                </label>
                 <i class="icon-calendar"></i>
             </form>
-            <button id="general-calendar-reset" class="btn-square calendar-button" type="button" value="Reset form">
+            <button id="general-calendar-reset" class="btn-square calendar-button" type="button" value="Reset form" aria-label="Reset form">
                 <i class="icon-refresh"></i>
             </button>
         </div>
@@ -365,206 +379,6 @@
 
     </div>
 </section>
-
-<!-- Links Section -->
-
-
-
-<!-- <section class="container-fluid">
-    <div class="links general">
-        <div class="links-heading">
-            <h3>LINKS</h3>
-        </div>
-
-        <div id="link-table" class="wrapper ">
-
-            <div class="btn btn-success button-links-top add-link-button">+ add new</div>
-
-            <div id="link-element" class="table-row top-border">
-                <div class="name-column">
-                    <p>Home page</p>
-                </div>
-                <div class="link-column">
-                    <a class="copy-link-value" href="https://www.homepage.org/" rel="noopener"
-                        target="_blank">http://www.homepage.com</a>
-                </div>
-                <div class="links-and-bin-column">
-                    <a class="copy-link">
-                        <i class="icon-links"></i>
-                    </a>
-                    <a class="trash-button">
-                        <i class="icon-trash"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="table-row">
-                <div class="name-column">
-                    <p>Currently offer</p>
-                </div>
-                <div class="link-column">
-                    <a class="copy-link-value" href="http://www.currently.com" rel="noopener"
-                        target="_blank">http://www.currently.com</a>
-                </div>
-                <div class="links-and-bin-column">
-                    <a class="copy-link">
-                        <i class="icon-links"></i>
-                    </a>
-                    <a class="trash-button">
-                        <i class="icon-trash"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="table-row">
-                <div class="name-column">
-                    <p>Blurpix</p>
-                </div>
-                <div class="link-column">
-                    <a class="copy-link-value" href="http://www.blurpix.com" rel="noopener"
-                        target="_blank">http://www.blurpix.com</a>
-                </div>
-                <div class="links-and-bin-column">
-                    <a class="copy-link">
-                        <i class="icon-links"></i>
-                    </a>
-                    <a class="trash-button">
-                        <i class="icon-trash"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="table-row">
-                <div class="name-column">
-                    <p>Yoursite</p>
-                </div>
-                <div class="link-column">
-                    <a class="copy-link-value" href="http://www.yoursite.com" rel="noopener"
-                        target="_blank">http://www.yoursite.com</a>
-                </div>
-                <div class="links-and-bin-column">
-                    <a class="copy-link">
-                        <i class="icon-links"></i>
-                    </a>
-                    <a class="trash-button">
-                        <i class="icon-trash"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="table-row">
-                <div class="name-column">
-                    <p>Google</p>
-                </div>
-                <div class="link-column">
-                    <a class="copy-link-value" href="http://www.google.com" rel="noopener"
-                        target="_blank">http://www.google.com</a>
-                </div>
-                <div class="links-and-bin-column">
-                    <a class="copy-link">
-                        <i class="icon-links"></i>
-                    </a>
-                    <a class="trash-button">
-                        <i class="icon-trash"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="table-row">
-                <div class="name-column">
-                    <p>Facebook</p>
-                </div>
-                <div class="link-column">
-                    <a class="copy-link-value" href="http://www.facebook.com" rel="noopener"
-                        target="_blank">http://www.facebook.com</a>
-                </div>
-                <div class="links-and-bin-column">
-                    <a class="copy-link">
-                        <i class="icon-links"></i>
-                    </a>
-                    <a class="trash-button">
-                        <i class="icon-trash"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="table-row">
-                <div class="name-column">
-                    <p>Dashboard</p>
-                </div>
-                <div class="link-column">
-                    <a class="copy-link-value" href="http://www.dashboard.com" rel="noopener"
-                        target="_blank">http://www.dashboard.com</a>
-                </div>
-                <div class="links-and-bin-column">
-                    <a class="copy-link">
-                        <i class="icon-links"></i>
-                    </a>
-                    <a class="trash-button">
-                        <i class="icon-trash"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="table-row">
-                <div class="name-column">
-                    <p>Blurax</p>
-                </div>
-                <div class="link-column">
-                    <a class="copy-link-value" href="http://www.blurax.com" rel="noopener"
-                        target="_blank">http://www.blurax.com</a>
-                </div>
-                <div class="links-and-bin-column">
-                    <a class="copy-link">
-                        <i class="icon-links"></i>
-                    </a>
-                    <a class="trash-button">
-                        <i class="icon-trash"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="table-row">
-                <div class="name-column">
-                    <p>Piece of wine</p>
-                </div>
-                <div class="link-column">
-                    <a class="copy-link-value" href="http://www.pieceofwine.com" rel="noopener"
-                        target="_blank">http://www.pieceofwine.com</a>
-                </div>
-                <div class="links-and-bin-column">
-                    <a class="copy-link">
-                        <i class="icon-links"></i>
-                    </a>
-                    <a class="trash-button">
-                        <i class="icon-trash"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="table-row">
-                <div class="name-column">
-                    <p>Twitter</p>
-                </div>
-                <div class="link-column">
-                    <a class="copy-link-value" href="http://www.twitter.com" rel="noopener"
-                        target="_blank">http://www.twitter.com</a>
-                </div>
-                <div class="links-and-bin-column">
-                    <a class="copy-link">
-                        <i class="icon-links"></i>
-                    </a>
-                    <a class="trash-button">
-                        <i class="icon-trash"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        <div class="btn btn-success button-links-top add-link-button">+ add new</div>
-    </div>
-
-</section> -->
     <!DOCTYPE html>
 
 <!-- Links Section -->

@@ -1396,7 +1396,7 @@ li {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-image: url(/down-3.e0d4d812.png);
+  background-image: url(/down-3.15bff722.webp);
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: right 0 top 50%;
@@ -1978,7 +1978,7 @@ ul {
   font-size: 16px;
   flex: 1;
   padding: 5px 0 5px 20px;
-  margin: 5px;
+  margin: 3px;
 }
 
 .right-calendar-input {

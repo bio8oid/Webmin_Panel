@@ -16,8 +16,8 @@
     "sass": "^1.23.7"
   },
   "scripts": {
-    "predev": "rimraf dist .cache",
-    "dev": "parcel *.html --open --no-source-maps --no-cache --port 8080",
+    "prestart": "rimraf dist .cache",
+    "start": "parcel *.html --open --no-source-maps --no-cache --port 8080",
     "prebuild": "rimraf dist .cache",
     "build": "parcel build index.html ../pages/*.html --no-cache --experimental-scope-hoisting --no-minify"
   },

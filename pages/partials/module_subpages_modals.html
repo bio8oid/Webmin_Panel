@@ -8,7 +8,7 @@
         <div class="modal-manager modal-message">
             <p>NOTIFICATIONS</p>
             <div class="modal-header">
-                <img src="../images/main-manager.png" alt="manager image">
+                <img src="../images/main-manager.webp" alt="manager image">
                 <div class="status-wrapper">
                     <p>John Doe</p>
                     <div class="btn-success online-label">online</div>
@@ -32,9 +32,13 @@
             <div class="modal-form">
                 <form class="modal-wrapper">
                     <i class="icon-login"></i>
-                    <input class="input" type="text" placeholder="login name">
+                    <label>
+                        <input class="input" type="text" placeholder="login name">
+                    </label>
                     <i class="icon-password"></i>
-                    <input class="input" type="text" placeholder="password">
+                    <label>
+                        <input class="input" type="text" placeholder="password">
+                    </label>
                     <button class="btn-enter js--close-modal">Enter</button>
                 </form>
             </div>
@@ -61,7 +65,7 @@
         <div class="modal-manager">
             <p>ONLINE CHAT WITH YOUR PERSONAL ADMIN</p>
             <div class="modal-header">
-                <img src="../images/main-manager.png" alt="manager image">
+                <img src="../images/main-manager.webp" alt="manager image">
                 <div class="status-wrapper">
                     <p>John Doe</p>
                     <div id="label" class="btn-success online-label">online</div>
@@ -74,7 +78,9 @@
             </div>
             <div class="modal-buttons">
                 <form>
-                    <input id="chat-input" class="input" type="text" placeholder="Enter your message">
+                    <label>
+                        <input id="chat-input" class="input" type="text" placeholder="Enter your message">
+                    </label>
                     <button type="submit" id="chat-button" class="btn-success send-button">Send</button>
                 </form>
             </div>
@@ -88,8 +94,12 @@
             <p>ADD URL</p>
             <div class="add-link-form">
                 <form autocomplete="on">
-                    <input id="link-name-input" class="input" type="text" placeholder="New Name" required />
-                    <input id="link-value-input" class="input" type="url" placeholder="New URL" required />
+                    <label>
+                        <input id="link-name-input" class="input" type="text" placeholder="New Name" required />
+                    </label>
+                    <label>
+                        <input id="link-value-input" class="input" type="url" placeholder="New URL" required />
+                    </label>
                     <button type="submit" id="add-link-button" class="btn-success js--close-modal">Save</button>
                 </form>
             </div>
