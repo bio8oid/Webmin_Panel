@@ -5,7 +5,7 @@
 	<title>Postback</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="Postback" content="Author: bio8oid Author,Category: Admin-Panel">
+	<meta name="Description" content="Author: bio8oid Author,Category: Admin-Panel">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
 	<link rel="stylesheet" type="text/css" href="/style.500aa19d.css">
 </head>
@@ -20,7 +20,7 @@
 
             <div class="wallet-element">
                 <i class="icon-wallet"></i>
-                <select class="select-wallet" name="wallets" id="walet">
+                <select class="select-wallet" name="wallets" id="walet" aria-label="wallet">
                     <option class="amount" value="first">$1,500.00</option>
                     <option class="amount" value="second">$2,500.00</option>
                     <option class="amount" value="third">$5,500.00</option>
@@ -28,21 +28,21 @@
             </div>
 
             <div class="notification-element">
-                <a id="indicator" href="#">
+                <a id="indicator" href="indicator">
                     <i class="icon-notification"></i>
                     <div id="orange-dot" class="orange-dot"></div>
                 </a>
             </div>
 
             <div class="profile-element">
-                <a class="profile-link" id="login" href="#">
+                <a class="profile-link" id="login" href="login">
                     <i class="icon-profile"></i>
                     <p>Jack Smith</p>
                 </a>
             </div>
 
             <div class="exit-element">
-                <a id="exit" href="#">
+                <a id="exit" href="quit">
                     <i class="icon-quit"></i>
                 </a>
             </div>
@@ -54,11 +54,9 @@
 <!-- Topbar Burger -->
 
 <div id="menu-burger" class="menu-lo-res-hamburger">
-    <a href="#">
+    <a href="burger">
         <svg class="hamburger-lo-res-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="344.339px" height="344.339px" viewbox="0 0 344.339 344.339" style="enable-background:new 0 0 344.339 344.339;" xml:space="preserve">
-            <g>
-                <rect y="46.06" width="344.339" height="29.52"></rect>
-            </g>
+            <g><rect y="46.06" width="344.339" height="29.52"></rect></g>
             <g>
                 <rect y="156.506" width="344.339" height="29.52"></rect>
             </g>
@@ -102,13 +100,9 @@
             <div class="modal-form">
                 <form class="modal-wrapper">
                     <i class="icon-login"></i>
-                    <label>
-                        <input class="input" type="text" placeholder="login name">
-                    </label>
+                        <input class="input" type="text" placeholder="login name" aria-labelledby="login">
                     <i class="icon-password"></i>
-                    <label>
-                        <input class="input" type="text" placeholder="password">
-                    </label>
+                        <input class="input" type="text" placeholder="password" aria-labelledby="login">
                     <button class="btn-enter js--close-modal">Enter</button>
                 </form>
             </div>
@@ -148,9 +142,7 @@
             </div>
             <div class="modal-buttons">
                 <form>
-                    <label>
-                        <input id="chat-input" class="input" type="text" placeholder="Enter your message">
-                    </label>
+                        <input id="chat-input" class="input" type="text" placeholder="Enter your message" aria-labelledby="chat">
                     <button type="submit" id="chat-button" class="btn-success send-button">Send</button>
                 </form>
             </div>
@@ -164,12 +156,8 @@
             <p>ADD URL</p>
             <div class="add-link-form">
                 <form autocomplete="on">
-                    <label>
-                        <input id="link-name-input" class="input" type="text" placeholder="New Name" required="">
-                    </label>
-                    <label>
-                        <input id="link-value-input" class="input" type="url" placeholder="New URL" required="">
-                    </label>
+                        <input id="link-name-input" class="input" type="text" placeholder="New Name" aria-labelledby="modal" required="">
+                        <input id="link-value-input" class="input" type="url" placeholder="New URL" aria-labelledby="modal" required="">
                     <button type="submit" id="add-link-button" class="btn-success js--close-modal">Save</button>
                 </form>
             </div>
@@ -198,7 +186,7 @@
 
         <div class="sidebar-logo-and-hamburger">
             <img class="logo-img" src="/webmin.532c5311.webp" alt="webmin">
-            <a id="sidebar-burger" class="component-sidebar-hamburger-link" href="#">
+            <a id="sidebar-burger" class="component-sidebar-hamburger-link" href="burger">
                 <svg class="hamburger-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="344.339px" height="344.339px" viewbox="0 0 344.339 344.339" style="enable-background:new 0 0 344.339 344.339;" xml:space="preserve">
                     <g>
                         <rect y="46.06" width="344.339" height="29.52"></rect>
@@ -268,7 +256,7 @@
 
         <div class="sidebar-manager-section">
             <p>YOUR ADMIN</p>
-            <a id="contact-manager" href="#">
+            <a id="contact-manager" href="admin">
                 <div id="dottie" class="green-dottie"></div>
                 <img src="/main-manager.e0a5abd1.webp" alt="manager image">
                 <p>John Doe</p>
@@ -285,21 +273,21 @@
                 </div>
 
                 <div class="notification-element">
-                    <a href="#">
+                    <a href="notification">
                         <i class="icon-notification"></i>
                         <div class="orange-dot"></div>
                     </a>
                 </div>
 
                 <div class="profile-element">
-                    <a class="profile-link" id="login-sidebar" href="#">
+                    <a class="profile-link" id="login-sidebar" href="profile">
                         <i class="icon-profile"></i>
                         <p>Jack Smith</p>
                     </a>
                 </div>
 
                 <div class="exit-element">
-                    <a id="exit-sidebar" href="#">
+                    <a id="exit-sidebar" href="exit">
                         <i class="icon-quit"></i>
                     </a>
                 </div>
@@ -319,18 +307,18 @@
 			<div class="postback-top">
 				<div class="signup">
 					<p>Signup</p>
-					<textarea class="info-input postback-input" type="text"></textarea>
+					<textarea class="info-input postback-input" type="text" aria-label="postback"></textarea>
 				</div>
 				<div class="deposit">
 					<p>Deposit</p>
-					<textarea class="info-input postback-input" type="text"></textarea>
+					<textarea class="info-input postback-input" type="text" aria-label="postback"></textarea>
 				</div>
 			</div>
 
 			<div class="postback-middle">
 				<div class="select-wrap">
-					<p>Postback type</p>
-					<select class="info-input">
+					<label for="postback-type">Postback type</label>
+					<select class="info-input" id="postback-type">
 						<option value="1">S2S (http://..)</option>
 						<option value="2">S2S (http://..)</option>
 						<option value="3">S2S (http://..)</option>
@@ -340,8 +328,8 @@
 				</div>
 
 				<div class="select-wrap">
-					<p>To countries</p>
-					<select class="info-input">
+					<label for="postback-country">To countries</label>
+					<select class="info-input" id="postback-country">
 						<option value="5">Uganda</option>
 						<option value="6">Germany</option>
 						<option value="7">Sweden</option>
@@ -351,8 +339,8 @@
 				</div>
 
 				<div class="select-wrap">
-					<p>Sending options</p>
-					<select class="info-input">
+					<label for="postback-option">Sending options</label>
+					<select class="info-input" id="postback-option">
 						<option value="9">Select</option>
 						<option value="10">Select</option>
 						<option value="11">Select</option>
@@ -368,31 +356,31 @@
 
 					<div class="checkbox-wrapper">
 						<label for="checkbox">
-							<input type="checkbox">
+							<input type="checkbox" aria-checked="mixed">
 							checkNumber
 						</label>
 						<label for="checkbox">
-							<input type="checkbox">
+							<input type="checkbox" aria-checked="mixed">
 							noAnswer
 						</label>
 						<label for="checkbox">
-							<input type="checkbox">
+							<input type="checkbox" aria-checked="mixed">
 							noCall
 						</label>
 						<label for="checkbox">
-							<input type="checkbox">
+							<input type="checkbox" aria-checked="mixed">
 							callAgain
 						</label>
 						<label for="checkbox">
-							<input type="checkbox">
+							<input type="checkbox" aria-checked="mixed">
 							recall
 						</label>
 						<label for="checkbox">
-							<input type="checkbox">
+							<input type="checkbox" aria-checked="mixed">
 							refused
 						</label>
 						<label for="checkbox">
-							<input type="checkbox">
+							<input type="checkbox" aria-checked="mixed">
 							interrupted
 						</label>
 					</div>
@@ -400,7 +388,7 @@
 
 				<div class="right-box">
 					<p>Send after:</p>
-					<input id="custom-slider" type="text" class="js-range-slider" name="my_range">
+					<input id="custom-slider" type="text" class="js-range-slider" name="my_range" aria-hidden="true">
 				</div>
 
 			</div>
@@ -411,7 +399,8 @@
 		</div>
 	</section>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
 
 	<script type="module" src="/script.d573be0b.js"></script>

@@ -20,7 +20,7 @@
 
             <div class="wallet-element">
                 <i class="icon-wallet"></i>
-                <select class="select-wallet" name="wallets" id="walet">
+                <select class="select-wallet" name="wallets" id="walet" aria-label="wallet">
                     <option class="amount" value="first">$1,500.00</option>
                     <option class="amount" value="second">$2,500.00</option>
                     <option class="amount" value="third">$5,500.00</option>
@@ -28,21 +28,21 @@
             </div>
 
             <div class="notification-element">
-                <a id="indicator" href="#">
+                <a id="indicator" href="indicator">
                     <i class="icon-notification"></i>
                     <div id="orange-dot" class="orange-dot"></div>
                 </a>
             </div>
 
             <div class="profile-element">
-                <a class="profile-link" id="login" href="#">
+                <a class="profile-link" id="login" href="login">
                     <i class="icon-profile"></i>
                     <p>Jack Smith</p>
                 </a>
             </div>
 
             <div class="exit-element">
-                <a id="exit" href="#">
+                <a id="exit" href="quit">
                     <i class="icon-quit"></i>
                 </a>
             </div>
@@ -54,11 +54,9 @@
 <!-- Topbar Burger -->
 
 <div id="menu-burger" class="menu-lo-res-hamburger">
-    <a href="#">
+    <a href="burger">
         <svg class="hamburger-lo-res-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="344.339px" height="344.339px" viewbox="0 0 344.339 344.339" style="enable-background:new 0 0 344.339 344.339;" xml:space="preserve">
-            <g>
-                <rect y="46.06" width="344.339" height="29.52"></rect>
-            </g>
+            <g><rect y="46.06" width="344.339" height="29.52"></rect></g>
             <g>
                 <rect y="156.506" width="344.339" height="29.52"></rect>
             </g>
@@ -103,11 +101,11 @@
                 <form class="modal-wrapper">
                     <i class="icon-login"></i>
                     <label>
-                        <input class="input" type="text" placeholder="login name">
+                        <input class="input" type="text" placeholder="login name" aria-labelledby="login">
                     </label>
                     <i class="icon-password"></i>
                     <label>
-                        <input class="input" type="text" placeholder="password">
+                        <input class="input" type="text" placeholder="password" aria-labelledby="login">
                     </label>
                     <button class="btn-enter js--close-modal">Enter</button>
                 </form>
@@ -149,7 +147,7 @@
             <div class="modal-buttons">
                 <form>
                     <label>
-                        <input id="chat-input" class="input" type="text" placeholder="Enter your message">
+                        <input id="chat-input" class="input" type="text" placeholder="Enter your message" aria-labelledby="chat">
                     </label>
                     <button type="submit" id="chat-button" class="btn-success send-button">Send</button>
                 </form>
@@ -165,10 +163,10 @@
             <div class="add-link-form">
                 <form autocomplete="on">
                     <label>
-                        <input id="link-name-input" class="input" type="text" placeholder="New Name" required="">
+                        <input id="link-name-input" class="input" type="text" placeholder="New Name" aria-labelledby="modal" required="">
                     </label>
                     <label>
-                        <input id="link-value-input" class="input" type="url" placeholder="New URL" required="">
+                        <input id="link-value-input" class="input" type="url" placeholder="New URL" aria-labelledby="modal" required="">
                     </label>
                     <button type="submit" id="add-link-button" class="btn-success js--close-modal">Save</button>
                 </form>
@@ -186,7 +184,7 @@
 
         <div class="sidebar-logo-and-hamburger">
             <img class="logo-img" src="/webmin.532c5311.webp" alt="webmin">
-            <a id="sidebar-burger" class="component-sidebar-hamburger-link" href="#">
+            <a id="sidebar-burger" class="component-sidebar-hamburger-link" href="burger">
                 <svg class="hamburger-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="344.339px" height="344.339px" viewbox="0 0 344.339 344.339" style="enable-background:new 0 0 344.339 344.339;" xml:space="preserve">
                     <g>
                         <rect y="46.06" width="344.339" height="29.52"></rect>
@@ -307,15 +305,11 @@
 
         <div class="general-calendar">
             <form id="general-calendar-form" class="calendar-wrapper">
-                <label>
-                    <input class="left-calendar-input" type="date" value="2016-05-16">
-                </label>
-                <label>
-                    <input class="right-calendar-input" type="date" value="2016-05-16">
-                </label>
+                    <input class="left-calendar-input" type="date" value="2016-05-16" name="date" aria-label="calendar-input-left">
+                    <input class="right-calendar-input" type="date" value="2016-05-16" name="date" aria-label="calendar-input-right">
                 <i class="icon-calendar"></i>
             </form>
-            <button id="general-calendar-reset" class="btn-square calendar-button" type="button" value="Reset form" aria-label="Reset form">
+            <button id="general-calendar-reset" class="btn-square calendar-button" type="button" value="Reset-form" aria-label="Reset-form">
                 <i class="icon-refresh"></i>
             </button>
         </div>

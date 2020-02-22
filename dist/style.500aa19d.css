@@ -2228,12 +2228,18 @@ ul {
   padding: 5px;
   color: #333;
 }
+.postback-section .postback-middle .select-wrap label {
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Open Sans", Helvetica, Arial;
+}
 .postback-section .postback-middle .select-wrap i {
   font-size: 10px;
   color: #a6a6a6;
   display: inline-block;
   position: absolute;
-  top: 68px;
+  top: 42px;
   right: 10px;
 }
 .postback-section .postback-bottom {
@@ -2407,12 +2413,18 @@ ul {
   padding: 5px;
   color: #333;
 }
+.postback-section .postback-middle .select-wrap label {
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Open Sans", Helvetica, Arial;
+}
 .postback-section .postback-middle .select-wrap i {
   font-size: 10px;
   color: #a6a6a6;
   display: inline-block;
   position: absolute;
-  top: 68px;
+  top: 42px;
   right: 10px;
 }
 .postback-section .postback-bottom {

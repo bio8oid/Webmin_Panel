@@ -5,7 +5,7 @@
 	<title>Postback</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="Postback" content="Author: bio8oid Author,Category: Admin-Panel">
+	<meta name="Description" content="Author: bio8oid Author,Category: Admin-Panel">
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
 	<link rel="stylesheet" type="text/css" href="../sass/style.scss">
@@ -36,8 +36,8 @@
 
 			<div class="postback-middle">
 				<div class="select-wrap">
-					<p>Postback type</p>
-					<select class="info-input">
+					<label for="postback-type">Postback type</label>
+					<select class="info-input" id="postback-type">
 						<option value="1">S2S (http://..)</option>
 						<option value="2">S2S (http://..)</option>
 						<option value="3">S2S (http://..)</option>
@@ -47,8 +47,8 @@
 				</div>
 
 				<div class="select-wrap">
-					<p>To countries</p>
-					<select class="info-input">
+					<label for="postback-country">To countries</label>
+					<select class="info-input" id="postback-country">
 						<option value="5">Uganda</option>
 						<option value="6">Germany</option>
 						<option value="7">Sweden</option>
@@ -58,8 +58,8 @@
 				</div>
 
 				<div class="select-wrap">
-					<p>Sending options</p>
-					<select class="info-input">
+					<label for="postback-option">Sending options</label>
+					<select class="info-input" id="postback-option">
 						<option value="9">Select</option>
 						<option value="10">Select</option>
 						<option value="11">Select</option>
@@ -107,7 +107,7 @@
 
 				<div class="right-box">
 					<p>Send after:</p>
-					<input id="custom-slider" type="text" class="js-range-slider" name="my_range" aria-checked="mixed"/>
+					<input id="custom-slider" type="text" class="js-range-slider" name="my_range" aria-hidden="true"/>
 				</div>
 
 			</div>
@@ -118,7 +118,9 @@
 		</div>
 	</section>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
 
 	<script type="module" src="../js/script.js"></script>
