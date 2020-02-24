@@ -66,8 +66,7 @@ window.onload = () => {
     document.querySelector(modal).classList.add('show');
   };
 
-  // Message Modal
-  
+  // Notfication Modal
   document.getElementById('indicator').addEventListener('click', e => {
     e.preventDefault();
     document.getElementById('orange-dot').classList.remove('orange-dot');
@@ -84,6 +83,13 @@ window.onload = () => {
   document.getElementById('login').addEventListener('click', e => {
     e.preventDefault();
     openModal('#loginModal');
+  });
+
+  // Sidebar Notfication Modal
+  document.getElementById('sidebar-indicator').addEventListener('click', e => {
+    e.preventDefault();
+    document.getElementById('sidebar-orange-dot').classList.remove('orange-dot');
+    openModal('#message');
   });
 
   // Sidebar Quit Modal

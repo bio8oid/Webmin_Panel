@@ -178,6 +178,12 @@ li {
 	text-decoration: none;
 	color: $font-color;
 
+	@media not all and (hover: none) {
+		&:hover .black {
+			background-color: #282828;
+		}
+	}
+
 	.select-wallet {
 		color: $font-color;
 		font-weight: $paragraph-font-weight;
@@ -190,6 +196,10 @@ li {
 		background-repeat: no-repeat;
 		background-position: right 0 top 50%;
 		width: 120px;
+	}
+
+	.black {
+		background: #14141d;
 	}
 }
 

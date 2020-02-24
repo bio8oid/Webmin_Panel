@@ -92,14 +92,17 @@
 
                 <div class="wallet-element">
                     <i class="icon-wallet"></i>
-                    <p>$1,500.00</p>
-                    <i class="icon-arrow-down"></i>
+                    <select class="select-wallet black" name="wallets" id="sidebar-wallet" aria-label="wallet">
+                        <option class="amount" value="first">$1,500.00</option>
+                        <option class="amount" value="second">$2,500.00</option>
+                        <option class="amount" value="third">$5,500.00</option>
+                    </select>
                 </div>
-
+                
                 <div class="notification-element">
-                    <a href="#">
+                    <a id="sidebar-indicator" href="#">
                         <i class="icon-notification"></i>
-                        <div class="orange-dot"></div>
+                        <div id="sidebar-orange-dot" class="orange-dot"></div>
                     </a>
                 </div>
 

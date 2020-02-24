@@ -1389,6 +1389,11 @@ li {
   text-decoration: none;
   color: #a6a6a6;
 }
+@media not all and (hover: none) {
+  .wallet-element:hover .black {
+    background-color: #282828;
+  }
+}
 .wallet-element .select-wallet {
   color: #a6a6a6;
   font-weight: 700;
@@ -1401,6 +1406,9 @@ li {
   background-repeat: no-repeat;
   background-position: right 0 top 50%;
   width: 120px;
+}
+.wallet-element .black {
+  background: #14141d;
 }
 
 /*  Notification  */
@@ -2738,9 +2746,9 @@ body.widen {
 .sidebar-small .sidebar-manager-section,
 .sidebar-small .link-paragraph,
 .sidebar-small .wallet-element p,
+.sidebar-small .select-wallet,
 .sidebar-small .icon-arrow-down,
 .sidebar-small .profile-element p,
-.sidebar-small .logo-img,
-.sidebar-small .orange-dot {
+.sidebar-small .logo-img {
   display: none;
 }
