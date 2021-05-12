@@ -4,7 +4,7 @@
   "description": "My project link: https://github.com/bio8oid/9__User_Panel",
   "main": "index.js",
   "dependencies": {
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "core-js": "^3.4.5"
   },
   "devDependencies": {
